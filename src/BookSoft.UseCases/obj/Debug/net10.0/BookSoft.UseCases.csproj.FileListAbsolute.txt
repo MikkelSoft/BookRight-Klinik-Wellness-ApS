@@ -1,0 +1,17 @@
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\bin\Debug\net10.0\BookSoft.UseCases.deps.json
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\bin\Debug\net10.0\BookSoft.UseCases.dll
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\bin\Debug\net10.0\BookSoft.UseCases.pdb
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\bin\Debug\net10.0\BookSoft.Domain.dll
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\bin\Debug\net10.0\BookSoft.Facade.dll
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\bin\Debug\net10.0\BookSoft.Domain.pdb
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\bin\Debug\net10.0\BookSoft.Facade.pdb
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\BookSoft.UseCases.csproj.AssemblyReference.cache
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\BookSoft.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\BookSoft.UseCases.AssemblyInfoInputs.cache
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\BookSoft.UseCases.AssemblyInfo.cs
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\BookSoft.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\BookSoft.8245AFBE.Up2Date
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\BookSoft.UseCases.dll
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\refint\BookSoft.UseCases.dll
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\BookSoft.UseCases.pdb
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\ref\BookSoft.UseCases.dll

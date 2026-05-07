@@ -1,0 +1,11 @@
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Facade\bin\Debug\net10.0\BookSoft.Facade.deps.json
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Facade\bin\Debug\net10.0\BookSoft.Facade.dll
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Facade\bin\Debug\net10.0\BookSoft.Facade.pdb
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Facade\obj\Debug\net10.0\BookSoft.Facade.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Facade\obj\Debug\net10.0\BookSoft.Facade.AssemblyInfoInputs.cache
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Facade\obj\Debug\net10.0\BookSoft.Facade.AssemblyInfo.cs
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Facade\obj\Debug\net10.0\BookSoft.Facade.csproj.CoreCompileInputs.cache
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Facade\obj\Debug\net10.0\BookSoft.Facade.dll
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Facade\obj\Debug\net10.0\refint\BookSoft.Facade.dll
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Facade\obj\Debug\net10.0\BookSoft.Facade.pdb
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Facade\obj\Debug\net10.0\ref\BookSoft.Facade.dll
