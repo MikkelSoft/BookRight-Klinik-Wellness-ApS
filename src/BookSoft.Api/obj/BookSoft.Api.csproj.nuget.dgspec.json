@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Api\\BookSoft.Api.csproj": {}
+    "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Api\\BookSoft.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Api\\BookSoft.Api.csproj": {
+    "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Api\\BookSoft.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Api\\BookSoft.Api.csproj",
+        "projectUniqueName": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Api\\BookSoft.Api.csproj",
         "projectName": "BookSoft.Api",
-        "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Api\\BookSoft.Api.csproj",
-        "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Api\\obj\\",
+        "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Api\\BookSoft.Api.csproj",
+        "packagesPath": "C:\\Users\\bash1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bash1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,21 +26,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Facade\\BookSoft.Facade.csproj": {
-                "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Facade\\BookSoft.Facade.csproj"
+              "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\BookSoft.Facade.csproj": {
+                "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\BookSoft.Facade.csproj"
               },
-              "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj"
+              "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj"
               },
-              "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj": {
-                "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj"
+              "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj": {
+                "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj"
               }
             }
           }
@@ -59,7 +59,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
@@ -90,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -508,20 +507,20 @@
         }
       }
     },
-    "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\BookSoft.Domain.csproj": {
+    "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\BookSoft.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\BookSoft.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\BookSoft.Domain.csproj",
         "projectName": "BookSoft.Domain",
-        "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\BookSoft.Domain.csproj",
-        "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\obj\\",
+        "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\BookSoft.Domain.csproj",
+        "packagesPath": "C:\\Users\\bash1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bash1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -530,11 +529,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -553,7 +552,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -571,7 +569,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -849,20 +847,20 @@
         }
       }
     },
-    "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Facade\\BookSoft.Facade.csproj": {
+    "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\BookSoft.Facade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Facade\\BookSoft.Facade.csproj",
+        "projectUniqueName": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\BookSoft.Facade.csproj",
         "projectName": "BookSoft.Facade",
-        "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Facade\\BookSoft.Facade.csproj",
-        "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Facade\\obj\\",
+        "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\BookSoft.Facade.csproj",
+        "packagesPath": "C:\\Users\\bash1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bash1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -871,11 +869,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -894,7 +892,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -912,7 +909,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1190,20 +1187,20 @@
         }
       }
     },
-    "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj": {
+    "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj",
         "projectName": "BookSoft.Infrastructure",
-        "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\bash1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bash1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1212,21 +1209,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\BookSoft.Domain.csproj": {
-                "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\BookSoft.Domain.csproj"
+              "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\BookSoft.Domain.csproj": {
+                "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\BookSoft.Domain.csproj"
               },
-              "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Facade\\BookSoft.Facade.csproj": {
-                "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Facade\\BookSoft.Facade.csproj"
+              "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\BookSoft.Facade.csproj": {
+                "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\BookSoft.Facade.csproj"
               },
-              "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj": {
-                "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj"
+              "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj": {
+                "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj"
               }
             }
           }
@@ -1245,7 +1242,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
@@ -1277,7 +1273,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1555,20 +1551,20 @@
         }
       }
     },
-    "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj": {
+    "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj",
+        "projectUniqueName": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj",
         "projectName": "BookSoft.UseCases",
-        "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj",
-        "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.UseCases\\obj\\",
+        "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj",
+        "packagesPath": "C:\\Users\\bash1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bash1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1577,18 +1573,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\BookSoft.Domain.csproj": {
-                "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\BookSoft.Domain.csproj"
+              "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\BookSoft.Domain.csproj": {
+                "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\BookSoft.Domain.csproj"
               },
-              "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Facade\\BookSoft.Facade.csproj": {
-                "projectPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Facade\\BookSoft.Facade.csproj"
+              "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\BookSoft.Facade.csproj": {
+                "projectPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\BookSoft.Facade.csproj"
               }
             }
           }
@@ -1607,7 +1603,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -1625,7 +1620,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

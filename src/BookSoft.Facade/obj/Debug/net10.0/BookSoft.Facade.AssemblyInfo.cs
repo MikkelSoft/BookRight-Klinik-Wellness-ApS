@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookSoft.Facade")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acd1eb48d52753e2dd6956f3a827a2213a7d9a25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0b8b87865b00c1e21543adff65f32e8bdf5d7b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookSoft.Facade")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookSoft.Facade")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

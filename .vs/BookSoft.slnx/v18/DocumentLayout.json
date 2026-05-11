@@ -1,10 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\",
+  "WorkspaceRootPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.domain\\entities\\dummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\dummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\practitioner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\practitioner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +25,91 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAtwAkBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-05-11T09:26:06.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "patient.cs",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\patient.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\patient.cs",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\patient.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T08:56:35.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Practitioner.cs",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Practitioner.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Practitioner.cs",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Practitioner.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Practitioner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T08:53:38.184Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "dummy.cs",
-              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\dummy.cs",
-              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\dummy.cs",
-              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\dummy.cs",
-              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\dummy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Person.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Person.cs",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Person.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Person.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T09:20:24.199Z",
+              "WhenOpened": "2026-05-11T08:37:43.306Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
