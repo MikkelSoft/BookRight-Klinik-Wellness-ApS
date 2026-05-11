@@ -6,7 +6,11 @@ namespace BookSoft.Domain;
 /// </summary>
 public abstract class Entity
 {
-    public Guid Id { get; protected set; }
+    public Guid ID { get; init; } //init betyder initial og gør så den ikke kan ændres
+    public Entity()
+    {
+        ID = Guid.NewGuid();
+    }
 }
 
 /// <summary>
