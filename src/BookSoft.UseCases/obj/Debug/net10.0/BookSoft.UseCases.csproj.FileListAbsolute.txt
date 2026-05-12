@@ -15,3 +15,4 @@ C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\Boo
 C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\refint\BookSoft.UseCases.dll
 C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\BookSoft.UseCases.pdb
 C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\ref\BookSoft.UseCases.dll
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.UseCases\obj\Debug\net10.0\BookSoft.UseCases.sourcelink.json

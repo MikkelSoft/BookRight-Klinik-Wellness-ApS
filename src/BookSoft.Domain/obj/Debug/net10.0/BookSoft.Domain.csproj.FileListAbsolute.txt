@@ -9,3 +9,4 @@ C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Domain\obj\Debug\net10.0\BookS
 C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Domain\obj\Debug\net10.0\refint\BookSoft.Domain.dll
 C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Domain\obj\Debug\net10.0\BookSoft.Domain.pdb
 C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Domain\obj\Debug\net10.0\ref\BookSoft.Domain.dll
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Domain\obj\Debug\net10.0\BookSoft.Domain.sourcelink.json

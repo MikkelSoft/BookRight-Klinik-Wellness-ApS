@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace BookSoft.Domain;
 
 /// <summary>
@@ -6,6 +8,7 @@ namespace BookSoft.Domain;
 /// </summary>
 public abstract class Entity
 {
+    [Key] //sætter primary key til entity framework
     public Guid ID { get; init; } //init betyder initial og gør så den ikke kan ændres
     public Entity()
     {

@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using BookSoft.Domain.ValueObjects;
 
 namespace BookSoft.Domain.Entities
 {
     public class Person : AggregateRoot
     {
-        public string FullName {  get; set; } = null!;
-        public EmailAddressAttribute Email { get; set; } = null!; 
-        public DateOnly birthday { get; set; }
-
+        public FullName FullName {  get; private set; } = null!;
+        public string Email { get; private set; } = null!;
     }
 }

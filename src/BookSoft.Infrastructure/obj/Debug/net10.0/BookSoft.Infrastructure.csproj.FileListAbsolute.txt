@@ -17,3 +17,6 @@ C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Infrastructure\obj\Debug\net10
 C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Infrastructure\obj\Debug\net10.0\refint\BookSoft.Infrastructure.dll
 C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Infrastructure\obj\Debug\net10.0\BookSoft.Infrastructure.pdb
 C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Infrastructure\obj\Debug\net10.0\ref\BookSoft.Infrastructure.dll
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Infrastructure\obj\Debug\net10.0\BookSoft.Infrastructure.sourcelink.json
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Infrastructure\bin\Debug\net10.0\BookSoft.Infrastructure.runtimeconfig.json
+C:\Users\Computer\Downloads\BookSoft\src\BookSoft.Infrastructure\obj\Debug\net10.0\BookSoft.Infrastructure.genruntimeconfig.cache

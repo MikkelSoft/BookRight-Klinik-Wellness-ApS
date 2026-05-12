@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Computer\\Downloads\\BookSoft\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.domain\\entities\\dummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\dummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.infrastructure\\data\\booksoftdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|solutionrelative:src\\booksoft.infrastructure\\data\\booksoftdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.infrastructure\\data\\configurations\\patientconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|solutionrelative:src\\booksoft.infrastructure\\data\\configurations\\patientconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.infrastructure\\data\\configurations\\practitionerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|solutionrelative:src\\booksoft.infrastructure\\data\\configurations\\practitionerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.domain\\entities\\practitioner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\practitioner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.domain\\entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.domain\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.domain\\valueobjects\\fullname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\valueobjects\\fullname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|c:\\users\\computer\\downloads\\booksoft\\src\\booksoft.infrastructure\\booksoft.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|solutionrelative:src\\booksoft.infrastructure\\booksoft.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +50,135 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dummy.cs",
-              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\dummy.cs",
-              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\dummy.cs",
-              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\dummy.cs",
-              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\dummy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PractitionerConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\Data\\Configurations\\PractitionerConfig.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Infrastructure\\Data\\Configurations\\PractitionerConfig.cs",
+              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\Data\\Configurations\\PractitionerConfig.cs",
+              "RelativeToolTip": "src\\BookSoft.Infrastructure\\Data\\Configurations\\PractitionerConfig.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T09:20:24.199Z",
+              "WhenOpened": "2026-05-12T08:06:09.948Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\Data\\Configurations\\PatientConfig.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Infrastructure\\Data\\Configurations\\PatientConfig.cs",
+              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\Data\\Configurations\\PatientConfig.cs",
+              "RelativeToolTip": "src\\BookSoft.Infrastructure\\Data\\Configurations\\PatientConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T08:23:35.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookSoftDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
+              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
+              "RelativeToolTip": "src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T07:17:31.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\Patient.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Patient.cs",
+              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\Patient.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Patient.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T09:44:37.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Practitioner.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\Practitioner.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Practitioner.cs",
+              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\Practitioner.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Practitioner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T09:45:00.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\Person.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Person.cs",
+              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\Person.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Person.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T08:15:07.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\Appointment.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Appointment.cs",
+              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\Entities\\Appointment.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T07:28:42.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AggregateRoot.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\AggregateRoot.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\AggregateRoot.cs",
+              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\AggregateRoot.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\AggregateRoot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T08:02:18.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FullName.cs",
+              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\ValueObjects\\FullName.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\ValueObjects\\FullName.cs",
+              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Domain\\ValueObjects\\FullName.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\ValueObjects\\FullName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T09:47:57.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookSoft.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Computer\\Downloads\\BookSoft\\src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj",
+              "RelativeToolTip": "src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-11T10:40:56.896Z"
             }
           ]
         }
