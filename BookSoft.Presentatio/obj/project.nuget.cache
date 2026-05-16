@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zjlJYMCXXew=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\BookSoft.Presentatio\\BookSoft.Presentatio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bash1\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.8\\microsoft.aspnetcore.app.internal.assets.10.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

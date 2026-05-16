@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="BookSoft.Presentatio/BookSoft.Presentatio.csproj" Id="2f5cae49-bc09-47c5-93b4-49fe5f520574" />
     <Project Path="src/BookSoft.Api/BookSoft.Api.csproj" />
     <Project Path="src/BookSoft.Domain/BookSoft.Domain.csproj" />
     <Project Path="src/BookSoft.Facade/BookSoft.Facade.csproj" />

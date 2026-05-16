@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookSoft.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c4ce61d580e7bbfba5f7875c9019145778a3475")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5488cde9c4f29832b7e8bd222467b6da556ca3e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookSoft.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookSoft.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
