@@ -9,7 +9,7 @@ namespace BookSoft.Domain.Entities
     {
         public DateTime TransactionDate { get; private set; }
         public AppointmentType AppointmentType { get; private set; }
-        public Practitioner Practitioners { get; private set; }
+        public Practitioner Practitioners { get; private set; } = null!;
         public FullName PractiionerName => Practitioners.FullName;
 
         public decimal cost => AppointmentType switch
