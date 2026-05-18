@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookSoft.UseCases.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4642ea143e3fd511afea54d54b33e17bc9b2227e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36e6435366967cbda47f543a1833a3b31c942354")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookSoft.UseCases.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookSoft.UseCases.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
