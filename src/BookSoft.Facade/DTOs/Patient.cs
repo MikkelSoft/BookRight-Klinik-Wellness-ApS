@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BookSoft.Facade.DTOs
 {
-    internal class PatientDto
+    public class Patient
     {
     }
 }
