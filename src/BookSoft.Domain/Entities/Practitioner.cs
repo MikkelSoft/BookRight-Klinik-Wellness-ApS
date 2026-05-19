@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using BookSoft.Domain.ValueObjects;
 
 namespace BookSoft.Domain.Entities
 {
@@ -10,9 +11,9 @@ namespace BookSoft.Domain.Entities
         public string Specialty { get; private set; } = null!;
         public List<string> PhoneNumbers { get; private set; } = new List<string>();
 
-        public Practitioner(string fullName, string email, string specialty)
+        public Practitioner(string firstName, string middleNames, string lastName, string email, string specialty)
         {
-            FullName = new FullName(fullName);
+            FullName = new FullName(firstName, middleNames, lastName);
             Email = email;
             Specialty = specialty;
         }

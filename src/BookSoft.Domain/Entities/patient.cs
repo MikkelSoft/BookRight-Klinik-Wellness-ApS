@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using BookSoft.Domain.ValueObjects;
 
 namespace BookSoft.Domain.Entities
 {
@@ -30,9 +31,9 @@ namespace BookSoft.Domain.Entities
             >= 1000 => loyaltyLevel.Bronze,
             _ => loyaltyLevel.None
         };
-        public Patient(string fullName, string email, DateTime birthday)
+        public Patient(string firstName, string middleNames, string lastName, string email, DateTime birthday)
         {
-            FullName = new FullName(fullName);
+            FullName = new FullName(firstName, middleNames, lastName);
             Email = email;
             Birthday = birthday;
         }

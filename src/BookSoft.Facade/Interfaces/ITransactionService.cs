@@ -9,6 +9,6 @@ namespace BookSoft.Facade.Interfaces
     public interface ITransactionService
     {
         Task<List<Transaction>> GetAllAsync();
-        Task<List<Transaction>> GetByPatientIdAsync(int patientId)
+        Task<List<Transaction>> GetByPatientIdAsync(int patientId);
     }
 }
