@@ -1,7 +1,7 @@
 <Solution>
   <Folder Name="/src/">
-    <Project Path="../BookRight-Klinik-Wellness-ApS&amp;/src/BookSoft.Blazor/BookSoft.Blazor.csproj" Id="9bfd3643-368e-4ccd-a8b4-7287632787d9" />
     <Project Path="src/BookSoft.Api/BookSoft.Api.csproj" />
+    <Project Path="src/BookSoft.Blazor/BookSoft.Blazor.csproj" />
     <Project Path="src/BookSoft.Domain/BookSoft.Domain.csproj" />
     <Project Path="src/BookSoft.Facade/BookSoft.Facade.csproj" />
     <Project Path="src/BookSoft.Infrastructure/BookSoft.Infrastructure.csproj" />

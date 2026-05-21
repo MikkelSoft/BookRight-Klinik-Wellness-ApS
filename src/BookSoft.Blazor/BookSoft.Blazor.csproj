@@ -7,4 +7,10 @@
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BookRight-Klinik-Wellness-ApS\src\BookSoft.Facade\BookSoft.Facade.csproj" />
+    <ProjectReference Include="..\..\..\BookRight-Klinik-Wellness-ApS\src\BookSoft.Infrastructure\BookSoft.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\BookRight-Klinik-Wellness-ApS\src\BookSoft.UseCases\BookSoft.UseCases.csproj" />
+  </ItemGroup>
+
 </Project>
