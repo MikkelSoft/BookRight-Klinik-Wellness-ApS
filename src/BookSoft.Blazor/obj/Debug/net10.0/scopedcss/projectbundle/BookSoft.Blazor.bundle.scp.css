@@ -39,9 +39,7 @@
     border-radius: 25px; 
         
 }
-.nav-link[b-anr8ipptmn] {
-    text-decoration: none;
-}
+
 /* /Components/Layout/ReconnectModal.razor.rz.scp.css */
 .components-reconnect-first-attempt-visible[b-rsia2mosg2],
 .components-reconnect-repeated-attempt-visible[b-rsia2mosg2],

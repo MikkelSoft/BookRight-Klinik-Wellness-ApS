@@ -12,4 +12,7 @@ body {
     display: flex;
 }
 
-
+a {
+    text-decoration: none;
+    padding: 0px;
+}
