@@ -1,13 +1,16 @@
 .nav-scrollable {
-    width: 90%
+    width: 100%;
+    align-content: center;
 }
 
 .nav-item {
     display: flex;
     padding: 10px;
     background-color: var(--primary-hover);
-    text-decoration: none;
     margin: 5px;
     border-radius: 25px; 
         
+}
+.nav-link {
+    text-decoration: none;
 }

@@ -13,37 +13,34 @@
     justify-content: center;
     align-content: space-around;
     background-color: var(--secondary);
-    width: 80%;
+    width: 90%;
     height: 70%;
-    z-index: 1;
-    position: absolute;
-    top: 0px;
-    right: 0px;
     border-radius: 0 0 0 25px;
 }
 
 .sidebar[b-70soimjwuj] {
     width: 20%;
-    align-content: space-around;
+    align-content: flex-start;
     padding: 15px;
-    z-index: 1;
-    position: absolute;
     left: 0px;
 
 }
 /* /Components/Layout/NavMenu.razor.rz.scp.css */
 .nav-scrollable[b-anr8ipptmn] {
-    width: 90%
+    width: 100%;
+    align-content: center;
 }
 
 .nav-item[b-anr8ipptmn] {
     display: flex;
     padding: 10px;
     background-color: var(--primary-hover);
-    text-decoration: none;
     margin: 5px;
     border-radius: 25px; 
         
+}
+.nav-link[b-anr8ipptmn] {
+    text-decoration: none;
 }
 /* /Components/Layout/ReconnectModal.razor.rz.scp.css */
 .components-reconnect-first-attempt-visible[b-rsia2mosg2],

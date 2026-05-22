@@ -1,13 +1,16 @@
 .nav-scrollable[b-anr8ipptmn] {
-    width: 90%
+    width: 100%;
+    align-content: center;
 }
 
 .nav-item[b-anr8ipptmn] {
     display: flex;
     padding: 10px;
     background-color: var(--primary-hover);
-    text-decoration: none;
     margin: 5px;
     border-radius: 25px; 
         
+}
+.nav-link[b-anr8ipptmn] {
+    text-decoration: none;
 }
