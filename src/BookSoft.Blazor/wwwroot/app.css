@@ -1,9 +1,9 @@
 :root {
-    --primary: #ffffff;
-    --primary-hover: #0069d9;
-    --primary-active: #005cbf;
-    --secondary: #808080;   
-
+    --primary: #F1FFFA;
+    --primary-hover: #2191FB;
+    --primary-active: #2191FB;
+    --font-color: #222725;
+    --secondary: #d4e1dc;
 }
 
 body {

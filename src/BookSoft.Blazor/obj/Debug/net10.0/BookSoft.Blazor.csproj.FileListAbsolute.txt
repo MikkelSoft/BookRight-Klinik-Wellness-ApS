@@ -213,7 +213,6 @@ C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Layout\ReconnectModal.razor.rz.scp.css
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\bundle\BookSoft.Blazor.styles.css
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\projectbundle\BookSoft.Blazor.bundle.scp.css
-C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\kdj1qlqoba-{0}-iica0rr6z6-iica0rr6z6.gz
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\qd4zll1iz5-{0}-bqjiyaj88i-bqjiyaj88i.gz
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\pfecvk5a2w-{0}-c2jlpeoesf-c2jlpeoesf.gz
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\1zahjzyhgh-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -261,8 +260,6 @@ C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\1622ce5jr3-{0}-abdmv1u4y3-abdmv1u4y3.gz
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\mebshqn8f9-{0}-ej96puwv3k-ej96puwv3k.gz
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\5li5khwqn6-{0}-cj5793hgrt-cj5793hgrt.gz
-C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\xixr6jn651-{0}-3y93rtwoeo-3y93rtwoeo.gz
-C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\f40gn40kyc-{0}-3y93rtwoeo-3y93rtwoeo.gz
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\staticwebassets.development.json
@@ -275,3 +272,6 @@ C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\BookSoft.Blazor.pdb
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\BookSoft.Blazor.genruntimeconfig.cache
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\ref\BookSoft.Blazor.dll
+C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\kdj1qlqoba-{0}-lajgao2qmm-lajgao2qmm.gz
+C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\xixr6jn651-{0}-486mjsegw9-486mjsegw9.gz
+C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\f40gn40kyc-{0}-486mjsegw9-486mjsegw9.gz

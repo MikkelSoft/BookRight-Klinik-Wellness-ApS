@@ -1,4 +1,13 @@
-.NavMenu {
-    background-color: var(--secondary);
+.nav-scrollable {
+    width: 90%
+}
+
+.nav-item {
+    display: flex;
     padding: 10px;
+    background-color: var(--primary-hover);
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 25px; 
+        
 }

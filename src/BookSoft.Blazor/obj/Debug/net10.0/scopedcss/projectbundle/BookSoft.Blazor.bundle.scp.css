@@ -5,25 +5,45 @@
     float: left;
     width: 100%;
     height: 100vh;
+    margin: 0px;
+    padding: 0px;
 }
 
 .content[b-70soimjwuj] {
     justify-content: center;
     align-content: space-around;
     background-color: var(--secondary);
-    width: 100%;
+    width: 80%;
+    height: 70%;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 0 0 0 25px;
 }
 
 .sidebar[b-70soimjwuj] {
-    width:15%;
-    align-content: flex-start;
+    width: 20%;
+    align-content: space-around;
     padding: 15px;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
 
 }
 /* /Components/Layout/NavMenu.razor.rz.scp.css */
-.NavMenu[b-anr8ipptmn] {
-    background-color: var(--secondary);
+.nav-scrollable[b-anr8ipptmn] {
+    width: 90%
+}
+
+.nav-item[b-anr8ipptmn] {
+    display: flex;
     padding: 10px;
+    background-color: var(--primary-hover);
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 25px; 
+        
 }
 /* /Components/Layout/ReconnectModal.razor.rz.scp.css */
 .components-reconnect-first-attempt-visible[b-rsia2mosg2],
