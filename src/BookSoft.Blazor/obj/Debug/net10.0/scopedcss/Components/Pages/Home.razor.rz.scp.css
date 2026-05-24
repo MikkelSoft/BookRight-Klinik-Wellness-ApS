@@ -1,2 +1,20 @@
-body[b-iyr0bui8t8] {
+.patients[b-iyr0bui8t8] {
+    width: 100%;
+    align-content: center;
 }
+
+.top-bar[b-iyr0bui8t8] {
+    float: left;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 0px;
+    width:100%;
+}
+
+
+.top-widget[b-iyr0bui8t8] {
+    padding: 0px; 
+    
+}
+

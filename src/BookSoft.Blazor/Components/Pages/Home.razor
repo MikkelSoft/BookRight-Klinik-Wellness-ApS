@@ -1,22 +1,24 @@
-﻿
-
-@page "/"
-@page "/Home"      // Home.razor
+﻿@page "/"
+@page "/Home"      //Home.razor
 
 <PageTitle>Home</PageTitle>
+<div class="patients">
+    <div class="top-bar">
+        <p class="Name top-widget">Name</p>
+        <p class="Birthday top-widget">Birthday</p>
+        <p class="Email top-widget">Email</p>
+        <p class="Loyalty top-widget">Loyalty</p>
+        <p class="Cpr-nr top-widget">CPR</p>
 
-<div class=" top-bar">
-
+        <input type="text" placeholder="Search" />
+    </div>
 </div>
 
+
 <div class="patient-group">
-
-    <ul>
-
-    </ul>
-
+    
 </div>
 
 @code   {
-    
-};
+
+}

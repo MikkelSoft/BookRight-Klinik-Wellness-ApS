@@ -7,7 +7,7 @@ namespace BookSoft.Facade.Interfaces
     public interface IPatientService
     {
         // GET: the reading functions for the patient
-        Task<List<Patient>> GetAllAsync();
+        Task<List<Patient>> GetAllAsync();  
         Task<List<Patient>> GetByNameAsync(string name);
         Task<List<Patient>> GetByIdAsync(int id);
 

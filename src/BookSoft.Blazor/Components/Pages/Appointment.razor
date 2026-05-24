@@ -1,7 +1,41 @@
 ﻿@page "/Appointment"  // Appointment.razor
 
-<h3>Appointment</h3>
+<div class="calendar">
 
-@code {
+    <!-- Top bar: month navigation + view toggle -->
+    <div class="calendar-header">
+        <button>&#8249;</button>
+        <span>Maj 2026</span>
+        <button>&#8250;</button>
+        <div class="view-toggle">
+            <button>Dag</button>
+            <button>Uge</button>
+            <button class="active">Måned</button>
+        </div>
+    </div>
 
-}
+    <!-- Day labels -->
+    <div class="calendar-days-header">
+        <span>Man</span>
+        <span>Tir</span>
+        <span>Ons</span>
+        <span>Tor</span>
+        <span>Fre</span>
+        <span>Lør</span>
+        <span>Søn</span>
+    </div>
+
+    <!-- Grid of weeks -->
+    <div class="calendar-grid">
+        <div class="calendar-cell">
+            <span class="day-number">1</span>
+            <!-- appointments go here -->
+            <div class="appointment">10:00 Anna Jensen</div>
+        </div>
+        <div class="calendar-cell">
+            <span class="day-number">2</span>
+        </div>
+        <!-- repeat for each day... -->
+    </div>
+
+</div>

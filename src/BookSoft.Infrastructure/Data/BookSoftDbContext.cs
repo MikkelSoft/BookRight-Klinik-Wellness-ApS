@@ -11,7 +11,7 @@ namespace BookSoft.Infrastructure.Data
         public DbSet<Practitioner> Practitioners { get; set; } //opretter kolonner i db
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
-        public DbSet<Transactions> Transactions { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

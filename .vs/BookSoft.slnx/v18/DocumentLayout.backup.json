@@ -3,32 +3,67 @@
   "WorkspaceRootPath": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\pages\\appointment.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\pages\\appointment.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.infrastructure\\data\\booksoftdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|solutionrelative:src\\booksoft.infrastructure\\data\\booksoftdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.facade\\dtos\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|solutionrelative:src\\booksoft.facade\\dtos\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.facade\\interfaces\\ipatientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|solutionrelative:src\\booksoft.facade\\interfaces\\ipatientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\pages\\appointment.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\pages\\appointment.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\pages\\financials.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\pages\\financials.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\booksoft.blazor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\booksoft.blazor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\10.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -55,19 +90,11 @@
       "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.blazor\\booksoft.blazor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4151D3FD-F2BC-6F6F-41B2-3350BFF1160A}|src\\BookSoft.Blazor\\BookSoft.Blazor.csproj|solutionrelative:src\\booksoft.blazor\\booksoft.blazor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.facade\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|solutionrelative:src\\booksoft.facade\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\practitioner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,20 +113,12 @@
       "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.infrastructure\\data\\booksoftdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|solutionrelative:src\\booksoft.infrastructure\\data\\booksoftdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.infrastructure\\data\\configurations\\patientconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|solutionrelative:src\\booksoft.infrastructure\\data\\configurations\\patientconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.facade\\queries\\dummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|solutionrelative:src\\booksoft.facade\\queries\\dummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\bash1\\source\\repos\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -184,7 +203,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -216,34 +235,69 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Program.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Program.cs",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Program.cs",
+              "RelativeToolTip": "src\\BookSoft.Blazor\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T20:22:01.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IPatientService.cs",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\Interfaces\\IPatientService.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Facade\\Interfaces\\IPatientService.cs",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\Interfaces\\IPatientService.cs",
+              "RelativeToolTip": "src\\BookSoft.Facade\\Interfaces\\IPatientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T20:20:39.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Home.razor.css",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Home.razor.css",
               "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Pages\\Home.razor.css",
               "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Home.razor.css",
               "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Pages\\Home.razor.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-05-24T12:34:50.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-24T12:16:34.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Appointment.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Appointment.razor",
               "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Pages\\Appointment.razor",
               "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Appointment.razor",
               "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Pages\\Appointment.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwCEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-24T12:16:46.123Z",
               "EditorCaption": ""
@@ -251,71 +305,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Financials.razor",
-              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Financials.razor",
-              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Pages\\Financials.razor",
-              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Financials.razor",
-              "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Pages\\Financials.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-24T12:16:41.494Z",
+              "Title": "patient.cs",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\patient.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\patient.cs",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\patient.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\patient.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBMAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T08:56:35.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-24T12:16:34.662Z",
+              "DocumentIndex": 4,
+              "Title": "BookSoftDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
+              "RelativeToolTip": "src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T20:26:28.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NavMenu.razor.css",
-              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor.css",
-              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor.css",
-              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor.css",
-              "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor.css",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-22T07:43:32.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-22T07:01:02.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainLayout.razor.css",
-              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor.css",
-              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor.css",
-              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor.css",
-              "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor.css",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-21T09:16:53.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor",
@@ -328,7 +343,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\DTOs\\Patient.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Facade\\DTOs\\Patient.cs",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\DTOs\\Patient.cs",
+              "RelativeToolTip": "src\\BookSoft.Facade\\DTOs\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T20:32:59.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Appointment.razor.css",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Appointment.razor.css",
+              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Pages\\Appointment.razor.css",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Appointment.razor.css",
+              "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Pages\\Appointment.razor.css",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwFUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-24T22:09:10.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Financials.razor",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Financials.razor",
+              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Pages\\Financials.razor",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Financials.razor",
+              "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Pages\\Financials.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-24T12:16:41.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAP0AAAAAAAAAAAArwAkBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-05-24T19:55:19.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Transaction.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Transaction.cs",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Transaction.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Transaction.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T19:38:04.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-22T07:01:02.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookSoft.Blazor.csproj",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\BookSoft.Blazor.csproj",
+              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\BookSoft.Blazor.csproj",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\BookSoft.Blazor.csproj",
+              "RelativeToolTip": "src\\BookSoft.Blazor\\BookSoft.Blazor.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-21T09:14:02.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor.css",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor.css",
+              "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor.css",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-22T07:43:32.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor.css",
+              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor.css",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-21T09:16:53.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Pages\\Error.razor",
@@ -341,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\wwwroot\\app.css",
@@ -349,11 +481,12 @@
               "RelativeToolTip": "src\\BookSoft.Blazor\\wwwroot\\app.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-22T08:03:55.139Z"
+              "WhenOpened": "2026-05-22T08:03:55.139Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\Routes.razor",
@@ -361,11 +494,12 @@
               "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Routes.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-22T08:09:45.465Z"
+              "WhenOpened": "2026-05-22T08:09:45.465Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\_Imports.razor",
@@ -373,23 +507,12 @@
               "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-22T08:09:52.283Z"
+              "WhenOpened": "2026-05-22T08:09:52.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BookSoft.Blazor.csproj",
-              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\BookSoft.Blazor.csproj",
-              "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\BookSoft.Blazor.csproj",
-              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\BookSoft.Blazor.csproj",
-              "RelativeToolTip": "src\\BookSoft.Blazor\\BookSoft.Blazor.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-21T09:14:02.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\Components\\App.razor",
               "RelativeDocumentMoniker": "src\\BookSoft.Blazor\\Components\\App.razor",
@@ -397,11 +520,12 @@
               "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\App.razor",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-21T08:15:49.601Z"
+              "WhenOpened": "2026-05-21T08:15:49.601Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor",
@@ -413,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\wwwroot\\app.css",
@@ -425,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "Financials.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Pages\\Financials.razor",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Pages\\Financials.razor",
@@ -437,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\App.razor",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\App.razor",
@@ -449,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "NavMenu.razor.css",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor.css",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor.css",
@@ -461,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Layout\\NavMenu.razor",
@@ -472,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "MainLayout.razor.css",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor.css",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Layout\\MainLayout.razor.css",
@@ -484,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 43,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Pages\\Home.razor",
@@ -496,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 44,
               "Title": "Appointment.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Pages\\Appointment.razor",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Pages\\Appointment.razor",
@@ -508,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 45,
               "Title": "bootstrap.css",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -520,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 46,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Properties\\launchSettings.json",
@@ -532,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 47,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Routes.razor",
@@ -544,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 48,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\_Imports.razor",
@@ -556,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 49,
               "Title": "ReconnectModal.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Layout\\ReconnectModal.razor",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Layout\\ReconnectModal.razor",
@@ -568,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 50,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Components\\Pages\\Error.razor",
@@ -580,7 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 51,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Program.cs",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\Program.cs",
@@ -592,7 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 52,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\appsettings.json",
               "RelativeDocumentMoniker": "..\\BookRight-Klinik-Wellness-ApS\u0026\\src\\BookSoft.Blazor\\appsettings.json",
@@ -604,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "ITransactionService.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\Interfaces\\ITransactionService.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Facade\\Interfaces\\ITransactionService.cs",
@@ -612,11 +736,12 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\Interfaces\\ITransactionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T08:46:46.554Z"
+              "WhenOpened": "2026-05-19T08:46:46.554Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Person.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Person.cs",
@@ -624,11 +749,12 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T08:37:43.306Z"
+              "WhenOpened": "2026-05-11T08:37:43.306Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "FullName.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\ValueObjects\\FullName.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Domain\\ValueObjects\\FullName.cs",
@@ -636,11 +762,12 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\ValueObjects\\FullName.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:50:31.526Z"
+              "WhenOpened": "2026-05-13T20:50:31.526Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "AggregateRoot.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\AggregateRoot.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Domain\\AggregateRoot.cs",
@@ -648,35 +775,12 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\AggregateRoot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:29:28.565Z"
+              "WhenOpened": "2026-05-13T20:29:28.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "patient.cs",
-              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\patient.cs",
-              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\patient.cs",
-              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\patient.cs",
-              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\patient.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAIA9wBwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T08:56:35.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "BookSoftDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
-              "RelativeDocumentMoniker": "src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
-              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
-              "RelativeToolTip": "src\\BookSoft.Infrastructure\\Data\\BookSoftDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:26:28.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Practitioner.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Practitioner.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Practitioner.cs",
@@ -684,11 +788,12 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Practitioner.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAuwBIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T08:53:38.184Z"
+              "WhenOpened": "2026-05-11T08:53:38.184Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "PatientConfig.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\Data\\Configurations\\PatientConfig.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Infrastructure\\Data\\Configurations\\PatientConfig.cs",
@@ -696,11 +801,12 @@
               "RelativeToolTip": "src\\BookSoft.Infrastructure\\Data\\Configurations\\PatientConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAUwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T07:52:49.55Z"
+              "WhenOpened": "2026-05-18T07:52:49.55Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "dummy.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\Queries\\dummy.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Facade\\Queries\\dummy.cs",
@@ -708,23 +814,12 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\Queries\\dummy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T20:44:08.53Z"
+              "WhenOpened": "2026-05-17T20:44:08.53Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Transactions.cs",
-              "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Transactions.cs",
-              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Transactions.cs",
-              "ToolTip": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Transactions.cs",
-              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Transactions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:55:08.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "Appointment.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Appointment.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Appointment.cs",
@@ -732,11 +827,12 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Appointment.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:28:46.46Z"
+              "WhenOpened": "2026-05-13T20:28:46.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "FullName.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\FullName.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Facade\\FullName.cs",
@@ -744,11 +840,12 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\FullName.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T22:08:09.125Z"
+              "WhenOpened": "2026-05-16T22:08:09.125Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "BookSoft.Facade.csproj",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\BookSoft.Facade.csproj",
               "RelativeDocumentMoniker": "src\\BookSoft.Facade\\BookSoft.Facade.csproj",
@@ -756,11 +853,12 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\BookSoft.Facade.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-14T23:24:18.217Z"
+              "WhenOpened": "2026-05-14T23:24:18.217Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "BookSoft.UseCases.csproj",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj",
               "RelativeDocumentMoniker": "src\\BookSoft.UseCases\\BookSoft.UseCases.csproj",
@@ -768,11 +866,12 @@
               "RelativeToolTip": "src\\BookSoft.UseCases\\BookSoft.UseCases.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-14T23:24:17.198Z"
+              "WhenOpened": "2026-05-14T23:24:17.198Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "BookSoftDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\Migrations\\BookSoftDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Infrastructure\\Migrations\\BookSoftDbContextModelSnapshot.cs",
@@ -780,11 +879,12 @@
               "RelativeToolTip": "src\\BookSoft.Infrastructure\\Migrations\\BookSoftDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:28:22.081Z"
+              "WhenOpened": "2026-05-13T20:28:22.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "dummy.cs",
               "DocumentMoniker": "C:\\Users\\bash1\\source\\repos\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Infrastructure\\QueryHandlers\\dummy.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Infrastructure\\QueryHandlers\\dummy.cs",
@@ -792,11 +892,12 @@
               "RelativeToolTip": "src\\BookSoft.Infrastructure\\QueryHandlers\\dummy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:28:18.932Z"
+              "WhenOpened": "2026-05-13T20:28:18.932Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",

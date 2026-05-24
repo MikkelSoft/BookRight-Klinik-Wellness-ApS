@@ -1,2 +1,20 @@
-﻿body {
+﻿.patients {
+    width: 100%;
+    align-content: center;
 }
+
+.top-bar {
+    float: left;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 0px;
+    width:100%;
+}
+
+
+.top-widget {
+    padding: 0px; 
+    
+}
+

@@ -274,5 +274,6 @@ C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\ref\BookSoft.Blazor.dll
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\kdj1qlqoba-{0}-o6r3s87fk1-o6r3s87fk1.gz
 C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
-C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\xixr6jn651-{0}-w1wx8shvs8-w1wx8shvs8.gz
-C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\f40gn40kyc-{0}-w1wx8shvs8-w1wx8shvs8.gz
+C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Pages\Appointment.razor.rz.scp.css
+C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\xixr6jn651-{0}-vifzclwdma-vifzclwdma.gz
+C:\Users\bash1\source\repos\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\f40gn40kyc-{0}-vifzclwdma-vifzclwdma.gz

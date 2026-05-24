@@ -213,6 +213,129 @@
         opacity: 0;
     }
 }
-/* /Components/Pages/Home.razor.rz.scp.css */
-body[b-iyr0bui8t8] {
+/* /Components/Pages/Appointment.razor.rz.scp.css */
+.calendar[b-u1e8iy2lfr] {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--secondary);
+    border-radius: 15px;
+    overflow: hidden;
 }
+
+.calendar-header[b-u1e8iy2lfr] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+    .calendar-header span[b-u1e8iy2lfr] {
+        font-size: 16px;
+        font-weight: 600;
+        min-width: 100px;
+        text-align: center;
+    }
+
+    .calendar-header button[b-u1e8iy2lfr] {
+        background: none;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 4px 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+.view-toggle[b-u1e8iy2lfr] {
+    margin-left: auto;
+    display: flex;
+    gap: 5px;
+}
+
+    .view-toggle button[b-u1e8iy2lfr] {
+        border-radius: 8px;
+        padding: 5px 12px;
+        font-size: 13px;
+    }
+
+        .view-toggle button.active[b-u1e8iy2lfr] {
+            background-color: var(--primary-hover);
+            color: white;
+            border-color: var(--primary-hover);
+        }
+
+.calendar-days-header[b-u1e8iy2lfr] {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 1px solid #ccc;
+}
+
+    .calendar-days-header span[b-u1e8iy2lfr] {
+        text-align: center;
+        padding: 8px 0;
+        font-size: 12px;
+        color: #888;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+.calendar-grid[b-u1e8iy2lfr] {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    flex: 1;
+}
+
+.calendar-cell[b-u1e8iy2lfr] {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 8px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+    .calendar-cell:nth-child(7n)[b-u1e8iy2lfr] {
+        border-right: none;
+    }
+
+.day-number[b-u1e8iy2lfr] {
+    font-size: 12px;
+    color: #555;
+    font-weight: 600;
+}
+
+.appointment[b-u1e8iy2lfr] {
+    background-color: var(--primary-hover);
+    color: white;
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-size: 11px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+/* /Components/Pages/Home.razor.rz.scp.css */
+.patients[b-iyr0bui8t8] {
+    width: 100%;
+    align-content: center;
+}
+
+.top-bar[b-iyr0bui8t8] {
+    float: left;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 0px;
+    width:100%;
+}
+
+
+.top-widget[b-iyr0bui8t8] {
+    padding: 0px; 
+    
+}
+
