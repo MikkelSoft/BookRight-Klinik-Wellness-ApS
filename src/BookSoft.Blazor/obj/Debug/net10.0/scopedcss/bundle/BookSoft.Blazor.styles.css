@@ -16,6 +16,7 @@
     width: 90%;
     height: 70%;
     border-radius: 0 0 0 25px;
+    padding: 10px;
 }
 
 .sidebar[b-70soimjwuj] {
@@ -33,12 +34,26 @@
 
 .nav-item[b-anr8ipptmn] {
     display: flex;
-    padding: 10px;
     background-color: var(--primary-hover);
     margin: 5px;
     border-radius: 25px; 
         
 }
+
+.nav-link[b-anr8ipptmn] {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-nav[b-anr8ipptmn] {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
 
 /* /Components/Layout/ReconnectModal.razor.rz.scp.css */
 .components-reconnect-first-attempt-visible[b-rsia2mosg2],
@@ -197,4 +212,7 @@
         height: 80px;
         opacity: 0;
     }
+}
+/* /Components/Pages/Home.razor.rz.scp.css */
+body[b-iyr0bui8t8] {
 }

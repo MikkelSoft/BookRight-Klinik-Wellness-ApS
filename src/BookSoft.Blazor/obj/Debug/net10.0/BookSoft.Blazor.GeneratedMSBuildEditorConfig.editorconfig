@@ -39,10 +39,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGaW5hbmNpYWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bash1/source/repos/sebastex/BookRight-Klinik-Wellness-ApS/src/BookSoft.Blazor/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/bash1/source/repos/sebastex/BookRight-Klinik-Wellness-ApS/src/BookSoft.Blazor/Components/Pages/NotFound.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOb3RGb3VuZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,3 +62,7 @@ build_metadata.AdditionalFiles.CssScope = b-anr8ipptmn
 [C:/Users/bash1/source/repos/sebastex/BookRight-Klinik-Wellness-ApS/src/BookSoft.Blazor/Components/Layout/ReconnectModal.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcUmVjb25uZWN0TW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rsia2mosg2
+
+[C:/Users/bash1/source/repos/sebastex/BookRight-Klinik-Wellness-ApS/src/BookSoft.Blazor/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-iyr0bui8t8
