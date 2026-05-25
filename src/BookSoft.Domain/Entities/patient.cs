@@ -32,8 +32,7 @@ namespace BookSoft.Domain.Entities
         };
         public Patient(string firstName, string middleNames, string lastName, string email, string phoneNumber, DateTime birthday, decimal totalSpent) : base(firstName, middleNames, lastName, email, phoneNumber)
         {
-            Birthday = birthday;
-
+            Birthday = birthday;  //base : gør så dette child af parent person bruger constructoren i base, altså parent class
         }
     }
 }

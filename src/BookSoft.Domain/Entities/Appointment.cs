@@ -19,6 +19,8 @@ namespace BookSoft.Domain.Entities
 
     public class Appointment : AggregateRoot
     {
+        public Guid PatientId { get; private set; }
+        public Guid PractitionerId { get; private set; }
         public DateTime Date { get; private set; }
         public AppointmentStatus Status { get; private set; }
         public AppointmentType AppointmentType { get; private set; }

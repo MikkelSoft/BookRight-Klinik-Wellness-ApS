@@ -4,7 +4,5 @@ using System.Text;
 
 namespace BookSoft.Facade.DTOs
 {
-    public record TransactionDto
-    {
-    }
+    public record CancelAppointmentRequest();
 }
