@@ -12,6 +12,7 @@ namespace BookSoft.Infrastructure.Data
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<Clinic> Clinics { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -38,6 +39,10 @@ namespace BookSoft.Infrastructure.Data
             modelBuilder.Entity<Patient>()
                 .HasMany(e => e.Appointments)
                 .WithOne(e => e.Patient);
+
+            modelBuilder.Entity<Clinic>()
+                .HasMany(e => e.Practitioners)
+                .WithMany(e => e.Clinics);
         }
     }
 }

@@ -8,6 +8,7 @@ namespace BookSoft.Domain.Entities
     public class Practitioner : Person
     {
         public virtual List<Appointment> Appointments { get; private set; } = new List<Appointment>();
+        public virtual List<Clinic> Clinics { get; private set; } = new List<Clinic>();
         public string Specialty { get; private set; } = null!;
         public List<string> PhoneNumbers { get; private set; } = new List<string>();
 
