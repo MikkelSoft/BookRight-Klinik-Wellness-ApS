@@ -16,7 +16,6 @@ namespace BookSoft.Domain.Entities
     {
         public virtual List<Appointment> Appointments { get; private set; } = new List<Appointment>();
         public DateTime Birthday { get; private set; } //datetime?
-        public List<string> PhoneNumbers { get; private set; } = new List<string>();
         public virtual List<Transaction> Transactions { get; private set; } = new List<Transaction>(); //have not fully implemented transactions class yet
         public decimal TotalSpent { get; private set; }
 

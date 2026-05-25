@@ -8,8 +8,8 @@ namespace BookSoft.Domain.Entities
 {
     public class Person : AggregateRoot
     {
-        //removed private set as it seemed to not appear in the patient class prolly not the best fix but it works for now
-        public FullName FullName {  get; set; } = null!;
-        public string Email { get; set; } = null!;
+        public FullName FullName {  get; private set; } = null!;
+        public string Email { get; private set; } = null!;
+        public List<string> PhoneNumbers { get; private set; } = new List<string>();
     }
 }
