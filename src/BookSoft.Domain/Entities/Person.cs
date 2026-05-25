@@ -10,6 +10,13 @@ namespace BookSoft.Domain.Entities
     {
         public FullName FullName {  get; private set; } = null!;
         public string Email { get; private set; } = null!;
-        public List<string> PhoneNumbers { get; private set; } = new List<string>();
+        public string PhoneNumber { get; private set; } = null!;
+
+        public Person(string firstName, string middleNames, string lastName, string email, string phoneNumber)
+        {
+            FullName = new FullName(firstName, middleNames, lastName);
+            Email = email;
+            PhoneNumber = phoneNumber;
+        }
     }
 }

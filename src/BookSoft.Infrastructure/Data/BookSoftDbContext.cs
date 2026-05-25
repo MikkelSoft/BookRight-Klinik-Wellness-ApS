@@ -27,7 +27,6 @@ namespace BookSoft.Infrastructure.Data
             modelBuilder.ApplyConfigurationsFromAssembly(
                 typeof(BookSoftDbContext).Assembly);
 
-
             modelBuilder.Entity<Practitioner>()
                 .HasMany(e => e.Appointments)
                 .WithMany(e => e.Practitioners);

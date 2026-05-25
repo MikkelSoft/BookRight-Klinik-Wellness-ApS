@@ -6,19 +6,19 @@ namespace BookSoft.Facade.Interfaces
     public interface IAppointmentRepository
     {
         // GET
-        Task<List<Appointment>> GetAllAsync();
-        Task<Appointment> GetByIdAsync(int id);
-        Task<List<Appointment>> GetByPatientIdAsync(int patientId);
-        Task<List<Appointment>> GetByPractitionerIdAsync(int practitionerId);
+        Task<List<AppointmentDto>> GetAllAsync();
+        Task<AppointmentDto> GetByIdAsync(int id);
+        Task<List<AppointmentDto>> GetByPatientIdAsync(int patientId);
+        Task<List<AppointmentDto>> GetByPractitionerIdAsync(int practitionerId);
 
         // CREATE
-        Task AddAsync(Appointment appointment);
+        Task AddAsync(AppointmentDto appointment);
 
         // UPDATE
-        Task UpdateAsync(Appointment appointment);
+        Task UpdateAsync(AppointmentDto appointment);
 
         // DELETE
-        Task DeleteAsync(Appointment appointment);
+        Task DeleteAsync(AppointmentDto appointment);
 
         // SAVE - EF Core needs this to commit changes to the database
         Task SaveChangesAsync();

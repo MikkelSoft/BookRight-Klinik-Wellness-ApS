@@ -4,7 +4,8 @@ using System.Text;
 
 namespace BookSoft.Facade.DTOs
 {
-    public class Practitioner
+    public record AppointmentDto
     {
+
     }
 }

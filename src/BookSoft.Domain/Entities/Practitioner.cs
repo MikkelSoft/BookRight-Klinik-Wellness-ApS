@@ -11,10 +11,8 @@ namespace BookSoft.Domain.Entities
         public virtual List<Clinic> Clinics { get; private set; } = new List<Clinic>();
         public string Specialty { get; private set; } = null!;
 
-        public Practitioner(string firstName, string middleNames, string lastName, string email, string specialty)
+        public Practitioner(string firstName, string middleNames, string lastName, string email, string phoneNumber, string specialty) : base(firstName, middleNames, lastName, email, phoneNumber)
         {
-            FullName = new FullName(firstName, middleNames, lastName);
-            Email = email;
             Specialty = specialty;
         }
     }
