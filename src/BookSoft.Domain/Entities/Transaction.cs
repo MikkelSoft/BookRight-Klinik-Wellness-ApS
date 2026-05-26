@@ -8,8 +8,9 @@ namespace BookSoft.Domain.Entities
 {
     public class Transaction : AggregateRoot
     {
-        public Guid PatientGuid { get; private set; }
+        public Guid PatientId { get; private set; }
         public DateTime TransactionDate { get; private set; }
+        public TransactionStatus Status { get; private set; }
         public AppointmentTypeEnum AppointmentType { get; private set; }
         public virtual Patient Patient { get; private set; } = null!;
 
