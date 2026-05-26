@@ -1,6 +1,5 @@
 <Solution>
   <Folder Name="/src/">
-    <Project Path="src/BookSoft.Api/BookSoft.Api.csproj" />
     <Project Path="src/BookSoft.Blazor/BookSoft.Blazor.csproj" />
     <Project Path="src/BookSoft.Domain/BookSoft.Domain.csproj" />
     <Project Path="src/BookSoft.Facade/BookSoft.Facade.csproj" />

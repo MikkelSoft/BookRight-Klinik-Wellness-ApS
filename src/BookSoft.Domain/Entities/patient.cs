@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using BookSoft.Domain.Enums;
 using BookSoft.Domain.ValueObjects;
 
 namespace BookSoft.Domain.Entities
 {
-    public enum loyaltyLevel
-    {
-        None,
-        Bronze,
-        Silver,
-        Gold
-    }
     public class Patient : Person
     {
         public virtual List<Appointment> Appointments { get; private set; } = new List<Appointment>();
@@ -23,12 +17,12 @@ namespace BookSoft.Domain.Entities
         {
             TotalSpent += amount;
         }
-        public loyaltyLevel LoyaltyLevel => TotalSpent switch //skal det her laves til en enum?
+        public LoyaltyLevelEnum loyaltyLevel => TotalSpent switch //skal det her laves til en enum?
         {
-            >= 10000 => loyaltyLevel.Gold,
-            >= 5000 => loyaltyLevel.Silver,
-            >= 1000 => loyaltyLevel.Bronze,
-            _ => loyaltyLevel.None
+            >= 10000 => LoyaltyLevelEnum.Gold,
+            >= 5000 => LoyaltyLevelEnum.Silver,
+            >= 1000 => LoyaltyLevelEnum.Bronze,
+            _ => LoyaltyLevelEnum.None
         };
         public Patient(string firstName, string middleNames, string lastName, string email, string phoneNumber, DateTime birthday, decimal totalSpent) : base(firstName, middleNames, lastName, email, phoneNumber)
         {

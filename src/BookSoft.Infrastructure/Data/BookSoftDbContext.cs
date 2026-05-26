@@ -29,11 +29,7 @@ namespace BookSoft.Infrastructure.Data
 
             modelBuilder.Entity<Practitioner>()
                 .HasMany(e => e.Appointments)
-                .WithMany(e => e.Practitioners);
-
-            modelBuilder.Entity<Appointment>()
-                .HasMany(e => e.Practitioners)
-                .WithMany(e => e.Appointments);
+                .WithOne(e => e.Practitioner);
 
             modelBuilder.Entity<Patient>()
                 .HasMany(e => e.Appointments)
@@ -42,6 +38,10 @@ namespace BookSoft.Infrastructure.Data
             modelBuilder.Entity<Clinic>()
                 .HasMany(e => e.Practitioners)
                 .WithMany(e => e.Clinics);
+
+            modelBuilder.Entity<Transaction>()
+                .HasOne(e => e.Patient)
+                .WithMany(e => e.Transactions);
         }
     }
 }
