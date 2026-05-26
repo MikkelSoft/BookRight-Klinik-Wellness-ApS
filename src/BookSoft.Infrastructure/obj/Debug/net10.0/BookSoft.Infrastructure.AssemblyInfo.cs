@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookSoft.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73ddad7708f043db3d78a8fac5dc310ffbfbad8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfed2f85a7bde0fd3ea895a56c39b67ae114c3d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookSoft.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookSoft.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
