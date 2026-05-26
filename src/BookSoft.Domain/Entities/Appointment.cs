@@ -8,7 +8,7 @@ namespace BookSoft.Domain.Entities
     {
         public Guid PatientId { get; private set; }
         public Guid PractitionerId { get; private set; }
-        public DateTime AppointmentDateTime { get; private set; }
+        public DateTime AppointmentStartTime { get; private set; }
 
         public AppointmentStatusEnum Status { get; private set; }
         public AppointmentTypeEnum AppointmentType { get; private set; }
@@ -26,16 +26,17 @@ namespace BookSoft.Domain.Entities
             _ => throw new ArgumentOutOfRangeException()
         };
 
-        public Appointment(Guid patientId, Guid practitionerId, DateTime appointmentDateTime)
+        public Appointment(Guid patientId, Guid practitionerId, DateTime appointmentStartTime)
         {
             PatientId = patientId;
             PractitionerId = practitionerId;
-            AppointmentDateTime = appointmentDateTime;
+            AppointmentStartTime = appointmentStartTime;
         }
 
-        public void CreateNewAppointment(Guid patientId, Guid practitionerId, DateTime appointmentDateTime)
+        public static Appointment CreateNewAppointment(Guid patientId, Guid practitionerId, DateTime appointmentStartTime) //factory metode
         {
-            var appointment = new Appointment(patientId, practitionerId, appointmentDateTime);
+            var appointment = new Appointment(patientId, practitionerId, appointmentStartTime);
+            return appointment;
         }
     }
 }

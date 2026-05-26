@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "OY5ulUFBw6o=",
+  "dgSpecHash": "V3wk8E6rpjQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\tests\\BookSoft.UseCases.Tests\\BookSoft.UseCases.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.applicationinsights\\2.23.0\\microsoft.applicationinsights.2.23.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.8\\microsoft.extensions.dependencyinjection.abstractions.10.0.8.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.testing.extensions.telemetry\\2.0.2\\microsoft.testing.extensions.telemetry.2.0.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.testing.extensions.trxreport.abstractions\\2.0.2\\microsoft.testing.extensions.trxreport.abstractions.2.0.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.testing.platform\\2.0.2\\microsoft.testing.platform.2.0.2.nupkg.sha512",

@@ -4,5 +4,5 @@ using System.Text;
 
 namespace BookSoft.Facade.DTOs
 {
-    public record CreateNewAppointmentRequest();
+    public record CreateNewAppointmentRequest(Guid PatientId, Guid PractitionerId, DateTime AppointmentStartTime);
 }
