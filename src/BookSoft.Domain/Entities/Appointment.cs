@@ -8,7 +8,7 @@ namespace BookSoft.Domain.Entities
     {
         public Guid PatientId { get; private set; }
         public Guid PractitionerId { get; private set; }
-        public DateTime DateTime { get; private set; }
+        public DateTime AppointmentDateTime { get; private set; }
 
         public AppointmentStatusEnum Status { get; private set; }
         public AppointmentTypeEnum AppointmentType { get; private set; }
@@ -25,5 +25,17 @@ namespace BookSoft.Domain.Entities
             AppointmentTypeEnum.Procedure => 60,
             _ => throw new ArgumentOutOfRangeException()
         };
+
+        public Appointment(Guid patientId, Guid practitionerId, DateTime appointmentDateTime)
+        {
+            PatientId = patientId;
+            PractitionerId = practitionerId;
+            AppointmentDateTime = appointmentDateTime;
+        }
+
+        public void CreateNewAppointment(Guid patientId, Guid practitionerId, DateTime appointmentDateTime)
+        {
+            var appointment = new Appointment(patientId, practitionerId, appointmentDateTime);
+        }
     }
 }

@@ -7,9 +7,9 @@ namespace BookSoft.Facade.Queries
 {
     public interface IAppointmentQueries
     {
-        Task<AppointmentDto> GetAsync(Guid id);
         Task<IReadOnlyList<AppointmentDto>> GetAllAsync();
-        Task<IReadOnlyList<AppointmentDto>> GetByPatientIdAsync(Guid patientId);
+        Task<AppointmentDto> GetByIdAsync(Guid Id);
+        Task<IReadOnlyList<AppointmentDto>> GetByPatientIdAsync(Guid patientId); //behøver dette at være en list?
         Task<IReadOnlyList<AppointmentDto>> GetByPractitionerIdAsync(Guid practitionerId);
     }
 }

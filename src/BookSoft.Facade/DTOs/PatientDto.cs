@@ -6,6 +6,5 @@ namespace BookSoft.Facade.DTOs
 {
     public record PatientDto
     {
-
     }
 }
