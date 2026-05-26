@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{3294299B-8C3F-B1B5-B1B8-D11513A7CD06}|src\\BookSoft.UseCases\\BookSoft.UseCases.csproj|solutionrelative:src\\booksoft.usecases\\appointments\\createnewappointmentusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.facade\\usecases\\icreatenewappointmentusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|solutionrelative:src\\booksoft.facade\\usecases\\icreatenewappointmentusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3294299B-8C3F-B1B5-B1B8-D11513A7CD06}|src\\BookSoft.UseCases\\BookSoft.UseCases.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.usecases\\irepositories\\iappointmentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3294299B-8C3F-B1B5-B1B8-D11513A7CD06}|src\\BookSoft.UseCases\\BookSoft.UseCases.csproj|solutionrelative:src\\booksoft.usecases\\irepositories\\iappointmentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3294299B-8C3F-B1B5-B1B8-D11513A7CD06}|src\\BookSoft.UseCases\\BookSoft.UseCases.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.usecases\\irepositories\\ipractitionerrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3294299B-8C3F-B1B5-B1B8-D11513A7CD06}|src\\BookSoft.UseCases\\BookSoft.UseCases.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.usecases\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3294299B-8C3F-B1B5-B1B8-D11513A7CD06}|src\\BookSoft.UseCases\\BookSoft.UseCases.csproj|solutionrelative:src\\booksoft.usecases\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3294299B-8C3F-B1B5-B1B8-D11513A7CD06}|src\\BookSoft.UseCases\\BookSoft.UseCases.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.usecases\\irepositories\\iappointmentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3294299B-8C3F-B1B5-B1B8-D11513A7CD06}|src\\BookSoft.UseCases\\BookSoft.UseCases.csproj|solutionrelative:src\\booksoft.usecases\\irepositories\\iappointmentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3294299B-8C3F-B1B5-B1B8-D11513A7CD06}|src\\BookSoft.UseCases\\BookSoft.UseCases.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.usecases\\irepositories\\ipatientrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,16 +51,20 @@
       "RelativeMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|solutionrelative:src\\booksoft.facade\\queries\\iappointmentqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.facade\\usecases\\icreatenewappointmentusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|solutionrelative:src\\booksoft.facade\\usecases\\icreatenewappointmentusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.facade\\usecases\\icancelappointmentusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|solutionrelative:src\\booksoft.facade\\usecases\\icancelappointmentusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.facade\\queries\\ipatientqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|solutionrelative:src\\booksoft.facade\\queries\\ipatientqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.facade\\queries\\ipractitionerqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|solutionrelative:src\\booksoft.facade\\queries\\ipractitionerqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.facade\\usecases\\icancelappointmentusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|solutionrelative:src\\booksoft.facade\\usecases\\icancelappointmentusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1007EDB-92F0-9D52-577B-5A45AE6835E1}|src\\BookSoft.Facade\\BookSoft.Facade.csproj|c:\\users\\pc\\source\\repos\\bookright-klinik-wellness-aps\\src\\booksoft.facade\\dtos\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -186,7 +186,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -222,15 +222,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "IAppointmentRepo.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\IRepositories\\IAppointmentRepo.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.UseCases\\IRepositories\\IAppointmentRepo.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\IRepositories\\IAppointmentRepo.cs",
               "RelativeToolTip": "src\\BookSoft.UseCases\\IRepositories\\IAppointmentRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T12:17:45.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "patient.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\patient.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\patient.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\patient.cs",
+              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T08:56:35.217Z",
               "EditorCaption": ""
             },
             {
@@ -261,7 +274,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPatientRepo.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\IRepositories\\IPatientRepo.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.UseCases\\IRepositories\\IPatientRepo.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\IRepositories\\IPatientRepo.cs",
+              "RelativeToolTip": "src\\BookSoft.UseCases\\IRepositories\\IPatientRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T12:18:02.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "IPractitionerRepo.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\IRepositories\\IPractitionerRepo.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.UseCases\\IRepositories\\IPractitionerRepo.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\IRepositories\\IPractitionerRepo.cs",
+              "RelativeToolTip": "src\\BookSoft.UseCases\\IRepositories\\IPractitionerRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T12:18:32.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.UseCases\\DependencyInjection.cs",
@@ -280,59 +319,20 @@
               "RelativeDocumentMoniker": "src\\BookSoft.UseCases\\Appointments\\CreateNewAppointmentUseCase.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\Appointments\\CreateNewAppointmentUseCase.cs",
               "RelativeToolTip": "src\\BookSoft.UseCases\\Appointments\\CreateNewAppointmentUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T12:13:40.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IPatientRepo.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\IRepositories\\IPatientRepo.cs",
-              "RelativeDocumentMoniker": "src\\BookSoft.UseCases\\IRepositories\\IPatientRepo.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\IRepositories\\IPatientRepo.cs",
-              "RelativeToolTip": "src\\BookSoft.UseCases\\IRepositories\\IPatientRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:18:02.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IPractitionerRepo.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\IRepositories\\IPractitionerRepo.cs",
-              "RelativeDocumentMoniker": "src\\BookSoft.UseCases\\IRepositories\\IPractitionerRepo.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\IRepositories\\IPractitionerRepo.cs",
-              "RelativeToolTip": "src\\BookSoft.UseCases\\IRepositories\\IPractitionerRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:18:32.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ICreateNewAppointmentUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\UseCases\\ICreateNewAppointmentUseCase.cs",
-              "RelativeDocumentMoniker": "src\\BookSoft.Facade\\UseCases\\ICreateNewAppointmentUseCase.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\UseCases\\ICreateNewAppointmentUseCase.cs",
-              "RelativeToolTip": "src\\BookSoft.Facade\\UseCases\\ICreateNewAppointmentUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:42:45.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Appointment.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Appointment.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Appointment.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Appointment.cs",
               "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Appointment.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA8wB4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T11:31:16.656Z",
               "EditorCaption": ""
@@ -340,19 +340,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "patient.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\patient.cs",
-              "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\patient.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\patient.cs",
-              "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\patient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T08:56:35.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "Clinic.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Clinic.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Clinic.cs",
@@ -365,20 +352,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "CreateNewAppointmentRequest.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\DTOs\\CreateNewAppointmentRequest.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Facade\\DTOs\\CreateNewAppointmentRequest.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\DTOs\\CreateNewAppointmentRequest.cs",
               "RelativeToolTip": "src\\BookSoft.Facade\\DTOs\\CreateNewAppointmentRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T12:13:54.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "IAppointmentQueries.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\Queries\\IAppointmentQueries.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Facade\\Queries\\IAppointmentQueries.cs",
@@ -391,7 +378,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICreateNewAppointmentUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\UseCases\\ICreateNewAppointmentUseCase.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Facade\\UseCases\\ICreateNewAppointmentUseCase.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\UseCases\\ICreateNewAppointmentUseCase.cs",
+              "RelativeToolTip": "src\\BookSoft.Facade\\UseCases\\ICreateNewAppointmentUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T11:42:45.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "ICancelAppointmentUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\UseCases\\ICancelAppointmentUseCase.cs",
+              "RelativeDocumentMoniker": "src\\BookSoft.Facade\\UseCases\\ICancelAppointmentUseCase.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\UseCases\\ICancelAppointmentUseCase.cs",
+              "RelativeToolTip": "src\\BookSoft.Facade\\UseCases\\ICancelAppointmentUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T12:23:55.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "IPatientQueries.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\Queries\\IPatientQueries.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Facade\\Queries\\IPatientQueries.cs",
@@ -404,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IPractitionerQueries.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\Queries\\IPractitionerQueries.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Facade\\Queries\\IPractitionerQueries.cs",
@@ -413,19 +426,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T12:01:33.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ICancelAppointmentUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\UseCases\\ICancelAppointmentUseCase.cs",
-              "RelativeDocumentMoniker": "src\\BookSoft.Facade\\UseCases\\ICancelAppointmentUseCase.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Facade\\UseCases\\ICancelAppointmentUseCase.cs",
-              "RelativeToolTip": "src\\BookSoft.Facade\\UseCases\\ICancelAppointmentUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T12:23:55.929Z",
               "EditorCaption": ""
             },
             {

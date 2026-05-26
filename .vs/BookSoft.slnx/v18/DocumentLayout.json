@@ -230,8 +230,7 @@
               "RelativeToolTip": "src\\BookSoft.UseCases\\IRepositories\\IAppointmentRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:17:45.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T12:17:45.427Z"
             },
             {
               "$type": "Document",
@@ -243,8 +242,7 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\patient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T08:56:35.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T08:56:35.217Z"
             },
             {
               "$type": "Document",
@@ -256,8 +254,7 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T08:37:43.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T08:37:43.306Z"
             },
             {
               "$type": "Document",
@@ -269,8 +266,7 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Transaction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T11:31:00.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T11:31:00.811Z"
             },
             {
               "$type": "Document",
@@ -282,8 +278,7 @@
               "RelativeToolTip": "src\\BookSoft.UseCases\\IRepositories\\IPatientRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:18:02.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T12:18:02.046Z"
             },
             {
               "$type": "Document",
@@ -295,8 +290,7 @@
               "RelativeToolTip": "src\\BookSoft.UseCases\\IRepositories\\IPractitionerRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:18:32.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T12:18:32.314Z"
             },
             {
               "$type": "Document",
@@ -308,8 +302,7 @@
               "RelativeToolTip": "src\\BookSoft.UseCases\\DependencyInjection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:10:10.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T12:10:10.952Z"
             },
             {
               "$type": "Document",
@@ -319,7 +312,7 @@
               "RelativeDocumentMoniker": "src\\BookSoft.UseCases\\Appointments\\CreateNewAppointmentUseCase.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\Appointments\\CreateNewAppointmentUseCase.cs",
               "RelativeToolTip": "src\\BookSoft.UseCases\\Appointments\\CreateNewAppointmentUseCase.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAACAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T12:13:40.01Z",
               "EditorCaption": ""
@@ -334,8 +327,7 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Appointment.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA8wB4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T11:31:16.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T11:31:16.656Z"
             },
             {
               "$type": "Document",
@@ -347,8 +339,7 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Clinic.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T10:49:28.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T10:49:28.687Z"
             },
             {
               "$type": "Document",
@@ -360,8 +351,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\DTOs\\CreateNewAppointmentRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T12:13:54.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T12:13:54.832Z"
             },
             {
               "$type": "Document",
@@ -373,8 +363,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\Queries\\IAppointmentQueries.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T12:26:39.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T12:26:39.258Z"
             },
             {
               "$type": "Document",
@@ -386,8 +375,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\UseCases\\ICreateNewAppointmentUseCase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:42:45.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T11:42:45.311Z"
             },
             {
               "$type": "Document",
@@ -399,8 +387,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\UseCases\\ICancelAppointmentUseCase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T12:23:55.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T12:23:55.929Z"
             },
             {
               "$type": "Document",
@@ -412,8 +399,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\Queries\\IPatientQueries.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:03:27.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T12:03:27.631Z"
             },
             {
               "$type": "Document",
@@ -425,8 +411,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\Queries\\IPractitionerQueries.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T12:01:33.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T12:01:33.599Z"
             },
             {
               "$type": "Document",
@@ -438,8 +423,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\DTOs\\PatientDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:49:33.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T11:49:33.581Z"
             },
             {
               "$type": "Document",
@@ -451,8 +435,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\DTOs\\CancelAppointmentRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T12:24:35.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T12:24:35.251Z"
             },
             {
               "$type": "Document",
@@ -464,8 +447,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\DTOs\\PractitionerDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T12:34:07.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T12:34:07.007Z"
             },
             {
               "$type": "Document",
@@ -477,8 +459,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\DTOs\\TransactionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:46:23.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T11:46:23.346Z"
             },
             {
               "$type": "Document",
@@ -490,8 +471,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\Interfaces (kan ikke bruges, bryder CQS)\\ITransactionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T08:46:46.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T08:46:46.554Z"
             },
             {
               "$type": "Document",
@@ -503,8 +483,7 @@
               "RelativeToolTip": "src\\BookSoft.UseCases\\BookSoft.UseCases.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-14T23:24:17.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T23:24:17.198Z"
             },
             {
               "$type": "Document",
@@ -516,8 +495,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\Interfaces (kan ikke bruges, bryder CQS)\\IPractitionerService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:44:00.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T11:44:00.751Z"
             },
             {
               "$type": "Document",
@@ -529,8 +507,7 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\AggregateRoot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:29:28.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T20:29:28.565Z"
             },
             {
               "$type": "Document",
@@ -542,8 +519,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\DTOs\\AppointmentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T11:47:42.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T11:47:42.862Z"
             },
             {
               "$type": "Document",
@@ -555,12 +531,7 @@
               "RelativeToolTip": "src\\BookSoft.Domain\\ValueObjects\\FullName.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T20:50:31.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2026-05-13T20:50:31.526Z"
             },
             {
               "$type": "Document",
@@ -572,8 +543,7 @@
               "RelativeToolTip": "src\\BookSoft.Facade\\BookSoft.Facade.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-14T23:24:18.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T23:24:18.217Z"
             },
             {
               "$type": "Document",
