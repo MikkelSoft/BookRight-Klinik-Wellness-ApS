@@ -8,10 +8,12 @@ namespace BookSoft.Domain.Entities
 {
     public class Patient : Person
     {
-        public virtual List<Appointment> Appointments { get; private set; } = new List<Appointment>();
-        public virtual List<Transaction> Transactions { get; private set; } = new List<Transaction>(); //have not fully implemented transactions class yet
         public DateTime Birthday { get; private set; } //datetime virker i sql, det gør dateonly ikke
         public decimal TotalSpent { get; private set; }
+
+        public virtual List<Appointment> Appointments { get; private set; } = new List<Appointment>();
+        public virtual List<Transaction> Transactions { get; private set; } = new List<Transaction>(); //have not fully implemented transactions class yet
+
 
         public void RecordPayment(decimal amount)
         {

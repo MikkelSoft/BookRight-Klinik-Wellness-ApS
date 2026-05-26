@@ -941,7 +941,8 @@
       "BookSoft.UseCases/1.0.0": {
         "dependencies": {
           "BookSoft.Domain": "1.0.0",
-          "BookSoft.Facade": "1.0.0"
+          "BookSoft.Facade": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.8"
         },
         "runtime": {
           "BookSoft.UseCases.dll": {

@@ -8,6 +8,6 @@ namespace BookSoft.Domain.Enums
     {
         Scheduled,
         Completed,
-        Canceled
+        Cancelled
     }
 }

@@ -1,0 +1,21 @@
+2026-05-26T18:26:02.9012293+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.0.2+88c9fc53a3b4f0fdf6b29a54e0e9f39dd44d9ede
+2026-05-26T18:26:02.9116263+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-05-26T18:26:02.9123887+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-05-26T18:26:02.9123937+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 18:26:02.884
+2026-05-26T18:26:02.9124564+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 14448
+2026-05-26T18:26:02.9124832+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 10.0.8
+2026-05-26T18:26:02.9125231+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.8\System.Private.CoreLib.dll
+2026-05-26T18:26:02.9125321+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-05-26T18:26:02.9125957+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\tests\BookSoft.Domain.Tests\bin\Debug\net10.0\BookSoft.Domain.Tests.dll
+2026-05-26T18:26:02.9127028+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\tests\BookSoft.Domain.Tests\bin\Debug\net10.0\Log --results-directory C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\TestResults --client-port 61433'
+2026-05-26T18:26:02.9133458+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-05-26T18:26:02.9293872+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-05-26T18:26:02.9409384+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-05-26T18:26:03.2390305+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '3.2.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-05-26T18:26:03.2480481+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v3.2.2+728c1dce01 (64-bit .NET 10.0.8)
+2026-05-26T18:26:03.2914031+00:00 xUnit.net INFORMATION   Discovering: BookSoft.Domain.Tests
+2026-05-26T18:26:03.3260106+00:00 xUnit.net INFORMATION   Discovered:  BookSoft.Domain.Tests
+2026-05-26T18:26:03.3439644+00:00 xUnit.net INFORMATION   Starting:    BookSoft.Domain.Tests
+2026-05-26T18:26:03.4470970+00:00 xUnit.net INFORMATION   Finished:    BookSoft.Domain.Tests (ID = 'd83d50109119d8436c8236598c8b2f7bb44ccbd674424c82efbe509d8655478e')
+2026-05-26T18:26:03.4515626+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-05-26T18:26:03.4557525+00:00 xUnit.net INFORMATION    BookSoft.Domain.Tests  Total: 1, Errors: 0, Failed: 0, Skipped: 0, Not Run: 0, Time: 0,105s

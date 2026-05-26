@@ -45,6 +45,14 @@
           }
         }
       },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.8": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.826.23019"
+          }
+        }
+      },
       "Microsoft.Testing.Extensions.Telemetry/2.0.2": {
         "dependencies": {
           "Microsoft.ApplicationInsights": "2.23.0",
@@ -337,7 +345,8 @@
       "BookSoft.UseCases/1.0.0": {
         "dependencies": {
           "BookSoft.Domain": "1.0.0",
-          "BookSoft.Facade": "1.0.0"
+          "BookSoft.Facade": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.8"
         },
         "runtime": {
           "BookSoft.UseCases.dll": {
@@ -374,6 +383,13 @@
       "sha512": "sha512-UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg==",
       "path": "microsoft.bcl.asyncinterfaces/6.0.0",
       "hashPath": "microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-21nbDV60SRPWGIivsyl6lqBeEJNG1sginhhfWgRrr3Ais7aQ12To25OAHQxgoiJkjqy1aQ6RxpZBGYuTi7Ge6A==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/10.0.8",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.10.0.8.nupkg.sha512"
     },
     "Microsoft.Testing.Extensions.Telemetry/2.0.2": {
       "type": "package",

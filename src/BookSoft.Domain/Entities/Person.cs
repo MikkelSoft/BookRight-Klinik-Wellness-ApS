@@ -12,6 +12,8 @@ namespace BookSoft.Domain.Entities
         public string Email { get; private set; } = null!;
         public string PhoneNumber { get; private set; } = null!;
 
+        private Person() { }
+
         public Person(string firstName, string middleNames, string lastName, string email, string phoneNumber)
         {
             FullName = new FullName(firstName, middleNames, lastName);

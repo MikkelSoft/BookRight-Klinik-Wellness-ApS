@@ -7,8 +7,11 @@ namespace BookSoft.Domain.Entities
 {
     public class Clinic : AggregateRoot
     {
+        public string ClinicName { get; private set; } = string.Empty;
+
         public virtual List<Practitioner> Practitioners { get; private set; } = new List<Practitioner>();
-        public string ClinicName { get; private set; }
+
+        private Clinic() { }
 
         public Clinic(string clinicName)
         {
