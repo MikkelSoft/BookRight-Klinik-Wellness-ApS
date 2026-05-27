@@ -12,11 +12,5 @@ public class TransactionConfig : IEntityTypeConfiguration<Transaction>
 
         builder.Property(t => t.cost)
             .HasColumnType("decimal(18,2)");
-
-        // one patient → many transactions
-        builder.HasOne(t => t.Patient)
-            .WithMany(p => p.Transactions)
-            .HasForeignKey(t => t.PatientId)
-            .OnDelete(DeleteBehavior.Restrict);
     }
 }

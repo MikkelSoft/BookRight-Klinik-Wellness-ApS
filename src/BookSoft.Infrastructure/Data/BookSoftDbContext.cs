@@ -27,13 +27,20 @@ namespace BookSoft.Infrastructure.Data
             modelBuilder.ApplyConfigurationsFromAssembly(
                 typeof(BookSoftDbContext).Assembly);
 
-            modelBuilder.Entity<Practitioner>()
-                .HasMany(e => e.Appointments)
-                .WithOne(e => e.Practitioner);
+            modelBuilder.Entity<Appointment>()
+                .HasOne(e => e.Patient)
+                .WithMany(e => e.Appointments)
+                .HasForeignKey(e => e.PatientId);
 
-            modelBuilder.Entity<Patient>()
-                .HasMany(e => e.Appointments)
-                .WithOne(e => e.Patient);
+            modelBuilder.Entity<Appointment>()
+                .HasOne(e => e.Practitioner)
+                .WithMany(e => e.Appointments)
+                .HasForeignKey(e => e.PractitionerId);
+
+            modelBuilder.Entity<Appointment>()
+                .HasOne(e => e.Clinic)
+                .WithMany(e => e.Appointments)
+                .HasForeignKey(e => e.ClinicId);
 
             modelBuilder.Entity<Clinic>()
                 .HasMany(e => e.Practitioners)
@@ -41,7 +48,8 @@ namespace BookSoft.Infrastructure.Data
 
             modelBuilder.Entity<Transaction>()
                 .HasOne(e => e.Patient)
-                .WithMany(e => e.Transactions);
+                .WithMany(e => e.Transactions)
+                .HasForeignKey(e => e.PatientId);
         }
     }
 }

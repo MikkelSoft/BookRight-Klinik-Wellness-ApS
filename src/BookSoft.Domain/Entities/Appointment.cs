@@ -21,6 +21,7 @@ namespace BookSoft.Domain.Entities
         //opretter virtuelle objekter til EF
         public virtual Practitioner? Practitioner { get; private set; }
         public virtual Patient? Patient { get; private set; }
+        public virtual Clinic? Clinic { get; private set; }
 
      
         

@@ -15,7 +15,7 @@ namespace BookSoft.Infrastructure.Data.Configurations
         {
             builder.HasKey(e => e.ID);
 
-            builder.OwnsOne(e => e.FullName)/*
+            builder.OwnsOne(e => e.FullName)/* value object :D, det er også muligt at bruge complexproperty så den laver json fil
                 .Property(e => e.FirstName) kan bruge det her hvis kolonen skal hedde noget andet end det den selv opretter (den plejer vist bare at navngive efter variablernes navne i VO
                 .HasColumnName("FirstName")*/;
         }

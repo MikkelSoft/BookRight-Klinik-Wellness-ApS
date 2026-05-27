@@ -5,6 +5,7 @@ using BookSoft.UseCases.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace BookSoft.UseCases.Appointments
 {
@@ -28,8 +29,9 @@ namespace BookSoft.UseCases.Appointments
             var patientBookings = await _appointmentRepo.GetByPatientIdAsync(request.PatientId);
             var practitionerBookings = await _appointmentRepo.GetByPractitionerIdAsync(request.PractitionerId); //skal implementeres videre så der ikke kommer nogen overlap
 
-            var appointmentStartTime = new DateTime();
-            var appointment = Appointment.CreateNewAppointment(request.PatientId, request.PractitionerId, appointmentStartTime);
+            string appointmentTypeString = request.AppointmentTypeString;
+            DateTime appointmentStartTime = request.AppointmentStartTime;
+            var appointment = Appointment.CreateNewAppointment(request.PatientId, request.PractitionerId, request.ClinicId, appointmentTypeString, appointmentStartTime);
 
             await _appointmentRepo.AddAsync(appointment);
             await _appointmentRepo.SaveAsync();

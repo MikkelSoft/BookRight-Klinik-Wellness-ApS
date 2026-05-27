@@ -9,17 +9,17 @@ namespace BookSoft.Infrastructure.Repositories;
 
 public class PatientRepository
 {
-    private readonly BookSoftDbContext _ctx;
+    private readonly BookSoftDbContext _db;
 
-    public PatientRepository(BookSoftDbContext ctx)
+    public PatientRepository(BookSoftDbContext db)
     {
-        _ctx = ctx;
+        _db = db;
     }
 
     // GET all
     public async Task<List<Patient>> GetAllAsync(CancellationToken ct = default)
     {
-        return await _ctx.Patients
+        return await _db.Patients
             .Include(p => p.Appointments)
             .ToListAsync(ct);
     }
@@ -27,7 +27,7 @@ public class PatientRepository
     // GET by Id
     public async Task<Patient?> GetByIdAsync(Guid id, CancellationToken ct = default)
     {
-        return await _ctx.Patients
+        return await _db.Patients
             .Include(p => p.Appointments)
             .FirstOrDefaultAsync(p => p.ID == id, ct);
     }
@@ -36,8 +36,9 @@ public class PatientRepository
     public async Task<List<Patient>> GetByNameAsync(string name, CancellationToken ct = default)
     {
         var lower = name.ToLower();
-        return await _ctx.Patients
+        return await _db.Patients
             .Where(p => p.FullName.FirstName.ToLower().Contains(lower)
+                     || p.FullName.MiddleNames.ToLower().Contains(lower)
                      || p.FullName.LastName.ToLower().Contains(lower))
             .ToListAsync(ct);
     }
@@ -45,24 +46,24 @@ public class PatientRepository
     // CREATE
     public async Task AddAsync(Patient patient, CancellationToken ct = default)
     {
-        await _ctx.Patients.AddAsync(patient, ct);
+        await _db.Patients.AddAsync(patient, ct);
     }
 
     // UPDATE
     public void Update(Patient patient)
     {
-        _ctx.Patients.Update(patient);
+        _db.Patients.Update(patient);
     }
 
     // DELETE
     public void Delete(Patient patient)
     {
-        _ctx.Patients.Remove(patient);
+        _db.Patients.Remove(patient);
     }
 
     // SAVE
     public async Task SaveChangesAsync(CancellationToken ct = default)
     {
-        await _ctx.SaveChangesAsync(ct);
+        await _db.SaveChangesAsync(ct);
     }
 }

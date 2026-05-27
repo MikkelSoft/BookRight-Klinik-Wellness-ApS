@@ -9,17 +9,17 @@ namespace BookSoft.Infrastructure.Repositories;
 
 public class ClinicRepository
 {
-    private readonly BookSoftDbContext _ctx;
+    private readonly BookSoftDbContext _db;
 
-    public ClinicRepository(BookSoftDbContext ctx)
+    public ClinicRepository(BookSoftDbContext db)
     {
-        _ctx = ctx;
+        _db = db;
     }
 
     // GET all
     public async Task<List<Clinic>> GetAllAsync(CancellationToken ct = default)
     {
-        return await _ctx.Clinics
+        return await _db.Clinics
             .Include(c => c.Practitioners)
             .ToListAsync(ct);
     }
@@ -27,7 +27,7 @@ public class ClinicRepository
     // GET by Id
     public async Task<Clinic?> GetByIdAsync(Guid id, CancellationToken ct = default)
     {
-        return await _ctx.Clinics
+        return await _db.Clinics
             .Include(c => c.Practitioners)
             .FirstOrDefaultAsync(c => c.ID == id, ct);
     }
@@ -35,31 +35,31 @@ public class ClinicRepository
     // GET by name
     public async Task<Clinic?> GetByNameAsync(string name, CancellationToken ct = default)
     {
-        return await _ctx.Clinics
+        return await _db.Clinics
             .FirstOrDefaultAsync(c => c.ClinicName.ToLower() == name.ToLower(), ct);
     }
 
     // CREATE
     public async Task AddAsync(Clinic clinic, CancellationToken ct = default)
     {
-        await _ctx.Clinics.AddAsync(clinic, ct);
+        await _db.Clinics.AddAsync(clinic, ct);
     }
 
     // UPDATE
     public void Update(Clinic clinic)
     {
-        _ctx.Clinics.Update(clinic);
+        _db.Clinics.Update(clinic);
     }
 
     // DELETE
     public void Delete(Clinic clinic)
     {
-        _ctx.Clinics.Remove(clinic);
+        _db.Clinics.Remove(clinic);
     }
 
     // SAVE
     public async Task SaveChangesAsync(CancellationToken ct = default)
     {
-        await _ctx.SaveChangesAsync(ct);
+        await _db.SaveChangesAsync(ct);
     }
 }

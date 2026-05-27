@@ -10,6 +10,7 @@ namespace BookSoft.Domain.Entities
         public string ClinicName { get; private set; } = string.Empty;
 
         public virtual List<Practitioner> Practitioners { get; private set; } = new List<Practitioner>();
+        public virtual List<Appointment> Appointments { get; private set; } = new List<Appointment>();
 
         private Clinic() { }
 

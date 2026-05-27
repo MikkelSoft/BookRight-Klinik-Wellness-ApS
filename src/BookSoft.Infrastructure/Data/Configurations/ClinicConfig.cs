@@ -13,11 +13,5 @@ public class ClinicConfig : IEntityTypeConfiguration<Clinic>
         builder.Property(c => c.ClinicName)
             .IsRequired()
             .HasMaxLength(200);
-
-        // one clinic → many practitioners
-        builder.HasMany(c => c.Practitioners)
-            .WithOne(p => p.Clinic)
-            .HasForeignKey(p => p.ClinicId)
-            .OnDelete(DeleteBehavior.Restrict);
     }
 }

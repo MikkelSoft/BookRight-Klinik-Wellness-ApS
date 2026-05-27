@@ -12,6 +12,8 @@ public static class UseCasesServiceCollectionExtensions
     public static IServiceCollection AddUseCases(this IServiceCollection services)
     {
         services.AddScoped<ICreateNewAppointmentUseCase, CreateNewAppointmentUseCase>();
+        //services.AddScoped<ICancelAppointmentUseCase, CancelAppointmentUseCase>();
+        //services.AddScoped<IFinishAppointmentUseCase, FinishAppointmentUseCase>();
 
         return services;
     }

@@ -10,17 +10,17 @@ namespace BookSoft.Infrastructure.Repositories;
 
 public class AppointmentRepository
 {
-    private readonly BookSoftDbContext _ctx;
+    private readonly BookSoftDbContext _db;
 
-    public AppointmentRepository(BookSoftDbContext ctx)
+    public AppointmentRepository(BookSoftDbContext db)
     {
-        _ctx = ctx;
+        _db = db;
     }
 
     // GET all
     public async Task<List<Appointment>> GetAllAsync(CancellationToken ct = default)
     {
-        return await _ctx.Appointments
+        return await _db.Appointments
             .Include(a => a.Patient)
             .Include(a => a.Practitioner)
             .ToListAsync(ct);
@@ -29,7 +29,7 @@ public class AppointmentRepository
     // GET by Id
     public async Task<Appointment?> GetByIdAsync(Guid id, CancellationToken ct = default)
     {
-        return await _ctx.Appointments
+        return await _db.Appointments
             .Include(a => a.Patient)
             .Include(a => a.Practitioner)
             .FirstOrDefaultAsync(a => a.ID == id, ct);
@@ -38,7 +38,7 @@ public class AppointmentRepository
     // GET by patient
     public async Task<List<Appointment>> GetByPatientAsync(Guid patientId, CancellationToken ct = default)
     {
-        return await _ctx.Appointments
+        return await _db.Appointments
             .Where(a => a.PatientId == patientId)
             .Include(a => a.Practitioner)
             .OrderByDescending(a => a.AppointmentStartTime)
@@ -48,7 +48,7 @@ public class AppointmentRepository
     // GET by practitioner
     public async Task<List<Appointment>> GetByPractitionerAsync(Guid practitionerId, CancellationToken ct = default)
     {
-        return await _ctx.Appointments
+        return await _db.Appointments
             .Where(a => a.PractitionerId == practitionerId)
             .Include(a => a.Patient)
             .OrderByDescending(a => a.AppointmentStartTime)
@@ -58,7 +58,7 @@ public class AppointmentRepository
     // GET by date range
     public async Task<List<Appointment>> GetByDateRangeAsync(DateTime from, DateTime to, CancellationToken ct = default)
     {
-        return await _ctx.Appointments
+        return await _db.Appointments
             .Where(a => a.AppointmentStartTime >= from && a.AppointmentStartTime <= to)
             .Include(a => a.Patient)
             .Include(a => a.Practitioner)
@@ -69,7 +69,7 @@ public class AppointmentRepository
     // GET by status
     public async Task<List<Appointment>> GetByStatusAsync(AppointmentStatusEnum status, CancellationToken ct = default)
     {
-        return await _ctx.Appointments
+        return await _db.Appointments
             .Where(a => a.AppointmentStatus == status)
             .Include(a => a.Patient)
             .Include(a => a.Practitioner)
@@ -79,7 +79,7 @@ public class AppointmentRepository
     // GET by type
     public async Task<List<Appointment>> GetByTypeAsync(AppointmentTypeEnum type, CancellationToken ct = default)
     {
-        return await _ctx.Appointments
+        return await _db.Appointments
             .Where(a => a.AppointmentType == type)
             .Include(a => a.Patient)
             .Include(a => a.Practitioner)
@@ -89,7 +89,7 @@ public class AppointmentRepository
     // CHECK for clashing appointments for a practitioner
     public async Task<bool> HasClashAsync(Guid practitionerId, DateTime start, DateTime end, CancellationToken ct = default)
     {
-        return await _ctx.Appointments
+        return await _db.Appointments
             .AnyAsync(a => a.PractitionerId == practitionerId
                         && a.AppointmentStartTime < end
                         && a.AppointmentEndTime > start, ct);
@@ -98,24 +98,24 @@ public class AppointmentRepository
     // CREATE
     public async Task AddAsync(Appointment appointment, CancellationToken ct = default)
     {
-        await _ctx.Appointments.AddAsync(appointment, ct);
+        await _db.Appointments.AddAsync(appointment, ct);
     }
 
-    // UPDATE
+    // UPDATE //behøver ikke update i EF
     public void Update(Appointment appointment)
     {
-        _ctx.Appointments.Update(appointment);
+        _db.Appointments.Update(appointment);
     }
 
     // DELETE
     public void Delete(Appointment appointment)
     {
-        _ctx.Appointments.Remove(appointment);
+        _db.Appointments.Remove(appointment);
     }
 
     // SAVE
     public async Task SaveChangesAsync(CancellationToken ct = default)
     {
-        await _ctx.SaveChangesAsync(ct);
+        await _db.SaveChangesAsync(ct);
     }
 }

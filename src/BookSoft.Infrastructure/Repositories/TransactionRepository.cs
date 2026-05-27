@@ -10,17 +10,17 @@ namespace BookSoft.Infrastructure.Repositories;
 
 public class TransactionRepository
 {
-    private readonly BookSoftDbContext _ctx;
+    private readonly BookSoftDbContext _db;
 
-    public TransactionRepository(BookSoftDbContext ctx)
+    public TransactionRepository(BookSoftDbContext db)
     {
-        _ctx = ctx;
+        _db = db;
     }
 
     // GET all
     public async Task<List<Transaction>> GetAllAsync(CancellationToken ct = default)
     {
-        return await _ctx.Transactions
+        return await _db.Transactions
             .Include(t => t.Patient)
             .ToListAsync(ct);
     }
@@ -28,7 +28,7 @@ public class TransactionRepository
     // GET by Id
     public async Task<Transaction?> GetByIdAsync(Guid id, CancellationToken ct = default)
     {
-        return await _ctx.Transactions
+        return await _db.Transactions
             .Include(t => t.Patient)
             .FirstOrDefaultAsync(t => t.ID == id, ct);
     }
@@ -36,7 +36,7 @@ public class TransactionRepository
     // GET by patient
     public async Task<List<Transaction>> GetByPatientAsync(Guid patientId, CancellationToken ct = default)
     {
-        return await _ctx.Transactions
+        return await _db.Transactions
             .Where(t => t.PatientId == patientId)
             .OrderByDescending(t => t.TransactionDate)
             .ToListAsync(ct);
@@ -45,7 +45,7 @@ public class TransactionRepository
     // GET by date range
     public async Task<List<Transaction>> GetByDateRangeAsync(DateTime from, DateTime to, CancellationToken ct = default)
     {
-        return await _ctx.Transactions
+        return await _db.Transactions
             .Where(t => t.TransactionDate >= from && t.TransactionDate <= to)
             .Include(t => t.Patient)
             .OrderByDescending(t => t.TransactionDate)
@@ -55,7 +55,7 @@ public class TransactionRepository
     // GET unpaid transactions
     public async Task<List<Transaction>> GetUnpaidAsync(CancellationToken ct = default)
     {
-        return await _ctx.Transactions
+        return await _db.Transactions
             .Where(t => t.Status != TransactionStatus.Completed)
             .Include(t => t.Patient)
             .OrderBy(t => t.TransactionDate)
@@ -65,7 +65,7 @@ public class TransactionRepository
     // GET total revenue in a date range
     public async Task<decimal> GetTotalRevenueAsync(DateTime from, DateTime to, CancellationToken ct = default)
     {
-        return await _ctx.Transactions
+        return await _db.Transactions
             .Where(t => t.TransactionDate >= from && t.TransactionDate <= to && t.Status == TransactionStatus.Completed)
             .SumAsync(t => t.cost, ct);
     }
@@ -73,7 +73,7 @@ public class TransactionRepository
     // GET outstanding balance for a patient
     public async Task<decimal> GetOutstandingBalanceAsync(Guid patientId, CancellationToken ct = default)
     {
-        return await _ctx.Transactions
+        return await _db.Transactions
             .Where(t => t.PatientId == patientId && t.Status != TransactionStatus.Completed)
             .SumAsync(t => t.cost, ct);
     }
@@ -81,24 +81,24 @@ public class TransactionRepository
     // CREATE
     public async Task AddAsync(Transaction transaction, CancellationToken ct = default)
     {
-        await _ctx.Transactions.AddAsync(transaction, ct);
+        await _db.Transactions.AddAsync(transaction, ct);
     }
 
     // UPDATE
     public void Update(Transaction transaction)
     {
-        _ctx.Transactions.Update(transaction);
+        _db.Transactions.Update(transaction);
     }
 
     // DELETE
     public void Delete(Transaction transaction)
     {
-        _ctx.Transactions.Remove(transaction);
+        _db.Transactions.Remove(transaction);
     }
 
     // SAVE
     public async Task SaveChangesAsync(CancellationToken ct = default)
     {
-        await _ctx.SaveChangesAsync(ct);
+        await _db.SaveChangesAsync(ct);
     }
 }
