@@ -28,7 +28,9 @@ namespace BookSoft.Infrastructure.QueryHandlers
             a.AppointmentEndTime,
             string.Join(" ", a.Patient!.FullName.FirstName, a.Patient.FullName.MiddleNames, a.Patient.FullName.LastName).Trim(),
             string.Join(" ", a.Practitioner!.FullName.FirstName, a.Practitioner.FullName.MiddleNames, a.Practitioner.FullName.LastName).Trim(),
-            a.Clinic!.ClinicName
+            a.Clinic!.ClinicName,
+            a.Pris,
+            a.AnvendtRabatType
         );
 
         public async Task<AppointmentDto?> GetByIdAsync(Guid id)

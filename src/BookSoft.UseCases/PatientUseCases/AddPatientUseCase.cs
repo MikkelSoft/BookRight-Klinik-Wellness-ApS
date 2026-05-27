@@ -1,6 +1,5 @@
 ﻿using BookSoft.Domain.Entities;
 using BookSoft.Facade.DTOs;
-using BookSoft.Facade.DTOs.BookSoft.Facade.DTOs;
 using BookSoft.Facade.UseCases;
 using BookSoft.UseCases.IRepositories;
 using System;

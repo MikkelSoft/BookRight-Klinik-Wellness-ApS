@@ -17,7 +17,7 @@ public class TransactionRepository : ITransactionRepo
     {
         _db = db;
     }
-    /*
+    
     // GET all
     public async Task<List<Transaction>> GetAllAsync(CancellationToken ct = default)
     {
@@ -25,7 +25,7 @@ public class TransactionRepository : ITransactionRepo
             .Include(t => t.Patient)
             .ToListAsync(ct);
     }
-    */
+    
     // GET by Id
     public async Task<Transaction?> GetByIdAsync(Guid id)
     {
@@ -33,7 +33,7 @@ public class TransactionRepository : ITransactionRepo
             .Include(t => t.Patient)
             .FirstOrDefaultAsync(t => t.ID == id);
     }
-    /*
+    
     // GET by patient
     public async Task<List<Transaction>> GetByPatientAsync(Guid patientId, CancellationToken ct = default)
     {
@@ -68,7 +68,7 @@ public class TransactionRepository : ITransactionRepo
     {
         return await _db.Transactions
             .Where(t => t.TransactionDate >= from && t.TransactionDate <= to && t.Status == TransactionStatus.Completed)
-            .SumAsync(t => t.cost, ct);
+            .SumAsync(t => t.Beloeb, ct);
     }
 
     // GET outstanding balance for a patient
@@ -76,15 +76,14 @@ public class TransactionRepository : ITransactionRepo
     {
         return await _db.Transactions
             .Where(t => t.PatientId == patientId && t.Status != TransactionStatus.Completed)
-            .SumAsync(t => t.cost, ct);
+            .SumAsync(t => t.Beloeb, ct);
     }
 
     // CREATE
-    public async Task AddAsync(Transaction transaction, CancellationToken ct = default)
+    public async Task AddAsync(Transaction transaction)
     {
-        await _db.Transactions.AddAsync(transaction, ct);
-    }*/
-
+        await _db.Transactions.AddAsync(transaction);
+    }
     // UPDATE
     public void Update(Transaction transaction)
     {

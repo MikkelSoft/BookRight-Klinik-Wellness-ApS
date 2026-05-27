@@ -18,5 +18,12 @@ namespace BookSoft.Domain.Entities
         {
             ClinicName = clinicName;
         }
+
+        /// Renames the clinic.
+        /// Called by UpdateClinicUseCase when an admin changes the clinic's display name.
+        public void UpdateName(string clinicName)
+        {
+            ClinicName = clinicName;
+        }
     }
 }

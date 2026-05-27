@@ -12,4 +12,9 @@
     <None Remove="Interfaces %28undgå at bruge%29\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <!-- Facade skal kende Domain-enums (f.eks. AutorisationsTypeEnum) men må ikke afhænge af Infrastructure -->
+    <ProjectReference Include="..\BookSoft.Domain\BookSoft.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

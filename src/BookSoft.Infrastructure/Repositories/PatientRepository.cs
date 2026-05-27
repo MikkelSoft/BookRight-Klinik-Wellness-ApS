@@ -23,11 +23,12 @@ public class PatientRepository : IPatientRepo
             .Include(p => p.Appointments)
             .ToListAsync();
     }
-    // GET by Id
+    // GET by Id — Transactions inkluderes til loyalitetsberegning i RabatService
     public async Task<Patient?> GetByIdAsync(Guid id)
     {
         return await _db.Patients
             .Include(p => p.Appointments)
+            .Include(p => p.Transactions)
             .FirstOrDefaultAsync(p => p.ID == id);
     }
 
@@ -59,14 +60,13 @@ public class PatientRepository : IPatientRepo
     {
         await _db.SaveChangesAsync();
     }
-    // DELETE
+    // DELETE — stages the removal, does NOT call SaveAsync.
+    // The caller (use case) is responsible for calling SaveAsync after.
+    // This keeps delete consistent with all other write methods in this repo.
     public async Task DeleteAsync(Guid id)
     {
         var patient = await GetByIdAsync(id);
         if (patient != null)
-        {
             _db.Patients.Remove(patient);
-            await SaveAsync();
-        }
     }
 }

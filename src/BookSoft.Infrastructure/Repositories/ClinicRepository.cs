@@ -1,6 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using BookSoft.Domain.Entities;
 using BookSoft.Infrastructure.Data;
 using BookSoft.UseCases.IRepositories;
@@ -17,16 +14,13 @@ public class ClinicRepository : IClinicRepo
         _db = db;
     }
 
-    /*
-    // GET all
-    public async Task<List<Clinic>> GetAllAsync(CancellationToken ct = default)
+    public async Task<List<Clinic>> GetAllAsync()
     {
         return await _db.Clinics
             .Include(c => c.Practitioners)
-            .ToListAsync(ct);
+            .ToListAsync();
     }
-    */
-    // GET by Id
+
     public async Task<Clinic?> GetByIdAsync(Guid id)
     {
         return await _db.Clinics
@@ -34,27 +28,23 @@ public class ClinicRepository : IClinicRepo
             .FirstOrDefaultAsync(c => c.ID == id);
     }
 
-    /*
-    // GET by name
-    public async Task<Clinic?> GetByNameAsync(string name, CancellationToken ct = default)
+    public async Task AddAsync(Clinic clinic)
     {
-        return await _db.Clinics
-            .FirstOrDefaultAsync(c => c.ClinicName.ToLower() == name.ToLower(), ct);
+        await _db.Clinics.AddAsync(clinic);
     }
 
-    // CREATE
-    public async Task AddAsync(Clinic clinic, CancellationToken ct = default)
-    {
-        await _db.Clinics.AddAsync(clinic, ct);
-    }*/
-
-    // UPDATE
-    public void Update(Clinic clinic) //behøver ikke update i EF
+    public void Update(Clinic clinic)
     {
         _db.Clinics.Update(clinic);
     }
 
-    // SAVE
+    public async Task DeleteAsync(Guid id)
+    {
+        var clinic = await _db.Clinics.FindAsync(id);
+        if (clinic is not null)
+            _db.Clinics.Remove(clinic);
+    }
+
     public async Task SaveAsync()
     {
         await _db.SaveChangesAsync();

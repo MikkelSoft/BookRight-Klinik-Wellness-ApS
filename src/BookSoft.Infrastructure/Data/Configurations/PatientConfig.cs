@@ -18,6 +18,10 @@ namespace BookSoft.Infrastructure.Data.Configurations
             builder.OwnsOne(e => e.FullName)/* value object :D, det er også muligt at bruge complexproperty så den laver json fil
                 .Property(e => e.FirstName) kan bruge det her hvis kolonen skal hedde noget andet end det den selv opretter (den plejer vist bare at navngive efter variablernes navne i VO
                 .HasColumnName("FirstName")*/;
+
+            // TotalSpent — akkumuleret betalingshistorik, gemmes med 2 decimaler
+            builder.Property(e => e.TotalSpent)
+                .HasColumnType("decimal(18,2)");
         }
     }
 }

@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using BookSoft.Domain.Enums;
 
 namespace BookSoft.Facade.DTOs
 {
-    public record PractitionerDto
-    {
-    }
+    public record PractitionerDto(
+        Guid Id,
+        string FirstName,
+        string LastName,
+        string Email,
+        string PhoneNumber,
+        string Specialty,
+        AutorisationsTypeEnum AutorisationsType
+    );
 }

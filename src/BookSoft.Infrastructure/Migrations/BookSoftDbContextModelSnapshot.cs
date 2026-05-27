@@ -17,25 +17,10 @@ namespace BookSoft.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.7")
+                .HasAnnotation("ProductVersion", "10.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("AppointmentPractitioner", b =>
-                {
-                    b.Property<Guid>("AppointmentsID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("PractitionersID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("AppointmentsID", "PractitionersID");
-
-                    b.HasIndex("PractitionersID");
-
-                    b.ToTable("AppointmentPractitioner");
-                });
 
             modelBuilder.Entity("BookSoft.Domain.Entities.Appointment", b =>
                 {
@@ -43,14 +28,94 @@ namespace BookSoft.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("PatientID")
+                    b.Property<string>("AnvendtRabatType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("AppointmentEndTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("AppointmentStartTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("AppointmentStatus")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AppointmentType")
+                        .HasColumnType("int");
+
+                    b.Property<string>("AppointmentTypeString")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<Guid>("ClinicId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PatientId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("PaymentStatus")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("PractitionerId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Pris")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("PatientID");
+                    b.HasIndex("ClinicId");
+
+                    b.HasIndex("PatientId");
+
+                    b.HasIndex("PractitionerId");
 
                     b.ToTable("Appointments");
+                });
+
+            modelBuilder.Entity("BookSoft.Domain.Entities.Campaign", b =>
+                {
+                    b.Property<Guid>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.PrimitiveCollection<string>("GælderFor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Navn")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("RabatProcent")
+                        .HasColumnType("decimal(5,4)");
+
+                    b.Property<DateTime>("SlutDato")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("StartDato")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Campaigns");
+                });
+
+            modelBuilder.Entity("BookSoft.Domain.Entities.Clinic", b =>
+                {
+                    b.Property<Guid>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ClinicName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Clinics");
                 });
 
             modelBuilder.Entity("BookSoft.Domain.Entities.Patient", b =>
@@ -59,13 +124,19 @@ namespace BookSoft.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Birthday")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("Birthday")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("TotalSpent")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ID");
 
@@ -78,7 +149,18 @@ namespace BookSoft.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("AutorisationsType")
+                        .HasColumnType("int");
+
                     b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Specialty")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -87,28 +169,74 @@ namespace BookSoft.Infrastructure.Migrations
                     b.ToTable("Practitioners");
                 });
 
-            modelBuilder.Entity("AppointmentPractitioner", b =>
+            modelBuilder.Entity("BookSoft.Domain.Entities.Transaction", b =>
                 {
-                    b.HasOne("BookSoft.Domain.Entities.Appointment", null)
-                        .WithMany()
-                        .HasForeignKey("AppointmentsID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<Guid>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.HasOne("BookSoft.Domain.Entities.Practitioner", null)
-                        .WithMany()
-                        .HasForeignKey("PractitionersID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<int>("AppointmentType")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Beloeb")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<Guid>("PatientId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("TransactionDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("PatientId");
+
+                    b.ToTable("Transactions");
+                });
+
+            modelBuilder.Entity("ClinicPractitioner", b =>
+                {
+                    b.Property<Guid>("ClinicsID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PractitionersID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("ClinicsID", "PractitionersID");
+
+                    b.HasIndex("PractitionersID");
+
+                    b.ToTable("ClinicPractitioner");
                 });
 
             modelBuilder.Entity("BookSoft.Domain.Entities.Appointment", b =>
                 {
+                    b.HasOne("BookSoft.Domain.Entities.Clinic", "Clinic")
+                        .WithMany("Appointments")
+                        .HasForeignKey("ClinicId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("BookSoft.Domain.Entities.Patient", "Patient")
                         .WithMany("Appointments")
-                        .HasForeignKey("PatientID");
+                        .HasForeignKey("PatientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BookSoft.Domain.Entities.Practitioner", "Practitioner")
+                        .WithMany("Appointments")
+                        .HasForeignKey("PractitionerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Clinic");
 
                     b.Navigation("Patient");
+
+                    b.Navigation("Practitioner");
                 });
 
             modelBuilder.Entity("BookSoft.Domain.Entities.Patient", b =>
@@ -173,7 +301,45 @@ namespace BookSoft.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("BookSoft.Domain.Entities.Transaction", b =>
+                {
+                    b.HasOne("BookSoft.Domain.Entities.Patient", "Patient")
+                        .WithMany("Transactions")
+                        .HasForeignKey("PatientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Patient");
+                });
+
+            modelBuilder.Entity("ClinicPractitioner", b =>
+                {
+                    b.HasOne("BookSoft.Domain.Entities.Clinic", null)
+                        .WithMany()
+                        .HasForeignKey("ClinicsID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BookSoft.Domain.Entities.Practitioner", null)
+                        .WithMany()
+                        .HasForeignKey("PractitionersID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BookSoft.Domain.Entities.Clinic", b =>
+                {
+                    b.Navigation("Appointments");
+                });
+
             modelBuilder.Entity("BookSoft.Domain.Entities.Patient", b =>
+                {
+                    b.Navigation("Appointments");
+
+                    b.Navigation("Transactions");
+                });
+
+            modelBuilder.Entity("BookSoft.Domain.Entities.Practitioner", b =>
                 {
                     b.Navigation("Appointments");
                 });

@@ -1,4 +1,6 @@
-﻿using BookSoft.Facade.Queries;
+using BookSoft.Domain.Rabatter;
+using BookSoft.Domain.Rabatter.Strategier;
+using BookSoft.Facade.Queries;
 using BookSoft.Infrastructure.Data;
 using BookSoft.Infrastructure.QueryHandlers;
 using BookSoft.Infrastructure.Repositories;
@@ -15,24 +17,33 @@ public static class InfrastructureServiceCollectionExtensions
         this IServiceCollection services,
         IConfiguration config)
     {
-        // Database
+        // database - connection string kommer fra appsettings.json
         services.AddDbContext<BookSoftDbContext>(opts =>
             opts.UseSqlServer(config.GetConnectionString("Default")));
 
-        // Repositories — concrete classes
-        services.AddScoped<PatientRepository>();
-        services.AddScoped<PractitionerRepository>();
-        services.AddScoped<AppointmentRepository>();
-        services.AddScoped<TransactionRepository>();
-        services.AddScoped<ClinicRepository>();
-
-        // Repositories > interface > implementation for use cases
+        // repositories
         services.AddScoped<IAppointmentRepo, AppointmentRepository>();
         services.AddScoped<IPatientRepo, PatientRepository>();
         services.AddScoped<IPractitionerRepo, PractitionerRepository>();
+        services.AddScoped<ITransactionRepo, TransactionRepository>();
+        services.AddScoped<IClinicRepo, ClinicRepository>();
+        services.AddScoped<ICampaignRepo, CampaignRepository>();
 
-        // Query handlers
+        // query handlers - read only, går direkte fra db til dto
         services.AddScoped<IAppointmentQueries, AppointmentQueriesImp>();
+        services.AddScoped<IPatientQueries, PatientQueriesImp>();
+        services.AddScoped<IPractitionerQueries, PractitionerQueriesImp>();
+        services.AddScoped<IClinicQueries, ClinicQueriesImp>();
+        services.AddScoped<ITransactionQueries, TransactionQueriesImp>();
+
+        // rabat strategier - alle registreres som IRabatBeregner
+        // RabatService får dem injected som IEnumerable og kører dem i parallel
+        services.AddScoped<IRabatBeregner, BronzeLoyalitetRabat>();
+        services.AddScoped<IRabatBeregner, SolvLoyalitetRabat>();
+        services.AddScoped<IRabatBeregner, GuldLoyalitetRabat>();
+        services.AddScoped<IRabatBeregner, FoedselsdagsRabat>();
+        services.AddScoped<IRabatBeregner, KampagneRabat>();
+        services.AddScoped<RabatService>();
 
         return services;
     }

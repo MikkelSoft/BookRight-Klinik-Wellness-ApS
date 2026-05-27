@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "BookSoft.Facade/1.0.0": {
+        "dependencies": {
+          "BookSoft.Domain": "1.0.0"
+        },
         "runtime": {
           "BookSoft.Facade.dll": {}
+        }
+      },
+      "BookSoft.Domain/1.0.0": {
+        "runtime": {
+          "BookSoft.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "BookSoft.Facade/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookSoft.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -375,7 +375,11 @@
           "net10.0": {
             "framework": "net10.0",
             "targetAlias": "net10.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\SEBEI\\source\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\BookSoft.Domain.csproj": {
+                "projectPath": "C:\\Users\\SEBEI\\source\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\BookSoft.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

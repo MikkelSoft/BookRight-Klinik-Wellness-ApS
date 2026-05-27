@@ -931,6 +931,9 @@
         }
       },
       "BookSoft.Facade/1.0.0": {
+        "dependencies": {
+          "BookSoft.Domain": "1.0.0"
+        },
         "runtime": {
           "BookSoft.Facade.dll": {
             "assemblyVersion": "1.0.0.0",

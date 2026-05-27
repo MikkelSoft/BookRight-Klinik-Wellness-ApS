@@ -1,6 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using BookSoft.Domain.Entities;
 
 namespace BookSoft.UseCases.IRepositories
@@ -12,5 +9,8 @@ namespace BookSoft.UseCases.IRepositories
         Task<IReadOnlyList<Appointment>> GetByPractitionerIdAsync(Guid practitionerId);
         Task AddAsync(Appointment appointment);
         Task SaveAsync();
+
+        // tjekker om behandleren allerede har en aftale i det givne tidsrum
+        Task<bool> HasClashAsync(Guid practitionerId, DateTime start, DateTime end);
     }
 }

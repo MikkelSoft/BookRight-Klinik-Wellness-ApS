@@ -1,4 +1,4 @@
-﻿using BookSoft.Domain.Entities;
+using BookSoft.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -13,5 +13,8 @@ public class AppointmentConfig : IEntityTypeConfiguration<Appointment>
         builder.Property(a => a.AppointmentTypeString)
             .IsRequired()
             .HasMaxLength(50);
+
+        builder.Property(a => a.Pris)
+            .HasColumnType("decimal(18,2)");
     }
 }

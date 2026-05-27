@@ -9,7 +9,7 @@
       "BookSoft.Domain.Tests/1.0.0": {
         "dependencies": {
           "BookSoft.Domain": "1.0.0",
-          "xunit.v3.mtp-v2": "3.2.2"
+          "xunit.v3.mtp-v2": "4.0.0-pre.108"
         },
         "runtime": {
           "BookSoft.Domain.Tests.dll": {}
@@ -31,15 +31,15 @@
           }
         }
       },
-      "Microsoft.Testing.Extensions.Telemetry/2.0.2": {
+      "Microsoft.Testing.Extensions.Telemetry/2.2.2": {
         "dependencies": {
           "Microsoft.ApplicationInsights": "2.23.0",
-          "Microsoft.Testing.Platform": "2.0.2"
+          "Microsoft.Testing.Platform": "2.2.2"
         },
         "runtime": {
           "lib/net9.0/Microsoft.Testing.Extensions.Telemetry.dll": {
-            "assemblyVersion": "2.0.2.0",
-            "fileVersion": "2.0.225.56104"
+            "assemblyVersion": "2.2.2.0",
+            "fileVersion": "2.200.226.22803"
           }
         },
         "resources": {
@@ -84,22 +84,22 @@
           }
         }
       },
-      "Microsoft.Testing.Extensions.TrxReport.Abstractions/2.0.2": {
+      "Microsoft.Testing.Extensions.TrxReport.Abstractions/2.2.2": {
         "dependencies": {
-          "Microsoft.Testing.Platform": "2.0.2"
+          "Microsoft.Testing.Platform": "2.2.2"
         },
         "runtime": {
           "lib/net9.0/Microsoft.Testing.Extensions.TrxReport.Abstractions.dll": {
-            "assemblyVersion": "2.0.2.0",
-            "fileVersion": "2.0.225.56104"
+            "assemblyVersion": "2.2.2.0",
+            "fileVersion": "2.200.226.22803"
           }
         }
       },
-      "Microsoft.Testing.Platform/2.0.2": {
+      "Microsoft.Testing.Platform/2.2.2": {
         "runtime": {
           "lib/net9.0/Microsoft.Testing.Platform.dll": {
-            "assemblyVersion": "2.0.2.0",
-            "fileVersion": "2.0.225.56104"
+            "assemblyVersion": "2.2.2.0",
+            "fileVersion": "2.200.226.22803"
           }
         },
         "resources": {
@@ -144,14 +144,14 @@
           }
         }
       },
-      "Microsoft.Testing.Platform.MSBuild/2.0.2": {
+      "Microsoft.Testing.Platform.MSBuild/2.2.2": {
         "dependencies": {
-          "Microsoft.Testing.Platform": "2.0.2"
+          "Microsoft.Testing.Platform": "2.2.2"
         },
         "runtime": {
           "lib/net9.0/Microsoft.Testing.Extensions.MSBuild.dll": {
-            "assemblyVersion": "2.0.2.0",
-            "fileVersion": "2.0.225.56104"
+            "assemblyVersion": "2.2.2.0",
+            "fileVersion": "2.200.226.22803"
           }
         },
         "resources": {
@@ -196,78 +196,78 @@
           }
         }
       },
-      "xunit.v3.assert/3.2.2": {
+      "xunit.v3.assert/4.0.0-pre.108": {
         "runtime": {
           "lib/net8.0/xunit.v3.assert.dll": {
-            "assemblyVersion": "3.2.2.0",
-            "fileVersion": "3.2.2.0"
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
           }
         }
       },
-      "xunit.v3.common/3.2.2": {
+      "xunit.v3.common/4.0.0-pre.108": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "6.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/xunit.v3.common.dll": {
-            "assemblyVersion": "3.2.2.0",
-            "fileVersion": "3.2.2.0"
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
           }
         }
       },
-      "xunit.v3.core.mtp-v2/3.2.2": {
+      "xunit.v3.core.mtp-v2/4.0.0-pre.108": {
         "dependencies": {
-          "Microsoft.Testing.Extensions.Telemetry": "2.0.2",
-          "Microsoft.Testing.Extensions.TrxReport.Abstractions": "2.0.2",
-          "Microsoft.Testing.Platform": "2.0.2",
-          "Microsoft.Testing.Platform.MSBuild": "2.0.2",
-          "xunit.v3.extensibility.core": "3.2.2",
-          "xunit.v3.runner.inproc.console": "3.2.2"
+          "Microsoft.Testing.Extensions.Telemetry": "2.2.2",
+          "Microsoft.Testing.Extensions.TrxReport.Abstractions": "2.2.2",
+          "Microsoft.Testing.Platform": "2.2.2",
+          "Microsoft.Testing.Platform.MSBuild": "2.2.2",
+          "xunit.v3.extensibility.core": "4.0.0-pre.108",
+          "xunit.v3.runner.inproc.console": "4.0.0-pre.108"
         },
         "runtime": {
           "lib/net8.0/xunit.v3.mtp-v2.dll": {
-            "assemblyVersion": "3.2.2.0",
-            "fileVersion": "3.2.2.0"
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
           }
         }
       },
-      "xunit.v3.extensibility.core/3.2.2": {
+      "xunit.v3.extensibility.core/4.0.0-pre.108": {
         "dependencies": {
-          "xunit.v3.common": "3.2.2"
+          "xunit.v3.common": "4.0.0-pre.108"
         },
         "runtime": {
           "lib/netstandard2.0/xunit.v3.core.dll": {
-            "assemblyVersion": "3.2.2.0",
-            "fileVersion": "3.2.2.0"
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
           }
         }
       },
-      "xunit.v3.mtp-v2/3.2.2": {
+      "xunit.v3.mtp-v2/4.0.0-pre.108": {
         "dependencies": {
-          "xunit.v3.assert": "3.2.2",
-          "xunit.v3.core.mtp-v2": "3.2.2"
+          "xunit.v3.assert": "4.0.0-pre.108",
+          "xunit.v3.core.mtp-v2": "4.0.0-pre.108"
         }
       },
-      "xunit.v3.runner.common/3.2.2": {
+      "xunit.v3.runner.common/4.0.0-pre.108": {
         "dependencies": {
-          "xunit.v3.common": "3.2.2"
+          "xunit.v3.common": "4.0.0-pre.108"
         },
         "runtime": {
           "lib/netstandard2.0/xunit.v3.runner.common.dll": {
-            "assemblyVersion": "3.2.2.0",
-            "fileVersion": "3.2.2.0"
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
           }
         }
       },
-      "xunit.v3.runner.inproc.console/3.2.2": {
+      "xunit.v3.runner.inproc.console/4.0.0-pre.108": {
         "dependencies": {
-          "xunit.v3.extensibility.core": "3.2.2",
-          "xunit.v3.runner.common": "3.2.2"
+          "xunit.v3.extensibility.core": "4.0.0-pre.108",
+          "xunit.v3.runner.common": "4.0.0-pre.108"
         },
         "runtime": {
           "lib/net8.0/xunit.v3.runner.inproc.console.dll": {
-            "assemblyVersion": "3.2.2.0",
-            "fileVersion": "3.2.2.0"
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
           }
         }
       },
@@ -301,82 +301,82 @@
       "path": "microsoft.bcl.asyncinterfaces/6.0.0",
       "hashPath": "microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Testing.Extensions.Telemetry/2.0.2": {
+    "Microsoft.Testing.Extensions.Telemetry/2.2.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-H580BvHyuADoWzlH9zRk5fqVyGucm6mhph+k40CQc9O4ie+Buxa4Pk9Q92BEClqIICqi25J7fuMII9qFYYgKtw==",
-      "path": "microsoft.testing.extensions.telemetry/2.0.2",
-      "hashPath": "microsoft.testing.extensions.telemetry.2.0.2.nupkg.sha512"
+      "sha512": "sha512-qKRghdaDiC88N1s3LDJO7zW74QNZu/ErnTxuG7R9u9UORn6pTwdqbi7X+eY4UQb+7YV2gR2yz8eRelvOWQVxhA==",
+      "path": "microsoft.testing.extensions.telemetry/2.2.2",
+      "hashPath": "microsoft.testing.extensions.telemetry.2.2.2.nupkg.sha512"
     },
-    "Microsoft.Testing.Extensions.TrxReport.Abstractions/2.0.2": {
+    "Microsoft.Testing.Extensions.TrxReport.Abstractions/2.2.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MrHYdPZ1CiyYp5bfjzNSghfVwl/I9osMazcZMAbwZY0BhR32i70YLf4zSXECvU2qt2PvDdrjYpGRgBscFbjDpw==",
-      "path": "microsoft.testing.extensions.trxreport.abstractions/2.0.2",
-      "hashPath": "microsoft.testing.extensions.trxreport.abstractions.2.0.2.nupkg.sha512"
+      "sha512": "sha512-MuOC3Be70FPysaPxaO0f3GFoXU49UwnKCVDWfFrOZ93h955KZ6MKiJ6vwt/2r4e1wkLDoJFbkQzi/MNbpe4oXQ==",
+      "path": "microsoft.testing.extensions.trxreport.abstractions/2.2.2",
+      "hashPath": "microsoft.testing.extensions.trxreport.abstractions.2.2.2.nupkg.sha512"
     },
-    "Microsoft.Testing.Platform/2.0.2": {
+    "Microsoft.Testing.Platform/2.2.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-43NCOTEENtdc9fmlzX9KHQR14AZEYek5r4jOJlWPhTyV1+aYAQYl4x773nYXU5TKxV6+rMuniJ7wcj9C9qrP1A==",
-      "path": "microsoft.testing.platform/2.0.2",
-      "hashPath": "microsoft.testing.platform.2.0.2.nupkg.sha512"
+      "sha512": "sha512-9mUsTOri0aVqBX7/EJwqVJxVwdOzGUVJqK1H2EMfIl9xxJuSdqhfAlJbukl/iNugvi4+cmQs/LI8PLTDUT9P1A==",
+      "path": "microsoft.testing.platform/2.2.2",
+      "hashPath": "microsoft.testing.platform.2.2.2.nupkg.sha512"
     },
-    "Microsoft.Testing.Platform.MSBuild/2.0.2": {
+    "Microsoft.Testing.Platform.MSBuild/2.2.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2zKkQKaUoaKgb/3AekboWOdLMh4upCo1nLWQnjGzp8r9YjiNOZRrzTsJQ3A4U03AcbH0evlIvFDKYSUqmTVuug==",
-      "path": "microsoft.testing.platform.msbuild/2.0.2",
-      "hashPath": "microsoft.testing.platform.msbuild.2.0.2.nupkg.sha512"
+      "sha512": "sha512-acgkTLYA8C39oe5b5ISmydBshR0XO6v8z3/CXAsLmPQ3xAiomHuPoTAgY28tjQLcwPZOu4GX034BXWvmsVpzIg==",
+      "path": "microsoft.testing.platform.msbuild/2.2.2",
+      "hashPath": "microsoft.testing.platform.msbuild.2.2.2.nupkg.sha512"
     },
-    "xunit.v3.assert/3.2.2": {
+    "xunit.v3.assert/4.0.0-pre.108": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BPciBghgEEaJN/JG00QfCYDfEfnLgQhfnYEy+j1izoeHVNYd5+3Wm8GJ6JgYysOhpBPYGE+sbf75JtrRc7jrdA==",
-      "path": "xunit.v3.assert/3.2.2",
-      "hashPath": "xunit.v3.assert.3.2.2.nupkg.sha512"
+      "sha512": "sha512-tjqTqYM/OamQ8ITNEDCWWUt0Xf1vVrudrB6jWmSSUSLgFN7qWWKNjLwBkwk6R7atBUWqRFB2FEDEnTO5OYiYNQ==",
+      "path": "xunit.v3.assert/4.0.0-pre.108",
+      "hashPath": "xunit.v3.assert.4.0.0-pre.108.nupkg.sha512"
     },
-    "xunit.v3.common/3.2.2": {
+    "xunit.v3.common/4.0.0-pre.108": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Hj775PEH6GTbbg0wfKRvG2hNspDCvTH9irXhH4qIWgdrOSV1sQlqPie+DOvFeigsFg2fxSM3ZAaaCDQs+KreFA==",
-      "path": "xunit.v3.common/3.2.2",
-      "hashPath": "xunit.v3.common.3.2.2.nupkg.sha512"
+      "sha512": "sha512-qjg58vCJNP5pzytfRR36OJ/jGXPbzUiKzeuakK6wf1BF4IX9Y2pnjB7B7hLB5TS7JkOqkva7Yxtq31R/80cb5Q==",
+      "path": "xunit.v3.common/4.0.0-pre.108",
+      "hashPath": "xunit.v3.common.4.0.0-pre.108.nupkg.sha512"
     },
-    "xunit.v3.core.mtp-v2/3.2.2": {
+    "xunit.v3.core.mtp-v2/4.0.0-pre.108": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zW82tdCm+T1uUD1JKE+SmhgMq8nCAvcFPRLIVEiRgaxBSjcyJEKopLU3bHGOa416q+N3Dz7m1zLoPR5VJ5OQ+Q==",
-      "path": "xunit.v3.core.mtp-v2/3.2.2",
-      "hashPath": "xunit.v3.core.mtp-v2.3.2.2.nupkg.sha512"
+      "sha512": "sha512-UhG7BU0Cx1K6Dms74y+Py9HXd1K60j/9+xdFeDJH5xGGqjNegeDkS4CoQVPHWhYB2/oWEmvZ2aTMFazolfk+EA==",
+      "path": "xunit.v3.core.mtp-v2/4.0.0-pre.108",
+      "hashPath": "xunit.v3.core.mtp-v2.4.0.0-pre.108.nupkg.sha512"
     },
-    "xunit.v3.extensibility.core/3.2.2": {
+    "xunit.v3.extensibility.core/4.0.0-pre.108": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-srY8z/oMPvh/t8axtO2DwrHajhFMH7tnqKildvYrVQIfICi8fOn3yIBWkVPAcrKmHMwvXRJ/XsQM3VMR6DOYfQ==",
-      "path": "xunit.v3.extensibility.core/3.2.2",
-      "hashPath": "xunit.v3.extensibility.core.3.2.2.nupkg.sha512"
+      "sha512": "sha512-PtFcRhogkC/apzp2r0nrLkRhmac+DmvsA99MdTuBedJD0zSouPsJ7dQZuKNJ4OAvAcrDmn0TQdloeydpijvlhg==",
+      "path": "xunit.v3.extensibility.core/4.0.0-pre.108",
+      "hashPath": "xunit.v3.extensibility.core.4.0.0-pre.108.nupkg.sha512"
     },
-    "xunit.v3.mtp-v2/3.2.2": {
+    "xunit.v3.mtp-v2/4.0.0-pre.108": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-S0LJpeMIMrmbVLXDCvPVX47OLk28qBYfGU+5SNCbarOEdw8oKLfiVqaACwuYRvLiOqDEB/+VJ8gTSB1ZwheoOQ==",
-      "path": "xunit.v3.mtp-v2/3.2.2",
-      "hashPath": "xunit.v3.mtp-v2.3.2.2.nupkg.sha512"
+      "sha512": "sha512-sa5VHcdgSAXpmTMoog7y5rqCB7sj8gd1IbtuAtSCP2UKsjbReHSOvlqPTx90IAm7bIZziNv0cLTneCTbb7R70w==",
+      "path": "xunit.v3.mtp-v2/4.0.0-pre.108",
+      "hashPath": "xunit.v3.mtp-v2.4.0.0-pre.108.nupkg.sha512"
     },
-    "xunit.v3.runner.common/3.2.2": {
+    "xunit.v3.runner.common/4.0.0-pre.108": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/hkHkQCzGrugelOAehprm7RIWdsUFVmIVaD6jDH/8DNGCymTlKKPTbGokD5czbAfqfex47mBP0sb0zbHYwrO/g==",
-      "path": "xunit.v3.runner.common/3.2.2",
-      "hashPath": "xunit.v3.runner.common.3.2.2.nupkg.sha512"
+      "sha512": "sha512-j2InpjbqdJLrQOSIzJsxW9XHPskebeiZ9lgL7LPoF6Qsp7stF04QIV4sFn71y4vHtiePZUofDYZeR1SCN10qBQ==",
+      "path": "xunit.v3.runner.common/4.0.0-pre.108",
+      "hashPath": "xunit.v3.runner.common.4.0.0-pre.108.nupkg.sha512"
     },
-    "xunit.v3.runner.inproc.console/3.2.2": {
+    "xunit.v3.runner.inproc.console/4.0.0-pre.108": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ulWOdSvCk+bPXijJZ73bth9NyoOHsAs1ZOvamYbCkD4DNLX/Bd29Ve2ZNUwBbK0MqfIYWXHZViy/HKrdEC/izw==",
-      "path": "xunit.v3.runner.inproc.console/3.2.2",
-      "hashPath": "xunit.v3.runner.inproc.console.3.2.2.nupkg.sha512"
+      "sha512": "sha512-dfi+7d4WzK1G7kphtfpsOMCn6JfOOba64jytXwxsyrJfr7+GEtvJEwmqxrOYP1u+3VqLxesxboSdzJdVvIQYmg==",
+      "path": "xunit.v3.runner.inproc.console/4.0.0-pre.108",
+      "hashPath": "xunit.v3.runner.inproc.console.4.0.0-pre.108.nupkg.sha512"
     },
     "BookSoft.Domain/1.0.0": {
       "type": "project",

@@ -8,11 +8,14 @@ namespace BookSoft.Domain.Entities
 {
     public class Person : AggregateRoot
     {
-        public FullName FullName {  get; private set; } = null!;
-        public string Email { get; private set; } = null!;
-        public string PhoneNumber { get; private set; } = null!;
+        // protected set — subclasses (Patient, Practitioner) need to update
+        // these when UpdateDetails() is called. Private set would prevent that.
+        public FullName FullName {  get; protected set; } = null!;
+        public string Email { get; protected set; } = null!;
+        public string PhoneNumber { get; protected set; } = null!;
 
-        private Person() { }
+     
+        protected Person() { }
 
         public Person(string firstName, string middleNames, string lastName, string email, string phoneNumber)
         {

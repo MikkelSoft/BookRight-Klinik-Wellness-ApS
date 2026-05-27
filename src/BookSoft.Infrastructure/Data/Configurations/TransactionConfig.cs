@@ -1,4 +1,4 @@
-﻿using BookSoft.Domain.Entities;
+using BookSoft.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -10,7 +10,11 @@ public class TransactionConfig : IEntityTypeConfiguration<Transaction>
     {
         builder.HasKey(t => t.ID);
 
-        builder.Property(t => t.cost)
-            .HasColumnType("decimal(18,2)");
+        builder.Property(t => t.Beloeb)
+            .HasColumnType("decimal(18,2)")
+            .IsRequired();
+
+        // cost er bare en alias property der peger på Beloeb - skal ikke gemmes i db
+        builder.Ignore(t => t.cost);
     }
 }
