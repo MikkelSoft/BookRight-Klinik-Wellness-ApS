@@ -23,8 +23,19 @@ namespace BookSoft.Domain.Entities
         public virtual Patient? Patient { get; private set; }
         public virtual Clinic? Clinic { get; private set; }
 
-     
-        
+        public void Cancel()
+        {
+            if (AppointmentStatus == AppointmentStatusEnum.Cancelled)
+            {
+                throw new DomainException("The appointment is already cancelled.");
+            }
+            if (AppointmentStatus == AppointmentStatusEnum.Completed)
+            {
+                throw new DomainException("You can not cancel completed appointments.");
+            }
+            AppointmentStatus = AppointmentStatusEnum.Cancelled;
+        }
+
         private Appointment() { } //til EF core
 
         private Appointment(Guid patientId, Guid practitionerId, Guid clinicId, string appointmentTypeString, DateTime appointmentStartTime) //private constructor tvinger den til at bruge factory method

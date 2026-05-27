@@ -4,5 +4,6 @@ using System.Text;
 
 namespace BookSoft.Facade.DTOs
 {
-    public record CancelAppointmentRequest();
+    // BookSoft.Facade/DTOs/CancelAppointmentRequest.cs
+    public record CancelAppointmentRequest(Guid AppointmentId);
 }

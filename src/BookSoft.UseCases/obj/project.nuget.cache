@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pTUGEU+HNMw=",
+  "dgSpecHash": "vnA59xxYqz4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\source\\repos\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj",
+  "projectFilePath": "C:\\Users\\SEBEI\\source\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.UseCases\\BookSoft.UseCases.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.8\\microsoft.extensions.dependencyinjection.abstractions.10.0.8.nupkg.sha512"
+    "C:\\Users\\SEBEI\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.8\\microsoft.extensions.dependencyinjection.abstractions.10.0.8.nupkg.sha512"
   ],
   "logs": []
 }
