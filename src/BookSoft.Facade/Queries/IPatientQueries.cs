@@ -8,6 +8,6 @@ namespace BookSoft.Facade.Queries
     public interface IPatientQueries
     {
         Task<IReadOnlyList<PatientDto>> GetAllAsync();
-        Task<PatientDto> GetByIdAsync(Guid Id);
+        Task<PatientDto?> GetByIdAsync(Guid id);  // add the ?
     }
 }

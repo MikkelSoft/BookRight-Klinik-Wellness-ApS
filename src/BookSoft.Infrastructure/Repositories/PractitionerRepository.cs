@@ -18,13 +18,13 @@ public class PractitionerRepository : IPractitionerRepo
     }
 
     // GET all
-    /*
+   
     public async Task<List<Practitioner>> GetAllAsync(CancellationToken ct = default)
     {
         return await _db.Practitioners
             .Include(p => p.Appointments)
             .ToListAsync(ct);
-    }*/
+    }
 
     // GET by Id
     public async Task<Practitioner?> GetByIdAsync(Guid id)
@@ -33,7 +33,7 @@ public class PractitionerRepository : IPractitionerRepo
             .Include(p => p.Appointments)
             .FirstOrDefaultAsync(p => p.ID == id);
     }
-    /*
+    
     // GET by specialty
     public async Task<List<Practitioner>> GetBySpecialtyAsync(string specialty, CancellationToken ct = default)
     {
@@ -56,7 +56,8 @@ public class PractitionerRepository : IPractitionerRepo
     public async Task AddAsync(Practitioner practitioner, CancellationToken ct = default)
     {
         await _db.Practitioners.AddAsync(practitioner, ct);
-    }*/
+    }
+    
 
     // UPDATE //behøves ik
     public void Update(Practitioner practitioner)
@@ -68,5 +69,11 @@ public class PractitionerRepository : IPractitionerRepo
     public async Task SaveAsync(CancellationToken ct = default)
     {
         await _db.SaveChangesAsync(ct);
+    }
+
+    //Delete
+    public async Task Delete(Practitioner practitioner)
+    {
+        _db.Practitioners.Remove(practitioner);
     }
 }

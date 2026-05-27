@@ -16,7 +16,13 @@ public class PatientRepository : IPatientRepo
     {
         _db = db;
     }
-
+    // GET all
+    public async Task<List<Patient>> GetAllAsync()
+    {
+        return await _db.Patients
+            .Include(p => p.Appointments)
+            .ToListAsync();
+    }
     // GET by Id
     public async Task<Patient?> GetByIdAsync(Guid id)
     {
@@ -24,8 +30,8 @@ public class PatientRepository : IPatientRepo
             .Include(p => p.Appointments)
             .FirstOrDefaultAsync(p => p.ID == id);
     }
-    /*
-    // GET by name (searches first or last name)
+
+    //GET by name(searches first or last name)
     public async Task<List<Patient>> GetByNameAsync(string name)
     {
         var lower = name.ToLower();
@@ -36,12 +42,12 @@ public class PatientRepository : IPatientRepo
             .ToListAsync();
     }
 
-    // CREATE
+    //CREATE
     public async Task AddAsync(Patient patient)
     {
         await _db.Patients.AddAsync(patient);
     }
-    */
+    
     // UPDATE //behøver ikke update
     public void Update(Patient patient)
     {
@@ -52,5 +58,15 @@ public class PatientRepository : IPatientRepo
     public async Task SaveAsync()
     {
         await _db.SaveChangesAsync();
+    }
+    // DELETE
+    public async Task DeleteAsync(Guid id)
+    {
+        var patient = await GetByIdAsync(id);
+        if (patient != null)
+        {
+            _db.Patients.Remove(patient);
+            await SaveAsync();
+        }
     }
 }
