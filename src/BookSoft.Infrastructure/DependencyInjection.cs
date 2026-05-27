@@ -6,14 +6,13 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace BookSoft.Infrastructure;
 
-public static class DependencyInjection
+public static class InfrastructureServiceCollectionExtensions
 {
     public static IServiceCollection AddInfrastructure(
         this IServiceCollection services,
         IConfiguration config)
     {
-        services.AddDbContext<BookSoftDbContext>(opts =>
-            opts.UseSqlServer(config.GetConnectionString("Default")));
+        var connectionString = config.GetConnectionString("Server=localhost;Database=BookSoftDB;Trusted_Connection=True;TrustServerCertificate=True");
 
         services.AddScoped<PatientRepository>();
         services.AddScoped<PractitionerRepository>();

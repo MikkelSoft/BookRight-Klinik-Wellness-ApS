@@ -1,5 +1,6 @@
 using BookSoft.Blazor.Components;
-using BookSoft.Facade.Interfaces;
+using BookSoft.Infrastructure;
+using BookSoft.Infrastructure.Data;
 using BookSoft.Facade;
 
 var builder = WebApplication.CreateBuilder(args);

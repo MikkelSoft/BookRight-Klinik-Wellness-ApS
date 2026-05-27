@@ -8,12 +8,11 @@ namespace BookSoft.Infrastructure.Data
 {
     public class BookSoftDbContext : DbContext
     {
-        public DbSet<Practitioner> Practitioners { get; set; } //opretter kolonner i db
-        public DbSet<Patient> Patients { get; set; }
-        public DbSet<Appointment> Appointments { get; set; }
-        public DbSet<Transaction> Transactions { get; set; }
-        public DbSet<Clinic> Clinics { get; set; }
-
+        public DbSet<Practitioner> Practitioners => Set<Practitioner>();
+        public DbSet<Patient> Patients => Set<Patient>();
+        public DbSet<Appointment> Appointments => Set<Appointment>();
+        public DbSet<Transaction> Transactions => Set<Transaction>();
+        public DbSet<Clinic> Clinics => Set<Clinic>();
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

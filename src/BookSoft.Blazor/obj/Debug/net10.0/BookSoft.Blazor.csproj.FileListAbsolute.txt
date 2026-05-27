@@ -373,11 +373,9 @@ C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\D
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\0uhw1ehztv-{0}-4094rpi4f9-4094rpi4f9.gz
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\e5iduh3xw8-{0}-ft3s53vfgj-ft3s53vfgj.gz
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\ie05luolty-{0}-c63t5i9ira-c63t5i9ira.gz
-C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\be58yw9jsc-{0}-hrwsygsryq-hrwsygsryq.gz
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\swrcqvmjhg-{0}-ynyaa8k90p-ynyaa8k90p.gz
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\00ztvbnfqd-{0}-v0zj4ognzu-v0zj4ognzu.gz
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\pxaez3pw3i-{0}-43atpzeawx-43atpzeawx.gz
-C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\1gmwd2b0hn-{0}-pj5nd1wqec-pj5nd1wqec.gz
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\dxwxkmxgy0-{0}-zub09dkrxp-zub09dkrxp.gz
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\2jh26hhn2n-{0}-nvvlpmu67g-nvvlpmu67g.gz
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\ugzknhcfgp-{0}-keugtjm085-keugtjm085.gz
@@ -418,3 +416,5 @@ C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\D
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\BookSoft.60486FFD.Up2Date
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\BookSoft.Blazor.genruntimeconfig.cache
 C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\ref\BookSoft.Blazor.dll
+C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\be58yw9jsc-{0}-sxgpq0vy83-sxgpq0vy83.gz
+C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\1gmwd2b0hn-{0}-g0yirmvfn8-g0yirmvfn8.gz

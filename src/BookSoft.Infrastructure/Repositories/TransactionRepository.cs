@@ -5,10 +5,11 @@ using BookSoft.Domain.Entities;
 using BookSoft.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using BookSoft.Domain.Enums;
+using BookSoft.UseCases.IRepositories;
 
 namespace BookSoft.Infrastructure.Repositories;
 
-public class TransactionRepository
+public class TransactionRepository : ITransactionRepo
 {
     private readonly BookSoftDbContext _db;
 
@@ -16,7 +17,7 @@ public class TransactionRepository
     {
         _db = db;
     }
-
+    /*
     // GET all
     public async Task<List<Transaction>> GetAllAsync(CancellationToken ct = default)
     {
@@ -24,15 +25,15 @@ public class TransactionRepository
             .Include(t => t.Patient)
             .ToListAsync(ct);
     }
-
+    */
     // GET by Id
-    public async Task<Transaction?> GetByIdAsync(Guid id, CancellationToken ct = default)
+    public async Task<Transaction?> GetByIdAsync(Guid id)
     {
         return await _db.Transactions
             .Include(t => t.Patient)
-            .FirstOrDefaultAsync(t => t.ID == id, ct);
+            .FirstOrDefaultAsync(t => t.ID == id);
     }
-
+    /*
     // GET by patient
     public async Task<List<Transaction>> GetByPatientAsync(Guid patientId, CancellationToken ct = default)
     {
@@ -82,7 +83,7 @@ public class TransactionRepository
     public async Task AddAsync(Transaction transaction, CancellationToken ct = default)
     {
         await _db.Transactions.AddAsync(transaction, ct);
-    }
+    }*/
 
     // UPDATE
     public void Update(Transaction transaction)
@@ -90,15 +91,9 @@ public class TransactionRepository
         _db.Transactions.Update(transaction);
     }
 
-    // DELETE
-    public void Delete(Transaction transaction)
-    {
-        _db.Transactions.Remove(transaction);
-    }
-
     // SAVE
-    public async Task SaveChangesAsync(CancellationToken ct = default)
+    public async Task SaveAsync()
     {
-        await _db.SaveChangesAsync(ct);
+        await _db.SaveChangesAsync();
     }
 }

@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Interfaces %28undgå at bruge%29\**" />
+    <EmbeddedResource Remove="Interfaces %28undgå at bruge%29\**" />
+    <None Remove="Interfaces %28undgå at bruge%29\**" />
+  </ItemGroup>
+
 </Project>

@@ -7,6 +7,6 @@ namespace BookSoft.UseCases.IRepositories
 {
     public interface IPractitionerRepo
     {
-        Task<Practitioner> GetByIdAsync(Guid id);
+        Task<Practitioner?> GetByIdAsync(Guid id);
     }
 }

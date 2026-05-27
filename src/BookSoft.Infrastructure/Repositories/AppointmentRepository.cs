@@ -4,11 +4,12 @@ using System.Text;
 using BookSoft.Domain.Entities;
 using BookSoft.Domain.Enums;
 using BookSoft.Infrastructure.Data;
+using BookSoft.UseCases.IRepositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookSoft.Infrastructure.Repositories;
 
-public class AppointmentRepository
+public class AppointmentRepository : IAppointmentRepo
 {
     private readonly BookSoftDbContext _db;
 
@@ -18,43 +19,43 @@ public class AppointmentRepository
     }
 
     // GET all
-    public async Task<List<Appointment>> GetAllAsync(CancellationToken ct = default)
+    public async Task<IReadOnlyList<Appointment>> GetAllAsync()
     {
         return await _db.Appointments
             .Include(a => a.Patient)
             .Include(a => a.Practitioner)
-            .ToListAsync(ct);
+            .ToListAsync();
     }
 
     // GET by Id
-    public async Task<Appointment?> GetByIdAsync(Guid id, CancellationToken ct = default)
+    public async Task<Appointment?> GetByIdAsync(Guid id)
     {
         return await _db.Appointments
             .Include(a => a.Patient)
             .Include(a => a.Practitioner)
-            .FirstOrDefaultAsync(a => a.ID == id, ct);
+            .FirstOrDefaultAsync(a => a.ID == id);
     }
 
     // GET by patient
-    public async Task<List<Appointment>> GetByPatientAsync(Guid patientId, CancellationToken ct = default)
+    public async Task<IReadOnlyList<Appointment>> GetByPatientIdAsync(Guid patientId)
     {
         return await _db.Appointments
             .Where(a => a.PatientId == patientId)
             .Include(a => a.Practitioner)
             .OrderByDescending(a => a.AppointmentStartTime)
-            .ToListAsync(ct);
+            .ToListAsync();
     }
 
     // GET by practitioner
-    public async Task<List<Appointment>> GetByPractitionerAsync(Guid practitionerId, CancellationToken ct = default)
+    public async Task<IReadOnlyList<Appointment>> GetByPractitionerIdAsync(Guid practitionerId)
     {
         return await _db.Appointments
             .Where(a => a.PractitionerId == practitionerId)
             .Include(a => a.Patient)
             .OrderByDescending(a => a.AppointmentStartTime)
-            .ToListAsync(ct);
+            .ToListAsync();
     }
-
+    /* kommenteret ud da det ikke anvendes og der er ikke tilsvarende oprettet i IAppointmentRepo i usecase
     // GET by date range
     public async Task<List<Appointment>> GetByDateRangeAsync(DateTime from, DateTime to, CancellationToken ct = default)
     {
@@ -93,12 +94,12 @@ public class AppointmentRepository
             .AnyAsync(a => a.PractitionerId == practitionerId
                         && a.AppointmentStartTime < end
                         && a.AppointmentEndTime > start, ct);
-    }
+    }*/
 
     // CREATE
-    public async Task AddAsync(Appointment appointment, CancellationToken ct = default)
+    public async Task AddAsync(Appointment appointment)
     {
-        await _db.Appointments.AddAsync(appointment, ct);
+        await _db.Appointments.AddAsync(appointment);
     }
 
     // UPDATE //behøver ikke update i EF
@@ -107,15 +108,9 @@ public class AppointmentRepository
         _db.Appointments.Update(appointment);
     }
 
-    // DELETE
-    public void Delete(Appointment appointment)
-    {
-        _db.Appointments.Remove(appointment);
-    }
-
     // SAVE
-    public async Task SaveChangesAsync(CancellationToken ct = default)
+    public async Task SaveAsync()
     {
-        await _db.SaveChangesAsync(ct);
+        await _db.SaveChangesAsync();
     }
 }

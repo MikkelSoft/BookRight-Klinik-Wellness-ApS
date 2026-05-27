@@ -5,8 +5,8 @@ using System.Text;
 
 namespace BookSoft.UseCases.IRepositories
 {
-    public interface IPatientRepo
+    public interface ITransactionRepo
     {
-        Task<Patient?> GetByIdAsync(Guid id);
+        Task<Transaction?> GetByIdAsync(Guid id);
     }
 }
