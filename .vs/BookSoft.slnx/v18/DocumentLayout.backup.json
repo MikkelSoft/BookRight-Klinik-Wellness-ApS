@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\SEBEI\\source\\sebastex\\BookRight-Klinik-Wellness-ApS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\sebei\\source\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\sebei\\source\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\campaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\campaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|c:\\users\\sebei\\source\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A46BD0E-E0CF-80DC-C603-C2A739B7B632}|src\\BookSoft.Domain\\BookSoft.Domain.csproj|solutionrelative:src\\booksoft.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF29F771-C3B0-F381-D73C-B5332B5C94E4}|src\\BookSoft.Infrastructure\\BookSoft.Infrastructure.csproj|c:\\users\\sebei\\source\\sebastex\\bookright-klinik-wellness-aps\\src\\booksoft.infrastructure\\data\\booksoftdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -363,7 +363,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -425,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Users\\SEBEI\\source\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Transaction.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Transaction.cs",
@@ -438,13 +438,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Campaign.cs",
               "DocumentMoniker": "C:\\Users\\SEBEI\\source\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Campaign.cs",
               "RelativeDocumentMoniker": "src\\BookSoft.Domain\\Entities\\Campaign.cs",
               "ToolTip": "C:\\Users\\SEBEI\\source\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Domain\\Entities\\Campaign.cs",
               "RelativeToolTip": "src\\BookSoft.Domain\\Entities\\Campaign.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA8AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T21:04:19.151Z",
               "EditorCaption": ""
