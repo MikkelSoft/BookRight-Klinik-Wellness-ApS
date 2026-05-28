@@ -1,0 +1,102 @@
+.detail-card[b-iv7stfglw0] {
+    background: white;
+    border-radius: 12px;
+    padding: 28px 30px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+    .detail-card h3[b-iv7stfglw0] {
+        margin: 0 0 16px 0;
+        font-size: 18px;
+        color: var(--font-color);
+    }
+
+.detail-row[b-iv7stfglw0] {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 7px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+    .detail-row:last-of-type[b-iv7stfglw0] {
+        border-bottom: none;
+    }
+
+.detail-label[b-iv7stfglw0] {
+    font-size: 12px;
+    color: #999;
+    font-weight: 500;
+    min-width: 90px;
+}
+
+.detail-value[b-iv7stfglw0] {
+    font-size: 14px;
+    color: var(--font-color);
+    text-align: right;
+}
+
+.detail-value.discount[b-iv7stfglw0] {
+    color: #2e7d32;
+    font-size: 13px;
+}
+
+.error-msg[b-iv7stfglw0] {
+    color: #c0392b;
+    font-size: 13px;
+    margin: 10px 0 0 0;
+}
+
+.action-buttons[b-iv7stfglw0] {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.btn-finish[b-iv7stfglw0] {
+    flex: 1;
+    padding: 9px;
+    font-size: 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #e6f4ea;
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+    .btn-finish:hover:not(:disabled)[b-iv7stfglw0] { background-color: #c8e6c9; }
+    .btn-finish:disabled[b-iv7stfglw0] { opacity: 0.5; cursor: not-allowed; }
+
+.btn-cancel-appt[b-iv7stfglw0] {
+    flex: 1;
+    padding: 9px;
+    font-size: 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #fdecea;
+    color: #c0392b;
+    font-weight: 500;
+}
+
+    .btn-cancel-appt:hover:not(:disabled)[b-iv7stfglw0] { background-color: #f5c6cb; }
+    .btn-cancel-appt:disabled[b-iv7stfglw0] { opacity: 0.5; cursor: not-allowed; }
+
+.btn-close[b-iv7stfglw0] {
+    flex: 1;
+    padding: 9px;
+    font-size: 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--font-color);
+    font-weight: 500;
+}
+
+    .btn-close:hover[b-iv7stfglw0] { opacity: 0.85; }

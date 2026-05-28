@@ -1,0 +1,100 @@
+.modal-card[b-fhoees19oc] {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+    .modal-card h3[b-fhoees19oc] {
+        margin: 0 0 12px 0;
+        font-size: 18px;
+        color: var(--font-color);
+    }
+
+.loading-msg[b-fhoees19oc] {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.field[b-fhoees19oc] {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+    .field label[b-fhoees19oc] {
+        font-size: 12px;
+        color: #666;
+        font-weight: 500;
+    }
+
+    .field input[b-fhoees19oc],
+    .field select[b-fhoees19oc] {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 14px;
+        outline: none;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: var(--primary);
+        color: var(--font-color);
+    }
+
+        .field input:focus[b-fhoees19oc],
+        .field select:focus[b-fhoees19oc] {
+            border-color: var(--primary-hover);
+        }
+
+.error-msg[b-fhoees19oc] {
+    color: #c0392b;
+    font-size: 13px;
+    margin: 4px 0 0 0;
+}
+
+.modal-buttons[b-fhoees19oc] {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.btn-save[b-fhoees19oc] {
+    flex: 1;
+    padding: 10px;
+    background: var(--primary-hover);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .btn-save:disabled[b-fhoees19oc] {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    .btn-save:hover:not(:disabled)[b-fhoees19oc] {
+        opacity: 0.9;
+    }
+
+.btn-cancel[b-fhoees19oc] {
+    flex: 1;
+    padding: 10px;
+    background: var(--secondary);
+    color: var(--font-color);
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .btn-cancel:hover[b-fhoees19oc] {
+        opacity: 0.85;
+    }

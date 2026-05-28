@@ -1,41 +1,170 @@
-﻿@page "/Appointment"  // Appointment.razor
+@page "/Appointment"
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+@inject IAppointmentQueries AppointmentQueries
+@using BookSoft.Facade.Queries
+@using BookSoft.Facade.DTOs
+
+<PageTitle>Appointments</PageTitle>
 
 <div class="calendar">
 
-    <!-- Top bar: month navigation + view toggle -->
+    <!-- Navigation header -->
     <div class="calendar-header">
-        <button>&#8249;</button>
-        <span>Maj 2026</span>
-        <button>&#8250;</button>
+        <button class="nav-btn" @onclick="PrevWeek">&#8249;</button>
+        <span class="week-label">@weekStart.ToString("MMM d") – @weekStart.AddDays(6).ToString("MMM d, yyyy")</span>
+        <button class="nav-btn" @onclick="NextWeek">&#8250;</button>
+        <button class="today-btn" @onclick="GoToToday">Today</button>
         <div class="view-toggle">
-            <button>Dag</button>
-            <button>Uge</button>
-            <button class="active">Måned</button>
+            <button class="active">Week</button>
         </div>
     </div>
 
-    <!-- Day labels -->
-    <div class="calendar-days-header">
-        <span>Man</span>
-        <span>Tir</span>
-        <span>Ons</span>
-        <span>Tor</span>
-        <span>Fre</span>
-        <span>Lør</span>
-        <span>Søn</span>
+    <div class="calendar-content">
+
+        <!-- Day header row (fixed, does not scroll) -->
+        <div class="day-header-row">
+            <div class="time-spacer"></div>
+            @for (int i = 0; i < 7; i++)
+            {
+                var day = weekStart.AddDays(i);
+                var isToday = day.Date == DateTime.Today;
+                <div class="day-header @(isToday ? "is-today" : "")">
+                    <span class="day-name">@day.ToString("ddd")</span>
+                    <span class="@(isToday ? "day-num today-circle" : "day-num")">@day.Day</span>
+                </div>
+            }
+        </div>
+
+        <!-- Scrollable time + day grid -->
+        <div class="calendar-scroll">
+
+            <!-- Hour labels -->
+            <div class="time-col">
+                @for (int h = 8; h < 18; h++)
+                {
+                    <div class="hour-slot">@($"{h:00}:00")</div>
+                }
+            </div>
+
+            <!-- 7 day columns -->
+            <div class="day-cols">
+                @for (int i = 0; i < 7; i++)
+                {
+                    var day = weekStart.AddDays(i);
+                    var isToday = day.Date == DateTime.Today;
+                    <div class="day-col @(isToday ? "today-col" : "")">
+                        @foreach (var appt in GetDayAppointments(day))
+                        {
+                            var a      = appt;
+                            var top    = GetTop(a.AppointmentStartTime);
+                            var height = GetHeight(a.AppointmentStartTime, a.AppointmentEndTime);
+                            <div class="appt-block"
+                                 style="top:@(top.ToString("F0"))px; height:@(height.ToString("F0"))px;"
+                                 @onclick="() => OpenDetail(a)">
+                                <span class="appt-name">@a.PatientFullNameString</span>
+                                <span class="appt-time">@a.AppointmentStartTime.ToString("HH:mm")</span>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+
+        </div>
+
     </div>
 
-    <!-- Grid of weeks -->
-    <div class="calendar-grid">
-        <div class="calendar-cell">
-            <span class="day-number">1</span>
-            <!-- appointments go here -->
-            <div class="appointment">10:00 Anna Jensen</div>
-        </div>
-        <div class="calendar-cell">
-            <span class="day-number">2</span>
-        </div>
-        <!-- repeat for each day... -->
-    </div>
+    @if (loadError != null)
+    {
+        <p class="load-error">@loadError</p>
+    }
 
 </div>
+
+<!-- Create appointment modal -->
+@if (showCreateModal)
+{
+    <div class="modal-overlay" @onclick="CloseCreate">
+        <div @onclick:stopPropagation="true">
+            <CreateAppointment OnClose="CloseCreate" />
+        </div>
+    </div>
+}
+
+<!-- Appointment detail modal -->
+@if (selectedAppointment != null)
+{
+    <div class="modal-overlay" @onclick="CloseDetail">
+        <div @onclick:stopPropagation="true">
+            <AppointmentDetail Appointment="selectedAppointment" OnClose="CloseDetail" />
+        </div>
+    </div>
+}
+
+<button class="fab" @onclick='() => showCreateModal = true'>+</button>
+
+@code {
+    IReadOnlyList<AppointmentDto> appointments = [];
+    DateTime weekStart;
+    bool showCreateModal = false;
+    AppointmentDto? selectedAppointment;
+    string? loadError;
+
+    protected override async Task OnInitializedAsync()
+    {
+        weekStart = GetMonday(DateTime.Today);
+        await LoadAppointments();
+    }
+
+    async Task LoadAppointments()
+    {
+        try
+        {
+            appointments = await AppointmentQueries.GetAllAsync();
+            loadError = null;
+        }
+        catch (Exception ex)
+        {
+            loadError = $"Could not load appointments: {ex.Message}";
+        }
+    }
+
+    static DateTime GetMonday(DateTime date)
+    {
+        int diff = ((int)date.DayOfWeek + 6) % 7;
+        return date.AddDays(-diff).Date;
+    }
+
+    void PrevWeek() => weekStart = weekStart.AddDays(-7);
+    void NextWeek() => weekStart = weekStart.AddDays(7);
+    void GoToToday() => weekStart = GetMonday(DateTime.Today);
+
+    IEnumerable<AppointmentDto> GetDayAppointments(DateTime day) =>
+        appointments.Where(a => a.AppointmentStartTime.Date == day.Date);
+
+    static double GetTop(DateTime start)
+    {
+        double hours = start.Hour - 8;
+        double mins  = start.Minute;
+        return Math.Max(0, hours * 60 + mins);
+    }
+
+    static double GetHeight(DateTime start, DateTime end)
+    {
+        double mins = (end - start).TotalMinutes;
+        return Math.Max(22, mins); // 22px minimum so tiny blocks stay visible
+    }
+
+    void OpenDetail(AppointmentDto appt) => selectedAppointment = appt;
+
+    async Task CloseCreate()
+    {
+        showCreateModal = false;
+        await LoadAppointments();
+    }
+
+    async Task CloseDetail()
+    {
+        selectedAppointment = null;
+        await LoadAppointments();
+    }
+}

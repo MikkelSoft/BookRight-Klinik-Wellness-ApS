@@ -1,6 +1,90 @@
-﻿
-<h3>AddPatient</h3>
+@inject IAddPatientUseCase AddPatientUseCase
+@using BookSoft.Facade.UseCases
+@using BookSoft.Facade.DTOs
+
+<div class="modal-card">
+
+    <h3>New Patient</h3>
+
+    <div class="field">
+        <label>First name *</label>
+        <input type="text" @bind="firstName" placeholder="First name" />
+    </div>
+    <div class="field">
+        <label>Middle name</label>
+        <input type="text" @bind="middleName" placeholder="Middle name" />
+    </div>
+    <div class="field">
+        <label>Last name *</label>
+        <input type="text" @bind="lastName" placeholder="Last name" />
+    </div>
+    <div class="field">
+        <label>Email *</label>
+        <input type="email" @bind="email" placeholder="Email" />
+    </div>
+    <div class="field">
+        <label>Phone number *</label>
+        <input type="text" @bind="phoneNumber" placeholder="Phone number" />
+    </div>
+    <div class="field">
+        <label>Birthday *</label>
+        <input type="date" @bind="birthday" />
+    </div>
+
+    @if (errorMessage != null)
+    {
+        <p class="error-msg">@errorMessage</p>
+    }
+
+    <div class="modal-buttons">
+        <button class="btn-save" @onclick="Submit" disabled="@saving">
+            @(saving ? "Saving..." : "Add patient")
+        </button>
+        <button class="btn-cancel" @onclick="OnClose">Cancel</button>
+    </div>
+
+</div>
 
 @code {
+    string firstName  = "";
+    string middleName = "";
+    string lastName   = "";
+    string email      = "";
+    string phoneNumber = "";
+    DateTime birthday = DateTime.Today;
 
+    bool saving = false;
+    string? errorMessage;
+
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    async Task Submit()
+    {
+        if (string.IsNullOrWhiteSpace(firstName) ||
+            string.IsNullOrWhiteSpace(lastName)  ||
+            string.IsNullOrWhiteSpace(email)     ||
+            string.IsNullOrWhiteSpace(phoneNumber))
+        {
+            errorMessage = "Please fill in all required fields (*)";
+            return;
+        }
+
+        saving = true;
+        errorMessage = null;
+
+        try
+        {
+            var request = new AddPatientRequest(firstName, middleName, lastName, email, phoneNumber, birthday);
+            await AddPatientUseCase.Run(request);
+            await OnClose.InvokeAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+        finally
+        {
+            saving = false;
+        }
+    }
 }

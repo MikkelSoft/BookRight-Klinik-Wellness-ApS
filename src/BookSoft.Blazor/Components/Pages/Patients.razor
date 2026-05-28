@@ -1,22 +1,107 @@
 @page "/Patients"
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
 @inject IPatientQueries PatientQueries
-@inject IAddPatientUseCase AddPatientUseCase
 @using BookSoft.Facade.Queries
-@using BookSoft.Facade.UseCases
 @using BookSoft.Facade.DTOs
 
-<PageTitle>Patienter</PageTitle>
+<PageTitle>Patients</PageTitle>
 
 <div class="patients">
-    <div class="top-bar">
-        <p class="top-widget">Navn</p>
-        <p class="top-widget">Fødselsdag</p>
-        <p class="top-widget">Email</p>
-        <p class="top-widget">Loyalty</p>
-        <p class="top-widget">CPR</p>
-        <input type="text" placeholder="Søg" class="search-input"
-            
+
+    <!-- Search bar -->
+    <div class="action-bar">
+        <input type="text"
+               @bind="searchTerm"
+               @bind:event="oninput"
+               placeholder="Search patients..."
+               class="search-input" />
     </div>
 
-<button>+</button>
+    <!-- Column headers -->
+    <div class="list-header">
+        <span class="col">Name</span>
+        <span class="col">Birthday</span>
+        <span class="col">Email</span>
+        <span class="col">Phone</span>
+        <span class="col">Loyalty</span>
+    </div>
 
+    <!-- Patient rows -->
+    <div class="patient-group">
+
+        @if (loadError != null)
+        {
+            <p class="empty-state" style="color:#c0392b;">@loadError</p>
+        }
+
+        @foreach (var patient in FilteredPatients)
+        {
+            <div class="patient-row">
+                <span class="col">@patient.FirstName @patient.LastName</span>
+                <span class="col">@patient.Birthday.ToString("dd/MM/yyyy")</span>
+                <span class="col">@patient.Email</span>
+                <span class="col">@patient.PhoneNumber</span>
+                <span class="col @GetLoyaltyClass(patient.LoyaltyLevel)">@patient.LoyaltyLevel</span>
+            </div>
+        }
+
+        @if (!FilteredPatients.Any())
+        {
+            <p class="empty-state">No patients found</p>
+        }
+    </div>
+
+    <!-- Add patient modal -->
+    @if (showAddModal)
+    {
+        <div class="modal-overlay" @onclick="CloseModal">
+            <div @onclick:stopPropagation="true">
+                <AddPatient OnClose="CloseModal" />
+            </div>
+        </div>
+    }
+
+    <button class="fab" @onclick='() => showAddModal = true'>+</button>
+
+</div>
+
+@code {
+    IReadOnlyList<PatientDto> patients = [];
+    string searchTerm = "";
+    bool showAddModal = false;
+    string? loadError;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            patients = await PatientQueries.GetAllAsync();
+        }
+        catch (Exception ex)
+        {
+            loadError = $"Could not load patients: {ex.Message}";
+        }
+    }
+
+    IEnumerable<PatientDto> FilteredPatients =>
+        string.IsNullOrWhiteSpace(searchTerm)
+            ? patients
+            : patients.Where(p =>
+                p.FirstName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                p.LastName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                p.Email.Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
+
+    string GetLoyaltyClass(string level) => level.ToLower() switch
+    {
+        "gold"   => "loyalty-gold",
+        "silver" => "loyalty-silver",
+        "bronze" => "loyalty-bronze",
+        _        => "loyalty-none"
+    };
+
+    async Task CloseModal()
+    {
+        showAddModal = false;
+        patients = await PatientQueries.GetAllAsync();
+    }
+}

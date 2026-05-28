@@ -1,0 +1,164 @@
+@inject ICreateNewAppointmentUseCase CreateUseCase
+@inject IPatientQueries PatientQueries
+@inject IPractitionerQueries PractitionerQueries
+@inject IClinicQueries ClinicQueries
+@using BookSoft.Facade.UseCases
+@using BookSoft.Facade.DTOs
+@using BookSoft.Facade.Queries
+@using BookSoft.Domain.Enums
+
+<div class="modal-card">
+
+    <h3>New Appointment</h3>
+
+    @if (loading)
+    {
+        <p class="loading-msg">Loading...</p>
+    }
+    else
+    {
+        <div class="field">
+            <label>Patient *</label>
+            <select @bind="patientIdStr">
+                <option value="">-- Select patient --</option>
+                @foreach (var p in patients)
+                {
+                    <option value="@p.Id">@p.FirstName @p.LastName</option>
+                }
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Practitioner *</label>
+            <select @bind="practitionerIdStr">
+                <option value="">-- Select practitioner --</option>
+                @foreach (var p in practitioners)
+                {
+                    <option value="@p.Id">@p.FirstName @p.LastName (@p.AutorisationsType)</option>
+                }
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Clinic *</label>
+            <select @bind="clinicIdStr">
+                <option value="">-- Select clinic --</option>
+                @foreach (var c in clinics)
+                {
+                    <option value="@c.Id">@c.ClinicName</option>
+                }
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Appointment type *</label>
+            <select @bind="appointmentTypeStr">
+                <option value="">-- Select type --</option>
+                @foreach (var t in Enum.GetValues<AppointmentTypeEnum>())
+                {
+                    <option value="@t">@t</option>
+                }
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Date & Time *</label>
+            <input type="datetime-local" @bind="startTime" />
+        </div>
+
+        @if (errorMessage != null)
+        {
+            <p class="error-msg">@errorMessage</p>
+        }
+
+        <div class="modal-buttons">
+            <button class="btn-save" @onclick="Submit" disabled="@saving">
+                @(saving ? "Saving..." : "Create appointment")
+            </button>
+            <button class="btn-cancel" @onclick="OnClose">Cancel</button>
+        </div>
+    }
+
+</div>
+
+@code {
+    // dropdown data
+    IReadOnlyList<PatientDto>      patients      = [];
+    IReadOnlyList<PractitionerDto> practitioners = [];
+    IReadOnlyList<ClinicDto>       clinics       = [];
+
+    // form fields — strings for Guids to handle empty selection safely
+    string   patientIdStr      = "";
+    string   practitionerIdStr = "";
+    string   clinicIdStr       = "";
+    string   appointmentTypeStr = "";
+    DateTime startTime         = DateTime.Today.AddHours(9);
+
+    bool    loading       = true;
+    bool    saving        = false;
+    string? errorMessage;
+
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // load all three lists in parallel
+            var patientsTask      = PatientQueries.GetAllAsync();
+            var practitionersTask = PractitionerQueries.GetAllAsync();
+            var clinicsTask       = ClinicQueries.GetAllAsync();
+
+            await Task.WhenAll(patientsTask, practitionersTask, clinicsTask);
+
+            patients      = await patientsTask;
+            practitioners = await practitionersTask;
+            clinics       = await clinicsTask;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Could not load data: {ex.Message}";
+        }
+        finally
+        {
+            loading = false;
+        }
+    }
+
+    async Task Submit()
+    {
+        // validate all fields are selected
+        if (!Guid.TryParse(patientIdStr, out var patientId)           ||
+            !Guid.TryParse(practitionerIdStr, out var practitionerId) ||
+            !Guid.TryParse(clinicIdStr, out var clinicId)             ||
+            string.IsNullOrEmpty(appointmentTypeStr))
+        {
+            errorMessage = "Please fill in all required fields (*)";
+            return;
+        }
+
+        saving = true;
+        errorMessage = null;
+
+        try
+        {
+            var request = new CreateNewAppointmentRequest(
+                patientId,
+                practitionerId,
+                clinicId,
+                appointmentTypeStr,
+                startTime);
+
+            await CreateUseCase.Run(request);
+            await OnClose.InvokeAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+        finally
+        {
+            saving = false;
+        }
+    }
+}

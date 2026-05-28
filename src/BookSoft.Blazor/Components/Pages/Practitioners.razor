@@ -1,0 +1,101 @@
+@page "/Practitioners"
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+@inject IPractitionerQueries PractitionerQueries
+@using BookSoft.Facade.Queries
+@using BookSoft.Facade.DTOs
+
+<PageTitle>Practitioners</PageTitle>
+
+<div class="practitioners">
+
+    <!-- Search bar -->
+    <div class="action-bar">
+        <input type="text"
+               @bind="searchTerm"
+               @bind:event="oninput"
+               placeholder="Search practitioners..."
+               class="search-input" />
+    </div>
+
+    <!-- Column headers -->
+    <div class="list-header">
+        <span class="col">Name</span>
+        <span class="col">Specialty</span>
+        <span class="col">Authorization</span>
+        <span class="col">Email</span>
+        <span class="col">Phone</span>
+    </div>
+
+    <!-- Practitioner rows -->
+    <div class="practitioner-group">
+
+        @if (loadError != null)
+        {
+            <p class="empty-state error">@loadError</p>
+        }
+
+        @foreach (var p in FilteredPractitioners)
+        {
+            <div class="practitioner-row">
+                <span class="col">@p.FirstName @p.LastName</span>
+                <span class="col">@p.Specialty</span>
+                <span class="col">@p.AutorisationsType</span>
+                <span class="col">@p.Email</span>
+                <span class="col">@p.PhoneNumber</span>
+            </div>
+        }
+
+        @if (!FilteredPractitioners.Any() && loadError == null)
+        {
+            <p class="empty-state">No practitioners found</p>
+        }
+
+    </div>
+
+    <!-- Add practitioner modal -->
+    @if (showAddModal)
+    {
+        <div class="modal-overlay" @onclick="CloseModal">
+            <div @onclick:stopPropagation="true">
+                <AddPractiotioner OnClose="CloseModal" />
+            </div>
+        </div>
+    }
+
+    <button class="fab" @onclick='() => showAddModal = true'>+</button>
+
+</div>
+
+@code {
+    IReadOnlyList<PractitionerDto> practitioners = [];
+    string searchTerm = "";
+    bool showAddModal = false;
+    string? loadError;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            practitioners = await PractitionerQueries.GetAllAsync();
+        }
+        catch (Exception ex)
+        {
+            loadError = $"Could not load practitioners: {ex.Message}";
+        }
+    }
+
+    IEnumerable<PractitionerDto> FilteredPractitioners =>
+        string.IsNullOrWhiteSpace(searchTerm)
+            ? practitioners
+            : practitioners.Where(p =>
+                p.FirstName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                p.LastName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                p.Specialty.Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
+
+    async Task CloseModal()
+    {
+        showAddModal = false;
+        try { practitioners = await PractitionerQueries.GetAllAsync(); }
+        catch { }
+    }
+}

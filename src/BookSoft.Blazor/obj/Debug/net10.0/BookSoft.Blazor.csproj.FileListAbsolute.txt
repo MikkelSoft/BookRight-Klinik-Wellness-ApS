@@ -494,7 +494,6 @@ C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Layout\ReconnectModal.razor.rz.scp.css
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Pages\Appointment.razor.rz.scp.css
-C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\bundle\BookSoft.Blazor.styles.css
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\projectbundle\BookSoft.Blazor.bundle.scp.css
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\kdj1qlqoba-{0}-o6r3s87fk1-o6r3s87fk1.gz
@@ -655,6 +654,12 @@ C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\q71a8qrays-{0}-zyqspy8l5n-zyqspy8l5n.gz
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\uxbqkokfu0-{0}-lzs9hmhw5n-lzs9hmhw5n.gz
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\137ic4jcgc-{0}-ft71q750bt-ft71q750bt.gz
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Forms\AddPatient.razor.rz.scp.css
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Pages\Patients.razor.rz.scp.css
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Forms\AddPractiotioner.razor.rz.scp.css
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Pages\Practitioners.razor.rz.scp.css
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Forms\CreateAppointment.razor.rz.scp.css
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Forms\AppointmentDetail.razor.rz.scp.css
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\xixr6jn651-{0}-xu9v5uakl3-xu9v5uakl3.gz
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\f40gn40kyc-{0}-xu9v5uakl3-xu9v5uakl3.gz
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
-C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\xixr6jn651-{0}-7555y3mpvu-7555y3mpvu.gz
-C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\f40gn40kyc-{0}-7555y3mpvu-7555y3mpvu.gz
