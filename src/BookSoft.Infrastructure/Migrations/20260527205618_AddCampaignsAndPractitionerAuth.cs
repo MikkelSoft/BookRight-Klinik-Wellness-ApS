@@ -46,8 +46,8 @@ namespace BookSoft.Infrastructure.Migrations
                     Navn = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StartDato = table.Column<DateTime>(type: "datetime2", nullable: false),
                     SlutDato = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    RabatProcent = table.Column<decimal>(type: "decimal(5,4)", nullable: false),
-                    GælderFor = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    DiscountProcent = table.Column<decimal>(type: "decimal(5,4)", nullable: false),
+                    ValidFor = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -46,13 +46,9 @@ namespace BookSoft.Infrastructure.Data
                 .WithMany(e => e.Transactions)
                 .HasForeignKey(e => e.PatientId);
 
-            // GælderFor er en liste af enums - ef core gemmer den i en seperat tabel
             modelBuilder.Entity<Campaign>()
-                .Property(c => c.RabatProcent)
-                .HasColumnType("decimal(5,4)");
-
-            modelBuilder.Entity<Campaign>()
-                .PrimitiveCollection(c => c.GælderFor);
+                .HasMany(e => Transactions)
+                .WithOne(e => e.Campaign);
         }
     }
 }

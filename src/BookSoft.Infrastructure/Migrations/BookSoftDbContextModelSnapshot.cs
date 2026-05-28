@@ -80,7 +80,7 @@ namespace BookSoft.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.PrimitiveCollection<string>("GælderFor")
+                    b.PrimitiveCollection<string>("ValidFor")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -88,7 +88,7 @@ namespace BookSoft.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("RabatProcent")
+                    b.Property<decimal>("DiscountProcent")
                         .HasColumnType("decimal(5,4)");
 
                     b.Property<DateTime>("SlutDato")

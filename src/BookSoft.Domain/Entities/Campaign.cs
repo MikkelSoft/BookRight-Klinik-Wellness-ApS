@@ -12,12 +12,13 @@ namespace BookSoft.Domain.Entities
         public DateTime SlutDato { get; private set; }
 
         //Rabatprocent som decimaltal — f.eks. 0.20 for 20%.
-        public decimal RabatProcent { get; private set; }
+        public decimal DiscountProcent { get; private set; }
+        public virtual List<Appointment> Appointments { get; private set; } = new();
 
-        // Hvilke behandlingstyper kampagnen gælder for.
-        // Gemt som en primitiv samling i EF Core (separat tabel).
-        // Tom liste = gælder for alle behandlingstyper.
-        public List<AppointmentTypeEnum> GælderFor { get; private set; } = new();
+		// Hvilke behandlingstyper kampagnen gælder for.
+		// Gemt som en primitiv samling i EF Core (separat tabel).
+		// Tom liste = gælder for alle behandlingstyper.
+		public List<AppointmentTypeEnum> ValidFor { get; private set; } = new();
 
         // Krævet af EF Core
         private Campaign() { }
@@ -27,8 +28,8 @@ namespace BookSoft.Domain.Entities
             Navn = navn;
             StartDato = startDato;
             SlutDato = slutDato;
-            RabatProcent = rabatProcent;
-            GælderFor = gælderFor;
+            DiscountProcent = rabatProcent;
+            ValidFor = gælderFor;
         }
 
         /// <summary>Returnerer true hvis kampagnen er aktiv på den givne dato.</summary>
@@ -37,9 +38,9 @@ namespace BookSoft.Domain.Entities
 
         /// <summary>
         /// Returnerer true hvis kampagnen gælder for den givne behandlingstype.
-        /// Hvis GælderFor er tom gælder den for alle behandlingstyper.
+        /// Hvis ValidFor er tom gælder den for alle behandlingstyper.
         /// </summary>
-        public bool GælderForBehandling(AppointmentTypeEnum type) =>
-            !GælderFor.Any() || GælderFor.Contains(type);
+        public bool ValidForBehandling(AppointmentTypeEnum type) =>
+            !ValidFor.Any() || ValidFor.Contains(type);
     }
 }

@@ -17,7 +17,8 @@ namespace BookSoft.Domain.Entities
         // alias så FinishAppointmentUseCase stadig kan bruge .cost
         public decimal cost => Beloeb;
 
-        public virtual Patient Patient { get; private set; } = null!;
+        public virtual Patient? Patient { get; private set; } = null!;
+        public virtual Campaign? Campaign { get; private set; } = null!;
 
         private Transaction() { } // ef core
 
