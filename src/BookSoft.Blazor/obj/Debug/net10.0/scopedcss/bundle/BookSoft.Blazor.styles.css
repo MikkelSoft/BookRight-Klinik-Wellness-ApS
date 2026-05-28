@@ -391,3 +391,136 @@
     .fab:hover[b-iyr0bui8t8] {
         opacity: 0.9;
     }
+
+/* en enkelt patient række */
+.patient-row[b-iyr0bui8t8] {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    gap: 10px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+    .patient-row:hover[b-iyr0bui8t8] {
+        background: #f5f5f5;
+    }
+
+.patient-widget[b-iyr0bui8t8] {
+    flex: 1;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* loyalty farver */
+.loyalty-gold[b-iyr0bui8t8] {
+    color: #c8860a;
+    font-weight: 600;
+}
+
+.loyalty-silver[b-iyr0bui8t8] {
+    color: #777;
+    font-weight: 600;
+}
+
+.loyalty-bronze[b-iyr0bui8t8] {
+    color: #a0522d;
+    font-weight: 600;
+}
+
+.loyalty-none[b-iyr0bui8t8] {
+    color: #bbb;
+}
+
+/* modal overlay */
+.modal-overlay[b-iyr0bui8t8] {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal[b-iyr0bui8t8] {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+    .modal h3[b-iyr0bui8t8] {
+        margin: 0 0 10px 0;
+        font-size: 18px;
+    }
+
+    .modal label[b-iyr0bui8t8] {
+        font-size: 12px;
+        color: #666;
+        margin-top: 4px;
+    }
+
+    .modal input[b-iyr0bui8t8] {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 14px;
+        outline: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+        .modal input:focus[b-iyr0bui8t8] {
+            border-color: var(--primary-hover, #4a90e2);
+        }
+
+.modal-buttons[b-iyr0bui8t8] {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.btn-gem[b-iyr0bui8t8] {
+    flex: 1;
+    padding: 10px;
+    background: var(--primary-hover, #4a90e2);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .btn-gem:disabled[b-iyr0bui8t8] {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+.btn-annuller[b-iyr0bui8t8] {
+    flex: 1;
+    padding: 10px;
+    background: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.error-msg[b-iyr0bui8t8] {
+    color: #c0392b;
+    font-size: 13px;
+    margin: 0;
+}

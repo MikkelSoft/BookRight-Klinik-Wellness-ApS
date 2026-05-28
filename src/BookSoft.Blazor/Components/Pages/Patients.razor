@@ -1,10 +1,11 @@
-﻿@page "/Home"
+@page "/Patients"
 @inject IPatientQueries PatientQueries
 @inject IAddPatientUseCase AddPatientUseCase
 @using BookSoft.Facade.Queries
 @using BookSoft.Facade.UseCases
+@using BookSoft.Facade.DTOs
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Patienter</PageTitle>
 
 <div class="patients">
     <div class="top-bar">
@@ -13,15 +14,9 @@
         <p class="top-widget">Email</p>
         <p class="top-widget">Loyalty</p>
         <p class="top-widget">CPR</p>
-        <input type="text" placeholder="Søg" class="search-input" />
+        <input type="text" placeholder="Søg" class="search-input"
+            
     </div>
 
-    <div class="patient-group">
-        <p class="empty-state">Ingen patienter fundet</p>
-    </div>
-</div>
+<button>+</button>
 
-<button class="fab">+</button>
-
-@code {
-}

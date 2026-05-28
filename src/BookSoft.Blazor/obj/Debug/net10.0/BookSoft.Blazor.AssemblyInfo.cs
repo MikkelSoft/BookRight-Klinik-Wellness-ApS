@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookSoft.Blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+182ae5637ad2d05086dac9b7d8396135f8ca91c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd8408da163d4434a62ed6eae9c830a3029e416a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookSoft.Blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookSoft.Blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

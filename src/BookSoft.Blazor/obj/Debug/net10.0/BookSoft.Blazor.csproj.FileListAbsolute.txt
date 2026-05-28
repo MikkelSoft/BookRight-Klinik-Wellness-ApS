@@ -545,8 +545,6 @@ C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\1622ce5jr3-{0}-abdmv1u4y3-abdmv1u4y3.gz
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\mebshqn8f9-{0}-ej96puwv3k-ej96puwv3k.gz
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\5li5khwqn6-{0}-cj5793hgrt-cj5793hgrt.gz
-C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\xixr6jn651-{0}-5ogk9aaiis-5ogk9aaiis.gz
-C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\f40gn40kyc-{0}-5ogk9aaiis-5ogk9aaiis.gz
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\staticwebassets.development.json
@@ -650,3 +648,13 @@ C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\bin\Debug\net10.0\runtimes\win-x86\native\sni.dll
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\bin\Debug\net10.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\bin\Debug\net10.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\bin\Debug\net10.0\ChartJs.Blazor.dll
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\kkwjpfsf8x-{0}-rd7kpyao0h-rd7kpyao0h.gz
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\9pozex28tv-{0}-rxs4m3fo3f-rxs4m3fo3f.gz
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\l7flew2gq1-{0}-bv7wdkbct1-bv7wdkbct1.gz
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\q71a8qrays-{0}-zyqspy8l5n-zyqspy8l5n.gz
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\uxbqkokfu0-{0}-lzs9hmhw5n-lzs9hmhw5n.gz
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\137ic4jcgc-{0}-ft71q750bt-ft71q750bt.gz
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\xixr6jn651-{0}-7555y3mpvu-7555y3mpvu.gz
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\f40gn40kyc-{0}-7555y3mpvu-7555y3mpvu.gz

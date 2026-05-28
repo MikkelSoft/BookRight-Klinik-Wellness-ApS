@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookSoft.UseCases.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d794b809432ea7aaffb38b36fbc63e15602b22c3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd8408da163d4434a62ed6eae9c830a3029e416a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookSoft.UseCases.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookSoft.UseCases.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
