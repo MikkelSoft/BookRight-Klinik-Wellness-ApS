@@ -13,7 +13,7 @@ namespace BookSoft.Domain.Entities
 
         //Rabatprocent som decimaltal — f.eks. 0.20 for 20%.
         public decimal DiscountProcent { get; private set; }
-        public virtual List<Appointment> Appointments { get; private set; } = new();
+        public virtual List<Transaction> Transactions { get; private set; } = new();
 
 		// Hvilke behandlingstyper kampagnen gælder for.
 		// Gemt som en primitiv samling i EF Core (separat tabel).

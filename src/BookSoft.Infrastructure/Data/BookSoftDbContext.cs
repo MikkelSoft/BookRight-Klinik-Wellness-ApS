@@ -47,7 +47,7 @@ namespace BookSoft.Infrastructure.Data
                 .HasForeignKey(e => e.PatientId);
 
             modelBuilder.Entity<Campaign>()
-                .HasMany(e => Transactions)
+                .HasMany(e => e.Transactions)
                 .WithOne(e => e.Campaign);
         }
     }
