@@ -1,0 +1,68 @@
+@page "/Clinics"
+@rendermode InteractiveServer
+@inject IClinicQueries ClinicQueries
+
+<PageTitle>Klinikker</PageTitle>
+
+<div class="list-page">
+    <div class="top-bar">
+        <p class="top-widget">Klinik</p>
+        <p class="top-widget">Behandlere</p>
+        <input type="text" placeholder="Søg" class="search-input" @bind="search" @bind:event="oninput" />
+    </div>
+
+    <div class="list-group">
+        @if (clinics == null)
+        {
+            <p class="empty-state">Indlæser...</p>
+        }
+        else if (!Filtered.Any())
+        {
+            <p class="empty-state">Ingen klinikker fundet.</p>
+        }
+        else
+        {
+            @foreach (var c in Filtered)
+            {
+                <div class="list-row" @onclick="() => OpenEdit(c)">
+                    <p class="list-cell">@c.ClinicName</p>
+                    <p class="list-cell">@c.PractitionerCount</p>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<button class="fab" @onclick="OpenAdd">+</button>
+
+<AddClinic IsVisible="showModal"
+           Clinic="selected"
+           OnSaved="OnSaved"
+           OnCancelled="CloseModal" />
+
+@code {
+    List<ClinicDto>? clinics;
+    ClinicDto? selected;
+    bool showModal;
+    string search = "";
+
+    IEnumerable<ClinicDto> Filtered =>
+        string.IsNullOrWhiteSpace(search)
+            ? clinics!
+            : clinics!.Where(c =>
+                c.ClinicName.Contains(search, StringComparison.OrdinalIgnoreCase));
+
+    protected override async Task OnInitializedAsync() => await Load();
+
+    async Task Load() => clinics = (await ClinicQueries.GetAllAsync()).ToList();
+
+    void OpenAdd()     { selected = null; showModal = true; }
+    void OpenEdit(ClinicDto c) { selected = c; showModal = true; }
+    void CloseModal()  => showModal = false;
+
+    async Task OnSaved()
+    {
+        showModal = false;
+        await Load();
+    }
+}

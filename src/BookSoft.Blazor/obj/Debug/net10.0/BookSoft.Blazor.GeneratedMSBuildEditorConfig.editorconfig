@@ -43,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb3Jtc1xBZGRDYW1wYWlnbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/SEBEI/source/sebastex/BookRight-Klinik-Wellness-ApS/src/BookSoft.Blazor/Components/Forms/AddClinic.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb3Jtc1xBZGRDbGluaWMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/SEBEI/source/sebastex/BookRight-Klinik-Wellness-ApS/src/BookSoft.Blazor/Components/Forms/AddPatient.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb3Jtc1xBZGRQYXRpZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -53,6 +57,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/SEBEI/source/sebastex/BookRight-Klinik-Wellness-ApS/src/BookSoft.Blazor/Components/Forms/AppointmentDetail.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb3Jtc1xBcHBvaW50bWVudERldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SEBEI/source/sebastex/BookRight-Klinik-Wellness-ApS/src/BookSoft.Blazor/Components/Pages/Clinics.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGluaWNzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SEBEI/source/sebastex/BookRight-Klinik-Wellness-ApS/src/BookSoft.Blazor/Components/Pages/Error.razor]
