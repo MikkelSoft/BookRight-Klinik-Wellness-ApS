@@ -1,41 +1,211 @@
-﻿@page "/Appointment"  // Appointment.razor
+@page "/Appointment"
+@rendermode InteractiveServer
+@using BookSoft.Facade.DTOs
+@using BookSoft.Facade.Queries
+@using BookSoft.Domain.Enums
+@using BookSoft.Blazor.Components.Forms
+@inject IAppointmentQueries AppointmentQueries
+
+<PageTitle>Aftaler</PageTitle>
 
 <div class="calendar">
 
-    <!-- Top bar: month navigation + view toggle -->
+    <!-- Header: navigation + view toggle -->
     <div class="calendar-header">
-        <button>&#8249;</button>
-        <span>Maj 2026</span>
-        <button>&#8250;</button>
+        <button @onclick="PrevMonth">&#8249;</button>
+        <span>@currentMonth.ToString("MMMM yyyy", new System.Globalization.CultureInfo("da-DK"))</span>
+        <button @onclick="NextMonth">&#8250;</button>
         <div class="view-toggle">
-            <button>Dag</button>
-            <button>Uge</button>
-            <button class="active">Måned</button>
+            <button class="@(view=="dag"?"active":"")"    @onclick='()=>view="dag"'>Dag</button>
+            <button class="@(view=="uge"?"active":"")"    @onclick='()=>view="uge"'>Uge</button>
+            <button class="@(view=="måned"?"active":"")"  @onclick='()=>view="måned"'>Måned</button>
         </div>
     </div>
 
-    <!-- Day labels -->
-    <div class="calendar-days-header">
-        <span>Man</span>
-        <span>Tir</span>
-        <span>Ons</span>
-        <span>Tor</span>
-        <span>Fre</span>
-        <span>Lør</span>
-        <span>Søn</span>
-    </div>
+    @if (view == "måned")
+    {
+        <!-- Day labels -->
+        <div class="calendar-days-header">
+            <span>Man</span><span>Tir</span><span>Ons</span>
+            <span>Tor</span><span>Fre</span><span>Lør</span><span>Søn</span>
+        </div>
 
-    <!-- Grid of weeks -->
-    <div class="calendar-grid">
-        <div class="calendar-cell">
-            <span class="day-number">1</span>
-            <!-- appointments go here -->
-            <div class="appointment">10:00 Anna Jensen</div>
+        <!-- Month grid -->
+        <div class="calendar-grid">
+            @foreach (var cell in CalendarCells)
+            {
+                <div class="calendar-cell @(cell.IsCurrentMonth ? "" : "other-month")"
+                     @onclick="() => OpenAdd(cell.Date)">
+                    <span class="day-number @(cell.Date.Date == DateTime.Today ? "today" : "")">@cell.Date.Day</span>
+                    @foreach (var a in AppointmentsOn(cell.Date))
+                    {
+                        <div class="appointment @AppointmentClass(a.Status)"
+                             @onclick:stopPropagation
+                             @onclick="() => OpenDetail(a)">
+                            @a.AppointmentStartTime.ToString("HH:mm") @a.PatientFullNameString.Split(' ')[0]
+                        </div>
+                    }
+                </div>
+            }
         </div>
-        <div class="calendar-cell">
-            <span class="day-number">2</span>
+    }
+    else if (view == "uge")
+    {
+        <div class="week-list">
+            @foreach (var day in WeekDays)
+            {
+                <div class="week-day-section">
+                    <div class="week-day-label @(day.Date == DateTime.Today ? "today" : "")">
+                        @day.ToString("dddd dd/MM", new System.Globalization.CultureInfo("da-DK"))
+                    </div>
+                    @foreach (var a in AppointmentsOn(day).OrderBy(x => x.AppointmentStartTime))
+                    {
+                        <div class="week-appointment @AppointmentClass(a.Status)"
+                             @onclick="() => OpenDetail(a)">
+                            <span>@a.AppointmentStartTime.ToString("HH:mm")</span>
+                            <span>@a.PatientFullNameString</span>
+                            <span>@a.AppointmentTypeString</span>
+                            <span>@a.PractitionerFullNameString</span>
+                        </div>
+                    }
+                    @if (!AppointmentsOn(day).Any())
+                    {
+                        <p class="no-appt">Ingen aftaler</p>
+                    }
+                </div>
+            }
         </div>
-        <!-- repeat for each day... -->
-    </div>
+    }
+    else if (view == "dag")
+    {
+        <div class="week-list">
+            <div class="week-day-section">
+                <div class="week-day-label @(currentMonth.Date == DateTime.Today ? "today" : "")">
+                    @currentDay.ToString("dddd dd. MMMM yyyy", new System.Globalization.CultureInfo("da-DK"))
+                </div>
+                @foreach (var a in AppointmentsOn(currentDay).OrderBy(x => x.AppointmentStartTime))
+                {
+                    <div class="week-appointment @AppointmentClass(a.Status)"
+                         @onclick="() => OpenDetail(a)">
+                        <span>@a.AppointmentStartTime.ToString("HH:mm") – @a.AppointmentEndTime.ToString("HH:mm")</span>
+                        <span>@a.PatientFullNameString</span>
+                        <span>@a.AppointmentTypeString</span>
+                        <span>@a.PractitionerFullNameString</span>
+                    </div>
+                }
+                @if (!AppointmentsOn(currentDay).Any())
+                {
+                    <p class="no-appt">Ingen aftaler denne dag</p>
+                }
+            </div>
+        </div>
+    }
 
 </div>
+
+<button class="fab" @onclick="() => OpenAdd(null)">+</button>
+
+<AddAppointment IsVisible="showAddModal"
+                PreselectedDate="selectedDate"
+                OnSaved="OnSaved"
+                OnCancelled="CloseModals" />
+
+<AppointmentDetail IsVisible="showDetailModal"
+                   Appointment="selectedAppointment"
+                   OnChanged="OnSaved"
+                   OnClosed="CloseModals" />
+
+@code {
+    List<AppointmentDto> appointments = [];
+    string view = "måned";
+    DateTime currentMonth = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
+    DateTime currentDay = DateTime.Today;
+
+    bool showAddModal;
+    bool showDetailModal;
+    DateTime? selectedDate;
+    AppointmentDto? selectedAppointment;
+
+    protected override async Task OnInitializedAsync() => await LoadAppointments();
+
+    async Task LoadAppointments() =>
+        appointments = (await AppointmentQueries.GetAllAsync()).ToList();
+
+    void PrevMonth()
+    {
+        currentMonth = currentMonth.AddMonths(-1);
+        currentDay = currentMonth;
+    }
+
+    void NextMonth()
+    {
+        currentMonth = currentMonth.AddMonths(1);
+        currentDay = currentMonth;
+    }
+
+    void OpenAdd(DateTime? date)
+    {
+        selectedDate = date;
+        showAddModal = true;
+    }
+
+    void OpenDetail(AppointmentDto a)
+    {
+        selectedAppointment = a;
+        showDetailModal = true;
+    }
+
+    void CloseModals()
+    {
+        showAddModal = false;
+        showDetailModal = false;
+    }
+
+    async Task OnSaved()
+    {
+        CloseModals();
+        await LoadAppointments();
+    }
+
+    IEnumerable<AppointmentDto> AppointmentsOn(DateTime date) =>
+        appointments.Where(a => a.AppointmentStartTime.Date == date.Date);
+
+    static string AppointmentClass(AppointmentStatusEnum status) => status switch
+    {
+        AppointmentStatusEnum.Completed => "appt-completed",
+        AppointmentStatusEnum.Cancelled => "appt-cancelled",
+        _ => ""
+    };
+
+    // Build the 6-row × 7-col grid cells for the month view
+    List<CalendarCell> CalendarCells
+    {
+        get
+        {
+            var cells = new List<CalendarCell>();
+            var firstDay = currentMonth;
+            // Monday = 0 in Danish week
+            int startOffset = ((int)firstDay.DayOfWeek + 6) % 7;
+            var gridStart = firstDay.AddDays(-startOffset);
+
+            for (int i = 0; i < 42; i++)
+            {
+                var d = gridStart.AddDays(i);
+                cells.Add(new CalendarCell(d, d.Month == currentMonth.Month));
+            }
+            return cells;
+        }
+    }
+
+    IEnumerable<DateTime> WeekDays
+    {
+        get
+        {
+            int offset = ((int)currentMonth.DayOfWeek + 6) % 7;
+            var monday = currentMonth.AddDays(-offset);
+            return Enumerable.Range(0, 7).Select(i => monday.AddDays(i));
+        }
+    }
+
+    record CalendarCell(DateTime Date, bool IsCurrentMonth);
+}

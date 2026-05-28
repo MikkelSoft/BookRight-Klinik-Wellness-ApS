@@ -1,3 +1,5 @@
+using BookSoft.Domain.Enums;
+
 namespace BookSoft.Facade.DTOs
 {
     public record AppointmentDto(
@@ -11,7 +13,8 @@ namespace BookSoft.Facade.DTOs
         string PatientFullNameString,
         string PractitionerFullNameString,
         string ClinicName,
-        decimal Pris,               // endelig pris efter rabat og tillæg
-        string? AnvendtRabatType    // fx "Bronze-loyalitet (5%)" eller null hvis ingen rabat
+        decimal Pris,
+        string? AnvendtRabatType,
+        AppointmentStatusEnum Status
     );
 }

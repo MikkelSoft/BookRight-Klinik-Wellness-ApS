@@ -1,0 +1,100 @@
+@page "/Campaigns"
+@rendermode InteractiveServer
+@using BookSoft.Facade.DTOs
+@using BookSoft.Facade.Queries
+@using BookSoft.Blazor.Components.Forms
+@inject ICampaignQueries CampaignQueries
+
+<PageTitle>Kampagner</PageTitle>
+
+<div class="calendar">
+
+    <div class="calendar-header">
+        <button @onclick="PrevMonth">&#8249;</button>
+        <span>@currentMonth.ToString("MMMM yyyy", new System.Globalization.CultureInfo("da-DK"))</span>
+        <button @onclick="NextMonth">&#8250;</button>
+    </div>
+
+    <div class="calendar-days-header">
+        <span>Man</span><span>Tir</span><span>Ons</span>
+        <span>Tor</span><span>Fre</span><span>Lør</span><span>Søn</span>
+    </div>
+
+    <div class="calendar-grid">
+        @foreach (var cell in CalendarCells)
+        {
+            <div class="calendar-cell @(cell.IsCurrentMonth ? "" : "other-month")"
+                 @onclick="() => OpenAdd(cell.Date)">
+                <span class="day-number @(cell.Date.Date == DateTime.Today ? "today" : "")">@cell.Date.Day</span>
+                @foreach (var c in CampaignsOn(cell.Date))
+                {
+                    <div class="campaign-chip"
+                         style="background: @GetColor(c.Id)"
+                         @onclick:stopPropagation
+                         @onclick="() => OpenDetail(c)">
+                        @c.Navn — @((c.DiscountProcent * 100).ToString("0"))%
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+</div>
+
+<button class="fab" @onclick="() => OpenAdd(null)">+</button>
+
+<AddCampaign IsVisible="showModal"
+             Campaign="selectedCampaign"
+             PreselectedDate="selectedDate"
+             OnSaved="OnSaved"
+             OnCancelled="CloseModal" />
+
+@code {
+    List<CampaignDto> campaigns = [];
+    DateTime currentMonth = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
+    bool showModal;
+    DateTime? selectedDate;
+    CampaignDto? selectedCampaign;
+
+    protected override async Task OnInitializedAsync() => await Load();
+
+    async Task Load() => campaigns = (await CampaignQueries.GetAllAsync()).ToList();
+
+    void PrevMonth() => currentMonth = currentMonth.AddMonths(-1);
+    void NextMonth() => currentMonth = currentMonth.AddMonths(1);
+
+    void OpenAdd(DateTime? date)  { selectedDate = date; selectedCampaign = null; showModal = true; }
+    void OpenDetail(CampaignDto c) { selectedCampaign = c; selectedDate = null; showModal = true; }
+    void CloseModal() => showModal = false;
+
+    async Task OnSaved() { showModal = false; await Load(); }
+
+    IEnumerable<CampaignDto> CampaignsOn(DateTime date) =>
+        campaigns.Where(c => date.Date >= c.StartDato.Date && date.Date <= c.SlutDato.Date);
+
+    List<CalendarCell> CalendarCells
+    {
+        get
+        {
+            var cells = new List<CalendarCell>();
+            int offset = ((int)currentMonth.DayOfWeek + 6) % 7;
+            var start = currentMonth.AddDays(-offset);
+            for (int i = 0; i < 42; i++)
+            {
+                var d = start.AddDays(i);
+                cells.Add(new CalendarCell(d, d.Month == currentMonth.Month));
+            }
+            return cells;
+        }
+    }
+
+    static readonly string[] Palette =
+    [
+        "#6366f1", "#f59e0b", "#10b981", "#ef4444", "#8b5cf6",
+        "#06b6d4", "#f97316", "#84cc16", "#ec4899", "#14b8a6"
+    ];
+
+    static string GetColor(Guid id) => Palette[Math.Abs(id.GetHashCode()) % Palette.Length];
+
+    record CalendarCell(DateTime Date, bool IsCurrentMonth);
+}

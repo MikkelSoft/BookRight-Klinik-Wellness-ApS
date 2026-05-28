@@ -1,6 +1,7 @@
 using BookSoft.Facade.UseCases;
 using BookSoft.UseCases.Appointments;
 using BookSoft.UseCases.AppointmentUseCases;
+using BookSoft.UseCases.CampaignUseCases;
 using BookSoft.UseCases.ClinicUseCases;
 using BookSoft.UseCases.PatientUseCases;
 using BookSoft.UseCases.PractitionerUseCases;
@@ -30,6 +31,10 @@ public static class UseCasesServiceCollectionExtensions
         services.AddScoped<ICreateNewAppointmentUseCase, CreateNewAppointmentUseCase>();
         services.AddScoped<ICancelAppointmentUseCase, CancelAppointmentUseCase>();
         services.AddScoped<IFinishAppointmentUseCase, FinishAppointmentUseCase>();
+
+        // kampagner
+        services.AddScoped<IAddCampaignUseCase, AddCampaignUseCase>();
+        services.AddScoped<IRemoveCampaignUseCase, RemoveCampaignUseCase>();
 
         return services;
     }

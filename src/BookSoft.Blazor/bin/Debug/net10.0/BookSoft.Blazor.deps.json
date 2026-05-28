@@ -8,10 +8,10 @@
     ".NETCoreApp,Version=v10.0": {
       "BookSoft.Blazor/1.0.0": {
         "dependencies": {
+          "Blazor-ApexCharts": "6.1.0",
           "BookSoft.Facade": "1.0.0",
           "BookSoft.Infrastructure": "1.0.0",
           "BookSoft.UseCases": "1.0.0",
-          "ChartJs.Blazor": "1.1.0",
           "EntityFramework": "6.5.2",
           "Microsoft.EntityFrameworkCore.Design": "10.0.8"
         },
@@ -45,14 +45,11 @@
           }
         }
       },
-      "ChartJs.Blazor/1.1.0": {
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        },
+      "Blazor-ApexCharts/6.1.0": {
         "runtime": {
-          "lib/netstandard2.1/ChartJs.Blazor.dll": {
-            "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.0.0"
+          "lib/net10.0/Blazor-ApexCharts.dll": {
+            "assemblyVersion": "6.1.0.0",
+            "fileVersion": "6.1.0.0"
           }
         }
       },
@@ -917,12 +914,12 @@
       "path": "azure.identity/1.14.2",
       "hashPath": "azure.identity.1.14.2.nupkg.sha512"
     },
-    "ChartJs.Blazor/1.1.0": {
+    "Blazor-ApexCharts/6.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MUGYzS5FSx9r17sPVRlREPWU+1mFtggFaQtGKifQg30I48tx3OEDH3JZd07r+jKwtpN/h89HVUYy3IT2FS8ZEw==",
-      "path": "chartjs.blazor/1.1.0",
-      "hashPath": "chartjs.blazor.1.1.0.nupkg.sha512"
+      "sha512": "sha512-H2mkr7HEVk+BoQKcyoQtqq3ifoo/VxS7I8B35wO9tpiarGMdnAsL9pwcQBU4E/YnADNF+zOKTIaRxhd93Qr9HA==",
+      "path": "blazor-apexcharts/6.1.0",
+      "hashPath": "blazor-apexcharts.6.1.0.nupkg.sha512"
     },
     "EntityFramework/6.5.2": {
       "type": "package",

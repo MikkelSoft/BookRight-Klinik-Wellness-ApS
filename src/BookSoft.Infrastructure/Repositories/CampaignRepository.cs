@@ -14,21 +14,23 @@ public class CampaignRepository : ICampaignRepo
         _db = db;
     }
 
-    // henter alle kampagner der er aktive på datoen
-    public async Task<IReadOnlyList<Campaign>> GetAktiveAsync(DateTime dato)
-    {
-        return await _db.Campaigns
+    public async Task<IReadOnlyList<Campaign>> GetAllAsync() =>
+        await _db.Campaigns.OrderBy(c => c.StartDato).ToListAsync();
+
+    public async Task<IReadOnlyList<Campaign>> GetAktiveAsync(DateTime dato) =>
+        await _db.Campaigns
             .Where(k => k.StartDato.Date <= dato.Date && k.SlutDato.Date >= dato.Date)
             .ToListAsync();
-    }
 
-    public async Task AddAsync(Campaign campaign)
-    {
+    public async Task AddAsync(Campaign campaign) =>
         await _db.Campaigns.AddAsync(campaign);
+
+    public async Task DeleteAsync(Guid id)
+    {
+        var c = await _db.Campaigns.FindAsync(id);
+        if (c != null) _db.Campaigns.Remove(c);
     }
 
-    public async Task SaveAsync()
-    {
+    public async Task SaveAsync() =>
         await _db.SaveChangesAsync();
-    }
 }

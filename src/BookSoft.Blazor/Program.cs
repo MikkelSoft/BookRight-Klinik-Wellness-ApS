@@ -1,3 +1,4 @@
+using ApexCharts;
 using BookSoft.Blazor.Components;
 using BookSoft.Infrastructure;
 using BookSoft.Infrastructure.Data;
@@ -9,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddUseCases();
+builder.Services.AddApexCharts();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 

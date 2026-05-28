@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hqXa2Np0xzw=",
+  "dgSpecHash": "kM73Jr5/7+A=",
   "success": true,
   "projectFilePath": "C:\\Users\\SEBEI\\source\\sebastex\\BookRight-Klinik-Wellness-ApS\\src\\BookSoft.Blazor\\BookSoft.Blazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SEBEI\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\SEBEI\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
-    "C:\\Users\\SEBEI\\.nuget\\packages\\chartjs.blazor\\1.1.0\\chartjs.blazor.1.1.0.nupkg.sha512",
+    "C:\\Users\\SEBEI\\.nuget\\packages\\blazor-apexcharts\\6.1.0\\blazor-apexcharts.6.1.0.nupkg.sha512",
     "C:\\Users\\SEBEI\\.nuget\\packages\\entityframework\\6.5.2\\entityframework.6.5.2.nupkg.sha512",
     "C:\\Users\\SEBEI\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\SEBEI\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.8\\microsoft.aspnetcore.app.internal.assets.10.0.8.nupkg.sha512",

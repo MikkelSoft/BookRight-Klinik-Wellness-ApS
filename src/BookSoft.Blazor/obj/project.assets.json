@@ -38,33 +38,23 @@
           }
         }
       },
-      "ChartJs.Blazor/1.1.0": {
+      "Blazor-ApexCharts/6.1.0": {
         "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.3"
-        },
         "compile": {
-          "lib/netstandard2.1/ChartJs.Blazor.dll": {
+          "lib/net10.0/Blazor-ApexCharts.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.1/ChartJs.Blazor.dll": {
+          "lib/net10.0/Blazor-ApexCharts.dll": {
             "related": ".xml"
           }
         },
-        "contentFiles": {
-          "contentFiles/any/netstandard2.1/Properties/launchSettings.json": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          }
-        },
         "build": {
-          "buildTransitive/ChartJs.Blazor.props": {}
+          "buildTransitive/Blazor-ApexCharts.props": {}
         },
         "buildMultiTargeting": {
-          "buildMultiTargeting/ChartJs.Blazor.props": {}
+          "buildMultiTargeting/Blazor-ApexCharts.props": {}
         }
       },
       "EntityFramework/6.5.2": {
@@ -865,7 +855,7 @@
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -1279,34 +1269,76 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "ChartJs.Blazor/1.1.0": {
-      "sha512": "MUGYzS5FSx9r17sPVRlREPWU+1mFtggFaQtGKifQg30I48tx3OEDH3JZd07r+jKwtpN/h89HVUYy3IT2FS8ZEw==",
+    "Blazor-ApexCharts/6.1.0": {
+      "sha512": "H2mkr7HEVk+BoQKcyoQtqq3ifoo/VxS7I8B35wO9tpiarGMdnAsL9pwcQBU4E/YnADNF+zOKTIaRxhd93Qr9HA==",
       "type": "package",
-      "path": "chartjs.blazor/1.1.0",
+      "path": "blazor-apexcharts/6.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/ChartJs.Blazor.props",
+        "LICENSE",
+        "README.md",
+        "apexchart_logo.png",
+        "blazor-apexcharts.6.1.0.nupkg.sha512",
+        "blazor-apexcharts.nuspec",
+        "build/Blazor-ApexCharts.props",
+        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
         "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/ChartJs.Blazor.props",
-        "buildTransitive/ChartJs.Blazor.props",
-        "chartjs.blazor.1.1.0.nupkg.sha512",
-        "chartjs.blazor.nuspec",
-        "content/Properties/launchSettings.json",
-        "contentFiles/any/netstandard2.1/Properties/launchSettings.json",
-        "lib/netstandard2.1/ChartJs.Blazor.dll",
-        "lib/netstandard2.1/ChartJs.Blazor.xml",
-        "staticwebassets/Chart.min.js",
-        "staticwebassets/ChartJSBlazor.css",
-        "staticwebassets/ChartJsBlazorInterop.js",
-        "staticwebassets/ChartJsBlazorInterop.js.map",
-        "staticwebassets/moment-with-locales.min.js",
-        "staticwebassets/ts/ChartJsBlazorInterop.ts",
-        "staticwebassets/ts/ChartJsInterop.ts",
-        "staticwebassets/ts/MomentJsInterop.ts",
-        "staticwebassets/ts/types/Chart.min.d.ts",
-        "staticwebassets/ts/types/moment.d.ts",
-        "staticwebassets/tsconfig.json"
+        "buildMultiTargeting/Blazor-ApexCharts.props",
+        "buildTransitive/Blazor-ApexCharts.props",
+        "lib/net10.0/Blazor-ApexCharts.dll",
+        "lib/net10.0/Blazor-ApexCharts.xml",
+        "lib/net8.0/Blazor-ApexCharts.dll",
+        "lib/net8.0/Blazor-ApexCharts.xml",
+        "lib/net9.0/Blazor-ApexCharts.dll",
+        "lib/net9.0/Blazor-ApexCharts.xml",
+        "staticwebassets/css/apexcharts.css",
+        "staticwebassets/js/apexcharts.esm.js",
+        "staticwebassets/js/blazor-apexcharts.js",
+        "staticwebassets/locales/ar.json",
+        "staticwebassets/locales/be-cyrl.json",
+        "staticwebassets/locales/be-latn.json",
+        "staticwebassets/locales/ca.json",
+        "staticwebassets/locales/cs.json",
+        "staticwebassets/locales/da.json",
+        "staticwebassets/locales/de.json",
+        "staticwebassets/locales/el.json",
+        "staticwebassets/locales/en.json",
+        "staticwebassets/locales/es.json",
+        "staticwebassets/locales/et.json",
+        "staticwebassets/locales/fa.json",
+        "staticwebassets/locales/fi.json",
+        "staticwebassets/locales/fr.json",
+        "staticwebassets/locales/he.json",
+        "staticwebassets/locales/hi.json",
+        "staticwebassets/locales/hr.json",
+        "staticwebassets/locales/hu.json",
+        "staticwebassets/locales/hy.json",
+        "staticwebassets/locales/id.json",
+        "staticwebassets/locales/it.json",
+        "staticwebassets/locales/ja.json",
+        "staticwebassets/locales/ka.json",
+        "staticwebassets/locales/ko.json",
+        "staticwebassets/locales/lt.json",
+        "staticwebassets/locales/lv.json",
+        "staticwebassets/locales/ms.json",
+        "staticwebassets/locales/nb.json",
+        "staticwebassets/locales/nl.json",
+        "staticwebassets/locales/pl.json",
+        "staticwebassets/locales/pt-br.json",
+        "staticwebassets/locales/pt.json",
+        "staticwebassets/locales/ru.json",
+        "staticwebassets/locales/sk.json",
+        "staticwebassets/locales/sl.json",
+        "staticwebassets/locales/sq.json",
+        "staticwebassets/locales/sr.json",
+        "staticwebassets/locales/sv.json",
+        "staticwebassets/locales/th.json",
+        "staticwebassets/locales/tr.json",
+        "staticwebassets/locales/uk.json",
+        "staticwebassets/locales/vi.json",
+        "staticwebassets/locales/zh-cn.json",
+        "staticwebassets/locales/zh-tw.json"
       ]
     },
     "EntityFramework/6.5.2": {
@@ -3639,10 +3671,10 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Blazor-ApexCharts >= 6.1.0",
       "BookSoft.Facade >= 1.0.0",
       "BookSoft.Infrastructure >= 1.0.0",
       "BookSoft.UseCases >= 1.0.0",
-      "ChartJs.Blazor >= 1.1.0",
       "EntityFramework >= 6.5.2",
       "Microsoft.AspNetCore.App.Internal.Assets >= 10.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.8"
@@ -3711,9 +3743,9 @@
         "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
-          "ChartJs.Blazor": {
+          "Blazor-ApexCharts": {
             "target": "Package",
-            "version": "[1.1.0, )"
+            "version": "[6.1.0, )"
           },
           "EntityFramework": {
             "target": "Package",

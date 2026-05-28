@@ -35,6 +35,7 @@ public static class InfrastructureServiceCollectionExtensions
         services.AddScoped<IPractitionerQueries, PractitionerQueriesImp>();
         services.AddScoped<IClinicQueries, ClinicQueriesImp>();
         services.AddScoped<ITransactionQueries, TransactionQueriesImp>();
+        services.AddScoped<ICampaignQueries, CampaignQueriesImp>();
 
         // rabat strategier - alle registreres som IRabatBeregner
         // RabatService får dem injected som IEnumerable og kører dem i parallel

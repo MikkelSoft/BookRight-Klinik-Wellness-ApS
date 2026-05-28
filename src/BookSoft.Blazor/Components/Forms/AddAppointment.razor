@@ -1,0 +1,135 @@
+@using BookSoft.Facade.DTOs
+@using BookSoft.Facade.UseCases
+@using BookSoft.Facade.Queries
+@using BookSoft.Domain.Enums
+@inject ICreateNewAppointmentUseCase CreateAppointmentUseCase
+@inject IPatientQueries PatientQueries
+@inject IPractitionerQueries PractitionerQueries
+@inject IClinicQueries ClinicQueries
+
+@if (IsVisible)
+{
+    <div class="modal-overlay" @onclick="Cancel">
+        <div class="modal" @onclick:stopPropagation>
+            <h3>Ny aftale</h3>
+
+            <label>Patient</label>
+            <select @bind="patientId">
+                <option value="">— Vælg patient —</option>
+                @foreach (var p in patients)
+                {
+                    <option value="@p.Id">@p.FirstName @p.LastName</option>
+                }
+            </select>
+
+            <label>Behandler</label>
+            <select @bind="practitionerId">
+                <option value="">— Vælg behandler —</option>
+                @foreach (var p in practitioners)
+                {
+                    <option value="@p.Id">@p.FirstName @p.LastName (@p.AutorisationsType)</option>
+                }
+            </select>
+
+            <label>Klinik</label>
+            <select @bind="clinicId">
+                <option value="">— Vælg klinik —</option>
+                @foreach (var c in clinics)
+                {
+                    <option value="@c.Id">@c.ClinicName</option>
+                }
+            </select>
+
+            <label>Behandlingstype</label>
+            <select @bind="appointmentTypeString">
+                <option value="">— Vælg type —</option>
+                @foreach (var t in Enum.GetValues<AppointmentTypeEnum>())
+                {
+                    <option value="@t.ToString()">@FormatType(t)</option>
+                }
+            </select>
+
+            <label>Starttidspunkt</label>
+            <input @bind="startTime" type="datetime-local" />
+
+            @if (errorMsg != null)
+            {
+                <p class="error-msg">@errorMsg</p>
+            }
+
+            <div class="modal-buttons">
+                <button class="btn-annuller" @onclick="Cancel">Annuller</button>
+                <button class="btn-gem" @onclick="Save" disabled="@saving">Book aftale</button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public bool IsVisible { get; set; }
+    [Parameter] public DateTime? PreselectedDate { get; set; }
+    [Parameter] public EventCallback OnSaved { get; set; }
+    [Parameter] public EventCallback OnCancelled { get; set; }
+
+    List<PatientDto> patients = [];
+    List<PractitionerDto> practitioners = [];
+    List<ClinicDto> clinics = [];
+
+    string patientId = "", practitionerId = "", clinicId = "", appointmentTypeString = "";
+    DateTime startTime = DateTime.Today.AddHours(9);
+    string? errorMsg;
+    bool saving;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (!IsVisible) return;
+        patientId = practitionerId = clinicId = appointmentTypeString = "";
+        startTime = PreselectedDate?.Date.AddHours(9) ?? DateTime.Today.AddHours(9);
+        errorMsg = null;
+
+        patients = (await PatientQueries.GetAllAsync()).ToList();
+        practitioners = (await PractitionerQueries.GetAllAsync()).ToList();
+        clinics = (await ClinicQueries.GetAllAsync()).ToList();
+    }
+
+    async Task Save()
+    {
+        errorMsg = null;
+        if (string.IsNullOrEmpty(patientId) || string.IsNullOrEmpty(practitionerId) ||
+            string.IsNullOrEmpty(clinicId) || string.IsNullOrEmpty(appointmentTypeString))
+        {
+            errorMsg = "Udfyld alle felter.";
+            return;
+        }
+        saving = true;
+        try
+        {
+            await CreateAppointmentUseCase.Run(new CreateNewAppointmentRequest(
+                Guid.Parse(patientId),
+                Guid.Parse(practitionerId),
+                Guid.Parse(clinicId),
+                appointmentTypeString,
+                startTime
+            ));
+            await OnSaved.InvokeAsync();
+        }
+        catch (Exception ex) { errorMsg = ex.Message; }
+        finally { saving = false; }
+    }
+
+    async Task Cancel() => await OnCancelled.InvokeAsync();
+
+    static string FormatType(AppointmentTypeEnum t) => t switch
+    {
+        AppointmentTypeEnum.Fysioterapi30Min         => "Fysioterapi 30 min (395 kr)",
+        AppointmentTypeEnum.Fysioterapi45Min         => "Fysioterapi 45 min (589 kr)",
+        AppointmentTypeEnum.Fysioterapi60Min         => "Fysioterapi 60 min (745 kr)",
+        AppointmentTypeEnum.Sportsmassage30Min       => "Sportsmassage 30 min (350 kr)",
+        AppointmentTypeEnum.Sportsmassage60Min       => "Sportsmassage 60 min (699 kr)",
+        AppointmentTypeEnum.Akupunktur45Min          => "Akupunktur 45 min (550 kr)",
+        AppointmentTypeEnum.KostvejledningFoerste    => "Kostvejledning - første (799 kr)",
+        AppointmentTypeEnum.KostvejledningOpfoelgning=> "Kostvejledning - opfølgning (450 kr)",
+        AppointmentTypeEnum.Holdtraening60Min        => "Holdtræning 60 min (150 kr)",
+        _ => t.ToString()
+    };
+}

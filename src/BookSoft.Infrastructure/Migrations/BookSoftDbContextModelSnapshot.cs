@@ -80,22 +80,22 @@ namespace BookSoft.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.PrimitiveCollection<string>("ValidFor")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("DiscountProcent")
+                        .HasColumnType("decimal(5,4)");
 
                     b.Property<string>("Navn")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("DiscountProcent")
-                        .HasColumnType("decimal(5,4)");
 
                     b.Property<DateTime>("SlutDato")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("StartDato")
                         .HasColumnType("datetime2");
+
+                    b.PrimitiveCollection<string>("ValidFor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 
@@ -181,6 +181,9 @@ namespace BookSoft.Infrastructure.Migrations
                     b.Property<decimal>("Beloeb")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<Guid?>("CampaignID")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<Guid>("PatientId")
                         .HasColumnType("uniqueidentifier");
 
@@ -191,6 +194,8 @@ namespace BookSoft.Infrastructure.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("CampaignID");
 
                     b.HasIndex("PatientId");
 
@@ -303,11 +308,17 @@ namespace BookSoft.Infrastructure.Migrations
 
             modelBuilder.Entity("BookSoft.Domain.Entities.Transaction", b =>
                 {
+                    b.HasOne("BookSoft.Domain.Entities.Campaign", "Campaign")
+                        .WithMany("Transactions")
+                        .HasForeignKey("CampaignID");
+
                     b.HasOne("BookSoft.Domain.Entities.Patient", "Patient")
                         .WithMany("Transactions")
                         .HasForeignKey("PatientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Campaign");
 
                     b.Navigation("Patient");
                 });
@@ -325,6 +336,11 @@ namespace BookSoft.Infrastructure.Migrations
                         .HasForeignKey("PractitionersID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("BookSoft.Domain.Entities.Campaign", b =>
+                {
+                    b.Navigation("Transactions");
                 });
 
             modelBuilder.Entity("BookSoft.Domain.Entities.Clinic", b =>

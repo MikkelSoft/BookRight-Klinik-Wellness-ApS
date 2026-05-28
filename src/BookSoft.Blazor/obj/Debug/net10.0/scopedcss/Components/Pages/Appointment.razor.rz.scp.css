@@ -1,100 +1,9 @@
-.calendar[b-u1e8iy2lfr] {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: var(--secondary);
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.calendar-header[b-u1e8iy2lfr] {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px 20px;
-    border-bottom: 1px solid #ccc;
-}
-
-    .calendar-header span[b-u1e8iy2lfr] {
-        font-size: 16px;
-        font-weight: 600;
-        min-width: 100px;
-        text-align: center;
-    }
-
-    .calendar-header button[b-u1e8iy2lfr] {
-        background: none;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 4px 10px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-
-.view-toggle[b-u1e8iy2lfr] {
-    margin-left: auto;
-    display: flex;
-    gap: 5px;
-}
-
-    .view-toggle button[b-u1e8iy2lfr] {
-        border-radius: 8px;
-        padding: 5px 12px;
-        font-size: 13px;
-    }
-
-        .view-toggle button.active[b-u1e8iy2lfr] {
-            background-color: var(--primary-hover);
-            color: white;
-            border-color: var(--primary-hover);
-        }
-
-.calendar-days-header[b-u1e8iy2lfr] {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    border-bottom: 1px solid #ccc;
-}
-
-    .calendar-days-header span[b-u1e8iy2lfr] {
-        text-align: center;
-        padding: 8px 0;
-        font-size: 12px;
-        color: #888;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-
-.calendar-grid[b-u1e8iy2lfr] {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    flex: 1;
-}
-
-.calendar-cell[b-u1e8iy2lfr] {
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 6px 8px;
-    min-height: 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-    .calendar-cell:nth-child(7n)[b-u1e8iy2lfr] {
-        border-right: none;
-    }
-
-.day-number[b-u1e8iy2lfr] {
-    font-size: 12px;
-    color: #555;
-    font-weight: 600;
-}
+/* shared calendar layout is in app.css */
 
 .appointment[b-u1e8iy2lfr] {
     background-color: var(--primary-hover);
     color: white;
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 2px 6px;
     font-size: 11px;
     overflow: hidden;
@@ -102,3 +11,47 @@
     text-overflow: ellipsis;
     cursor: pointer;
 }
+
+.appointment.appt-completed[b-u1e8iy2lfr] { background-color: #10b981; }
+.appointment.appt-cancelled[b-u1e8iy2lfr] { background-color: #9ca3af; text-decoration: line-through; }
+
+/* Week / Day view */
+.week-list[b-u1e8iy2lfr] {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.week-day-section[b-u1e8iy2lfr] { display: flex; flex-direction: column; gap: 6px; }
+
+.week-day-label[b-u1e8iy2lfr] {
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    text-transform: capitalize;
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.week-day-label.today[b-u1e8iy2lfr] { color: var(--primary-hover); }
+
+.week-appointment[b-u1e8iy2lfr] {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: var(--primary-hover);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.week-appointment.appt-completed[b-u1e8iy2lfr] { background: #10b981; }
+.week-appointment.appt-cancelled[b-u1e8iy2lfr] { background: #9ca3af; text-decoration: line-through; }
+.week-appointment span[b-u1e8iy2lfr] { white-space: nowrap; }
+
+.no-appt[b-u1e8iy2lfr] { font-size: 12px; color: #bbb; padding: 4px 0; margin: 0; }

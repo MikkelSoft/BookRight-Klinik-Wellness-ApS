@@ -1,0 +1,118 @@
+@using BookSoft.Facade.DTOs
+@using BookSoft.Facade.UseCases
+@using BookSoft.Domain.Enums
+@inject IFinishAppointmentUseCase FinishAppointmentUseCase
+@inject ICancelAppointmentUseCase CancelAppointmentUseCase
+
+@if (IsVisible && Appointment != null)
+{
+    <div class="modal-overlay" @onclick="Close">
+        <div class="modal" @onclick:stopPropagation>
+            <h3>Aftaledetaljer</h3>
+
+            <div class="detail-row">
+                <span class="detail-label">Status</span>
+                <span class="badge @StatusBadge">@StatusLabel</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Patient</span>
+                <span class="detail-value">@Appointment.PatientFullNameString</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Behandler</span>
+                <span class="detail-value">@Appointment.PractitionerFullNameString</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Klinik</span>
+                <span class="detail-value">@Appointment.ClinicName</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Behandling</span>
+                <span class="detail-value">@Appointment.AppointmentTypeString</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Tidspunkt</span>
+                <span class="detail-value">@Appointment.AppointmentStartTime.ToString("dd/MM/yyyy HH:mm") – @Appointment.AppointmentEndTime.ToString("HH:mm")</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Pris</span>
+                <span class="detail-value">@Appointment.Pris.ToString("N0") kr</span>
+            </div>
+            @if (Appointment.AnvendtRabatType != null)
+            {
+                <div class="detail-row">
+                    <span class="detail-label">Rabat</span>
+                    <span class="detail-value">@Appointment.AnvendtRabatType</span>
+                </div>
+            }
+
+            @if (errorMsg != null)
+            {
+                <p class="error-msg">@errorMsg</p>
+            }
+
+            <div class="modal-buttons">
+                <button class="btn-annuller" @onclick="Close">Luk</button>
+                @if (Appointment.Status == AppointmentStatusEnum.Scheduled)
+                {
+                    <button class="btn-slet" @onclick="Cancel" disabled="@saving">Aflys</button>
+                    <button class="btn-action" @onclick="Finish" disabled="@saving">Afslut</button>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public bool IsVisible { get; set; }
+    [Parameter] public AppointmentDto? Appointment { get; set; }
+    [Parameter] public EventCallback OnChanged { get; set; }
+    [Parameter] public EventCallback OnClosed { get; set; }
+
+    string? errorMsg;
+    bool saving;
+
+    string StatusBadge => Appointment?.Status switch
+    {
+        AppointmentStatusEnum.Scheduled => "badge-scheduled",
+        AppointmentStatusEnum.Completed => "badge-completed",
+        AppointmentStatusEnum.Cancelled => "badge-cancelled",
+        _ => ""
+    };
+
+    string StatusLabel => Appointment?.Status switch
+    {
+        AppointmentStatusEnum.Scheduled => "Planlagt",
+        AppointmentStatusEnum.Completed => "Afsluttet",
+        AppointmentStatusEnum.Cancelled => "Aflyst",
+        _ => ""
+    };
+
+    async Task Finish()
+    {
+        if (Appointment == null) return;
+        saving = true;
+        try
+        {
+            await FinishAppointmentUseCase.Run(Appointment.Id);
+            await OnChanged.InvokeAsync();
+        }
+        catch (Exception ex) { errorMsg = ex.Message; }
+        finally { saving = false; }
+    }
+
+    async Task Cancel()
+    {
+        if (Appointment == null) return;
+        saving = true;
+        try
+        {
+            await CancelAppointmentUseCase.Run(new BookSoft.Facade.DTOs.CancelAppointmentRequest(Appointment.Id));
+            await OnChanged.InvokeAsync();
+        }
+        catch (Exception ex) { errorMsg = ex.Message; }
+        finally { saving = false; }
+    }
+
+    async Task Close() => await OnClosed.InvokeAsync();
+}
