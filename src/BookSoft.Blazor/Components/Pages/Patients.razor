@@ -1,0 +1,87 @@
+@page "/Patients"
+@rendermode InteractiveServer
+@using BookSoft.Facade.DTOs
+@using BookSoft.Facade.Queries
+@using BookSoft.Facade.UseCases
+@using BookSoft.Blazor.Components.Forms
+@inject IPatientQueries PatientQueries
+
+<PageTitle>Patienter</PageTitle>
+
+<div class="list-page">
+    <div class="top-bar">
+        <p class="top-widget">Navn</p>
+        <p class="top-widget">Fødselsdag</p>
+        <p class="top-widget">Email</p>
+        <p class="top-widget">Loyalty</p>
+        <p class="top-widget">Telefon</p>
+        <input type="text" placeholder="Søg" class="search-input" @bind="search" @bind:event="oninput" />
+    </div>
+
+    <div class="list-group">
+        @if (patients == null)
+        {
+            <p class="empty-state">Indlæser...</p>
+        }
+        else if (!FilteredPatients.Any())
+        {
+            <p class="empty-state">Ingen patienter fundet.</p>
+        }
+        else
+        {
+            @foreach (var p in FilteredPatients)
+            {
+                <div class="list-row" @onclick="() => OpenEdit(p)">
+                    <p class="list-cell">@p.FirstName @p.LastName</p>
+                    <p class="list-cell">@p.Birthday.ToString("dd/MM/yyyy")</p>
+                    <p class="list-cell">@p.Email</p>
+                    <p class="list-cell @LoyaltyClass(p.LoyaltyLevel)">@p.LoyaltyLevel</p>
+                    <p class="list-cell">@p.PhoneNumber</p>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<button class="fab" @onclick="OpenAdd">+</button>
+
+<AddPatient IsVisible="showModal"
+            Patient="selectedPatient"
+            OnSaved="OnSaved"
+            OnCancelled="CloseModal" />
+
+@code {
+    List<PatientDto>? patients;
+    PatientDto? selectedPatient;
+    bool showModal;
+    string search = "";
+
+    IEnumerable<PatientDto> FilteredPatients =>
+        string.IsNullOrWhiteSpace(search)
+            ? patients!
+            : patients!.Where(p =>
+                $"{p.FirstName} {p.LastName}".Contains(search, StringComparison.OrdinalIgnoreCase) ||
+                p.Email.Contains(search, StringComparison.OrdinalIgnoreCase));
+
+    protected override async Task OnInitializedAsync() => await LoadPatients();
+
+    async Task LoadPatients() => patients = (await PatientQueries.GetAllAsync()).ToList();
+
+    void OpenAdd()  { selectedPatient = null; showModal = true; }
+    void OpenEdit(PatientDto p) { selectedPatient = p; showModal = true; }
+    void CloseModal() => showModal = false;
+
+    async Task OnSaved()
+    {
+        showModal = false;
+        await LoadPatients();
+    }
+
+    static string LoyaltyClass(string level) => level.ToLower() switch
+    {
+        "gold"   => "loyalty-gold",
+        "silver" => "loyalty-silver",
+        "bronze" => "loyalty-bronze",
+        _        => "loyalty-none"
+    };
+}

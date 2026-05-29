@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BookSoft.Blazor/BookSoft.Blazor.csproj" />
+    <Project Path="src/BookSoft.Domain/BookSoft.Domain.csproj" />
+    <Project Path="src/BookSoft.Facade/BookSoft.Facade.csproj" />
+    <Project Path="src/BookSoft.Infrastructure/BookSoft.Infrastructure.csproj" />
+    <Project Path="src/BookSoft.UseCases/BookSoft.UseCases.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BookSoft.Domain.Tests/BookSoft.Domain.Tests.csproj" />
+    <Project Path="tests/BookSoft.UseCases.Tests/BookSoft.UseCases.Tests.csproj" />
+  </Folder>
+</Solution>
