@@ -1,0 +1,78 @@
+@page "/Practitioners"
+@rendermode InteractiveServer
+@using BookSoft.Facade.DTOs
+@using BookSoft.Facade.Queries
+@using BookSoft.Blazor.Components.Forms
+@inject IPractitionerQueries PractitionerQueries
+
+<PageTitle>Behandlere</PageTitle>
+
+<div class="list-page">
+    <div class="top-bar">
+        <p class="top-widget">Navn</p>
+        <p class="top-widget">Speciale</p>
+        <p class="top-widget">Autorisationstype</p>
+        <p class="top-widget">Email</p>
+        <p class="top-widget">Telefon</p>
+        <input type="text" placeholder="Søg" class="search-input" @bind="search" @bind:event="oninput" />
+    </div>
+
+    <div class="list-group">
+        @if (practitioners == null)
+        {
+            <p class="empty-state">Indlæser...</p>
+        }
+        else if (!Filtered.Any())
+        {
+            <p class="empty-state">Ingen behandlere fundet.</p>
+        }
+        else
+        {
+            @foreach (var p in Filtered)
+            {
+                <div class="list-row" @onclick="() => OpenEdit(p)">
+                    <p class="list-cell">@p.FirstName @p.LastName</p>
+                    <p class="list-cell">@p.Specialty</p>
+                    <p class="list-cell">@p.AutorisationsType</p>
+                    <p class="list-cell">@p.Email</p>
+                    <p class="list-cell">@p.PhoneNumber</p>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<button class="fab" @onclick="OpenAdd">+</button>
+
+<AddPractiotioner IsVisible="showModal"
+                  Practitioner="selected"
+                  OnSaved="OnSaved"
+                  OnCancelled="CloseModal" />
+
+@code {
+    List<PractitionerDto>? practitioners;
+    PractitionerDto? selected;
+    bool showModal;
+    string search = "";
+
+    IEnumerable<PractitionerDto> Filtered =>
+        string.IsNullOrWhiteSpace(search)
+            ? practitioners!
+            : practitioners!.Where(p =>
+                $"{p.FirstName} {p.LastName}".Contains(search, StringComparison.OrdinalIgnoreCase) ||
+                p.Specialty.Contains(search, StringComparison.OrdinalIgnoreCase));
+
+    protected override async Task OnInitializedAsync() => await Load();
+
+    async Task Load() => practitioners = (await PractitionerQueries.GetAllAsync()).ToList();
+
+    void OpenAdd()  { selected = null; showModal = true; }
+    void OpenEdit(PractitionerDto p) { selected = p; showModal = true; }
+    void CloseModal() => showModal = false;
+
+    async Task OnSaved()
+    {
+        showModal = false;
+        await Load();
+    }
+}

@@ -1,0 +1,267 @@
+@page "/Financials"
+@rendermode InteractiveServer
+@using ApexCharts
+@using BookSoft.Domain.Enums
+@using System.Globalization
+@inject ITransactionQueries TransactionQueries
+@inject IAppointmentQueries AppointmentQueries
+@inject ICampaignQueries CampaignQueries
+
+<PageTitle>Økonomi</PageTitle>
+
+<div class="bento">
+
+    <!-- ── Row 1: KPI tiles ── -->
+    <div class="bento-card kpi-card">
+        <span class="kpi-label">Total omsætning</span>
+        <span class="kpi-value">@totalRevenue.ToString("N0") kr</span>
+    </div>
+    <div class="bento-card kpi-card">
+        <span class="kpi-label">Afsluttede behandlinger</span>
+        <span class="kpi-value">@completedCount</span>
+    </div>
+    <div class="bento-card kpi-card kpi-red">
+        <span class="kpi-label">Aflyste aftaler</span>
+        <span class="kpi-value">@cancelledCount</span>
+    </div>
+    <div class="bento-card kpi-card">
+        <span class="kpi-label">Gns. pr. behandling</span>
+        <span class="kpi-value">@avgRevenue.ToString("N0") kr</span>
+    </div>
+
+    <!-- ── Row 2: Monthly area + Status donut + Top patients bar ── -->
+    <div class="bento-card span-2">
+        <p class="chart-title">Månedlig omsætning</p>
+        <div class="chart-wrap">
+            <ApexChart TItem="MonthPoint"
+                       Options="lineOpts"
+                       Height="@("100%")"
+                       Width="@("100%")">
+                <ApexPointSeries TItem="MonthPoint"
+                                 Items="monthData"
+                                 Name="Omsætning (kr)"
+                                 SeriesType="SeriesType.Area"
+                                 XValue="@(d => d.Label)"
+                                 YValue="@(d => d.Value)" />
+            </ApexChart>
+        </div>
+    </div>
+
+    <div class="bento-card">
+        <p class="chart-title">Aftalestatus</p>
+        <div class="chart-wrap">
+            <ApexChart TItem="StatusPoint"
+                       Options="donutOpts"
+                       Height="@("100%")"
+                       Width="@("100%")">
+                <ApexPointSeries TItem="StatusPoint"
+                                 Items="statusData"
+                                 Name="Aftaler"
+                                 SeriesType="SeriesType.Donut"
+                                 XValue="@(d => d.Label)"
+                                 YValue="@(d => (decimal)d.Count)" />
+            </ApexChart>
+        </div>
+    </div>
+
+    <div class="bento-card">
+        <p class="chart-title">Top 5 patienter</p>
+        <div class="chart-wrap">
+            <ApexChart TItem="NamePoint"
+                       Options="patientOpts"
+                       Height="@("100%")"
+                       Width="@("100%")">
+                <ApexPointSeries TItem="NamePoint"
+                                 Items="topPatients"
+                                 Name="Omsætning (kr)"
+                                 SeriesType="SeriesType.Bar"
+                                 XValue="@(d => d.Label)"
+                                 YValue="@(d => d.Value)" />
+            </ApexChart>
+        </div>
+    </div>
+
+    <!-- ── Row 3: Revenue by type + Info card ── -->
+    <div class="bento-card span-3">
+        <p class="chart-title">Omsætning pr. behandlingstype</p>
+        <div class="chart-wrap">
+            <ApexChart TItem="NamePoint"
+                       Options="typeOpts"
+                       Height="@("100%")"
+                       Width="@("100%")">
+                <ApexPointSeries TItem="NamePoint"
+                                 Items="typeData"
+                                 Name="Omsætning (kr)"
+                                 SeriesType="SeriesType.Bar"
+                                 XValue="@(d => d.Label)"
+                                 YValue="@(d => d.Value)" />
+            </ApexChart>
+        </div>
+    </div>
+
+    <div class="bento-card info-card">
+        <p class="chart-title">Nøgletal</p>
+        <div class="info-row">
+            <span>Aktive kampagner</span>
+            <strong>@activeCampaigns</strong>
+        </div>
+        <div class="info-row">
+            <span>Planlagte aftaler</span>
+            <strong>@scheduledCount</strong>
+        </div>
+        <div class="info-row">
+            <span>Mest populær behandling</span>
+            <strong>@topType</strong>
+        </div>
+        <div class="info-row">
+            <span>Højeste enkelt-betaling</span>
+            <strong>@maxTransaction.ToString("N0") kr</strong>
+        </div>
+        <div class="info-row">
+            <span>Patienter med transaktioner</span>
+            <strong>@uniquePatients</strong>
+        </div>
+    </div>
+
+</div>
+
+@code {
+    // ── Simple data-point records ──
+    record MonthPoint(string Label, decimal Value);
+    record StatusPoint(string Label, int Count);
+    record NamePoint(string Label, decimal Value);
+
+    // ── Data lists ──
+    List<MonthPoint> monthData   = [];
+    List<StatusPoint> statusData = [];
+    List<NamePoint>   topPatients = [];
+    List<NamePoint>   typeData    = [];
+
+    // ── KPI values ──
+    decimal totalRevenue;
+    int     completedCount;
+    int     cancelledCount;
+    decimal avgRevenue;
+    int     activeCampaigns;
+    int     scheduledCount;
+    int     uniquePatients;
+    string  topType = "—";
+    decimal maxTransaction;
+
+    // ── Chart options ──
+    ApexChartOptions<MonthPoint>  lineOpts    = new();
+    ApexChartOptions<StatusPoint> donutOpts   = new();
+    ApexChartOptions<NamePoint>   patientOpts = new();
+    ApexChartOptions<NamePoint>   typeOpts    = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var da = new CultureInfo("da-DK");
+        var transactions = (await TransactionQueries.GetAllAsync()).ToList();
+        var appointments = (await AppointmentQueries.GetAllAsync()).ToList();
+        var campaigns    = (await CampaignQueries.GetAllAsync()).ToList();
+
+        // ── KPIs ──
+        totalRevenue    = transactions.Sum(t => t.Cost);
+        completedCount  = transactions.Count;
+        cancelledCount  = appointments.Count(a => a.Status == AppointmentStatusEnum.Cancelled);
+        scheduledCount  = appointments.Count(a => a.Status == AppointmentStatusEnum.Scheduled);
+        avgRevenue      = completedCount > 0 ? Math.Round(totalRevenue / completedCount, 0) : 0;
+        activeCampaigns = campaigns.Count(c => DateTime.Today.Date >= c.StartDato.Date && DateTime.Today.Date <= c.SlutDato.Date);
+        maxTransaction  = transactions.Any() ? transactions.Max(t => t.Cost) : 0;
+        uniquePatients  = transactions.Select(t => t.PatientId).Distinct().Count();
+
+        var byType = transactions.GroupBy(t => t.AppointmentType)
+                                 .OrderByDescending(g => g.Sum(t => t.Cost)).ToList();
+        topType = byType.Any() ? ShortType(byType.First().Key) : "—";
+
+        // ── Monthly revenue (last 6 months) ──
+        monthData = Enumerable.Range(-5, 6)
+            .Select(i => DateTime.Today.AddMonths(i))
+            .Select(m => new MonthPoint(
+                m.ToString("MMM yy", da),
+                transactions.Where(t => t.TransactionDate.Year == m.Year && t.TransactionDate.Month == m.Month)
+                            .Sum(t => t.Cost)))
+            .ToList();
+
+        // ── Appointment status ──
+        statusData =
+        [
+            new("Planlagt",  appointments.Count(a => a.Status == AppointmentStatusEnum.Scheduled)),
+            new("Afsluttet", appointments.Count(a => a.Status == AppointmentStatusEnum.Completed)),
+            new("Aflyst",    appointments.Count(a => a.Status == AppointmentStatusEnum.Cancelled))
+        ];
+
+        // ── Top 5 patients ──
+        topPatients = transactions
+            .GroupBy(t => t.PatientFullName)
+            .Select(g => new NamePoint(g.Key.Split(' ').First(), g.Sum(t => t.Cost)))
+            .OrderByDescending(p => p.Value)
+            .Take(5)
+            .ToList();
+
+        // ── Revenue by treatment type ──
+        typeData = transactions
+            .GroupBy(t => t.AppointmentType)
+            .Select(g => new NamePoint(ShortType(g.Key), g.Sum(t => t.Cost)))
+            .OrderByDescending(p => p.Value)
+            .ToList();
+
+        // ── Chart options ──
+        lineOpts = new ApexChartOptions<MonthPoint>
+        {
+            Chart = new ApexCharts.Chart
+            {
+                Toolbar   = new Toolbar { Show = false },
+                Background = "transparent"
+            },
+            Colors = ["#2191FB"],
+            Grid   = new Grid { BorderColor = "#f0f0f0" },
+            Fill   = new Fill { Opacity = [0.3, 1.0] }
+        };
+
+        donutOpts = new ApexChartOptions<StatusPoint>
+        {
+            Chart  = new ApexCharts.Chart { Toolbar = new Toolbar { Show = false }, Background = "transparent" },
+            Colors = ["#2191FB", "#10b981", "#ef4444"],
+            Legend = new Legend { Position = LegendPosition.Bottom }
+        };
+
+        patientOpts = new ApexChartOptions<NamePoint>
+        {
+            Chart  = new ApexCharts.Chart { Toolbar = new Toolbar { Show = false }, Background = "transparent" },
+            Colors = ["#8b5cf6"],
+            Grid   = new Grid { BorderColor = "#f0f0f0" },
+            PlotOptions = new PlotOptions
+            {
+                Bar = new PlotOptionsBar { BorderRadius = 4 }
+            }
+        };
+
+        typeOpts = new ApexChartOptions<NamePoint>
+        {
+            Chart  = new ApexCharts.Chart { Toolbar = new Toolbar { Show = false }, Background = "transparent" },
+            Colors = ["#2191FB", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#06b6d4", "#f97316", "#84cc16", "#ec4899"],
+            Grid   = new Grid { BorderColor = "#f0f0f0" },
+            PlotOptions = new PlotOptions
+            {
+                Bar = new PlotOptionsBar { BorderRadius = 4, Distributed = true }
+            },
+            Legend = new Legend { Show = false }
+        };
+    }
+
+    static string ShortType(string t) => t switch
+    {
+        "Fysioterapi30Min"          => "Fys 30",
+        "Fysioterapi45Min"          => "Fys 45",
+        "Fysioterapi60Min"          => "Fys 60",
+        "Sportsmassage30Min"        => "Massage 30",
+        "Sportsmassage60Min"        => "Massage 60",
+        "Akupunktur45Min"           => "Akupunktur",
+        "KostvejledningFoerste"     => "Kost - 1.",
+        "KostvejledningOpfoelgning" => "Kost - opf.",
+        "Holdtraening60Min"         => "Holdtræning",
+        _ => t
+    };
+}

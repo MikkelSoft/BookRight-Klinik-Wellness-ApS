@@ -1,0 +1,90 @@
+/* ── Bento grid ── */
+.bento {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 90px 1fr 1fr;
+    gap: 12px;
+    padding: 12px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Card base */
+.bento-card {
+    background: white;
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+    min-height: 0;
+}
+
+/* Column spans */
+.span-2 { grid-column: span 2; }
+.span-3 { grid-column: span 3; }
+
+/* ── KPI tile ── */
+.kpi-card {
+    justify-content: center;
+    padding: 14px 20px;
+}
+
+.kpi-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #999;
+}
+
+.kpi-value {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--font-color);
+    letter-spacing: -0.5px;
+}
+
+.kpi-red .kpi-value { color: #ef4444; }
+
+/* ── Chart titles ── */
+.chart-title {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #999;
+    flex-shrink: 0;
+}
+
+/* ── Chart container ── */
+.chart-wrap {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+}
+
+/* ── Info card ── */
+.info-card { gap: 0; }
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 13px;
+}
+
+.info-row:last-child { border-bottom: none; }
+
+.info-row span { color: #666; }
+
+.info-row strong {
+    font-weight: 600;
+    color: var(--font-color);
+}

@@ -1,0 +1,29 @@
+2026-05-26T17:26:08.3608854+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 2.0.2+88c9fc53a3b4f0fdf6b29a54e0e9f39dd44d9ede
+2026-05-26T17:26:08.3711010+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-05-26T17:26:08.3718600+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-05-26T17:26:08.3718650+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 17:26:08.344
+2026-05-26T17:26:08.3719297+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 10796
+2026-05-26T17:26:08.3719556+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 10.0.8
+2026-05-26T17:26:08.3719683+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.8\System.Private.CoreLib.dll
+2026-05-26T17:26:08.3719755+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-05-26T17:26:08.3720314+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\tests\BookSoft.Domain.Tests\bin\Debug\net10.0\BookSoft.Domain.Tests.dll
+2026-05-26T17:26:08.3721540+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\tests\BookSoft.Domain.Tests\bin\Debug\net10.0\Log --results-directory C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\TestResults --client-port 60627'
+2026-05-26T17:26:08.3728271+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-05-26T17:26:08.3884480+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-05-26T17:26:08.3998682+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-05-26T17:26:08.5956308+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '3.2.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-05-26T17:26:08.6056356+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v3.2.2+728c1dce01 (64-bit .NET 10.0.8)
+2026-05-26T17:26:08.6457835+00:00 xUnit.net INFORMATION   Discovering: BookSoft.Domain.Tests
+2026-05-26T17:26:08.6779125+00:00 xUnit.net INFORMATION   Discovered:  BookSoft.Domain.Tests
+2026-05-26T17:26:08.6986660+00:00 xUnit.net INFORMATION   Starting:    BookSoft.Domain.Tests
+2026-05-26T17:26:08.8067115+00:00 xUnit.net ERROR     BookSoft.Domain.Tests.DomainTests.AppointmentTypeToDurationTest [FAIL]
+2026-05-26T17:26:08.8070392+00:00 xUnit.net INFORMATION       Assert.True() Failure
+2026-05-26T17:26:08.8070461+00:00 xUnit.net INFORMATION       Expected: True
+2026-05-26T17:26:08.8070468+00:00 xUnit.net INFORMATION       Actual:   False
+2026-05-26T17:26:08.8073433+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-05-26T17:26:08.8079812+00:00 xUnit.net INFORMATION         C:\Users\PC\source\repos\BookRight-Klinik-Wellness-ApS\tests\BookSoft.Domain.Tests\DomainTests.cs(26,0): at BookSoft.Domain.Tests.DomainTests.AppointmentTypeToDurationTest()
+2026-05-26T17:26:08.8079919+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+2026-05-26T17:26:08.8079966+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-05-26T17:26:08.8203074+00:00 xUnit.net INFORMATION   Finished:    BookSoft.Domain.Tests (ID = 'd83d50109119d8436c8236598c8b2f7bb44ccbd674424c82efbe509d8655478e')
+2026-05-26T17:26:08.8248693+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-05-26T17:26:08.8308439+00:00 xUnit.net INFORMATION    BookSoft.Domain.Tests  Total: 1, Errors: 0, Failed: 1, Skipped: 0, Not Run: 0, Time: 0,126s

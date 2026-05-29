@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces %28undgå at bruge%29\**" />
+    <EmbeddedResource Remove="Interfaces %28undgå at bruge%29\**" />
+    <None Remove="Interfaces %28undgå at bruge%29\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Facade skal kende Domain-enums (f.eks. AutorisationsTypeEnum) men må ikke afhænge af Infrastructure -->
+    <ProjectReference Include="..\BookSoft.Domain\BookSoft.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+{
+  "openapi": "3.1.1",
+  "info": {
+    "title": "BookSoft.Api | v1",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://localhost:7227"
+    },
+    {
+      "url": "http://localhost:5092"
+    }
+  ],
+  "paths": { }
+}

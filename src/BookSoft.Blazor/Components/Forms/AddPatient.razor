@@ -1,0 +1,118 @@
+@using BookSoft.Facade.DTOs
+@using BookSoft.Facade.UseCases
+@inject IAddPatientUseCase AddPatientUseCase
+@inject IUpdatePatientUseCase UpdatePatientUseCase
+@inject IRemovePatientUseCase RemovePatientUseCase
+
+@if (IsVisible)
+{
+    <div class="modal-overlay" @onclick="Cancel">
+        <div class="modal" @onclick:stopPropagation>
+            <h3>@(Patient == null ? "Ny patient" : "Rediger patient")</h3>
+
+            <label>Fornavn</label>
+            <input @bind="firstName" placeholder="Fornavn" />
+
+            <label>Mellemnavn (valgfri)</label>
+            <input @bind="middleNames" placeholder="Mellemnavn" />
+
+            <label>Efternavn</label>
+            <input @bind="lastName" placeholder="Efternavn" />
+
+            <label>Email</label>
+            <input @bind="email" type="email" placeholder="email@eksempel.dk" />
+
+            <label>Telefonnummer</label>
+            <input @bind="phone" placeholder="+45 12 34 56 78" />
+
+            <label>Fødselsdag</label>
+            <input @bind="birthday" type="date" />
+
+            @if (errorMsg != null)
+            {
+                <p class="error-msg">@errorMsg</p>
+            }
+
+            <div class="modal-buttons">
+                @if (Patient != null)
+                {
+                    <button class="btn-slet" @onclick="Delete" disabled="@saving">Slet</button>
+                }
+                <button class="btn-annuller" @onclick="Cancel">Annuller</button>
+                <button class="btn-gem" @onclick="Save" disabled="@saving">Gem</button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public bool IsVisible { get; set; }
+    [Parameter] public PatientDto? Patient { get; set; }
+    [Parameter] public EventCallback OnSaved { get; set; }
+    [Parameter] public EventCallback OnCancelled { get; set; }
+
+    string firstName = "", middleNames = "", lastName = "", email = "", phone = "";
+    DateTime birthday = DateTime.Today.AddYears(-30);
+    string? errorMsg;
+    bool saving;
+
+    protected override void OnParametersSet()
+    {
+        if (!IsVisible) return;
+        if (Patient != null)
+        {
+            firstName = Patient.FirstName;
+            middleNames = "";
+            lastName = Patient.LastName;
+            email = Patient.Email;
+            phone = Patient.PhoneNumber;
+            birthday = Patient.Birthday;
+        }
+        else
+        {
+            firstName = middleNames = lastName = email = phone = "";
+            birthday = DateTime.Today.AddYears(-30);
+        }
+        errorMsg = null;
+    }
+
+    async Task Save()
+    {
+        errorMsg = null;
+        if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(lastName))
+        {
+            errorMsg = "Fornavn og efternavn er påkrævet.";
+            return;
+        }
+        saving = true;
+        try
+        {
+            if (Patient == null)
+                await AddPatientUseCase.Run(new AddPatientRequest(firstName.Trim(), middleNames.Trim(), lastName.Trim(), email.Trim(), phone.Trim(), birthday));
+            else
+                await UpdatePatientUseCase.Run(new UpdatePatientRequest(Patient.Id, firstName.Trim(), middleNames.Trim(), lastName.Trim(), email.Trim(), phone.Trim(), birthday));
+
+            await OnSaved.InvokeAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMsg = ex.Message;
+        }
+        finally { saving = false; }
+    }
+
+    async Task Delete()
+    {
+        if (Patient == null) return;
+        saving = true;
+        try
+        {
+            await RemovePatientUseCase.Run(Patient.Id);
+            await OnSaved.InvokeAsync();
+        }
+        catch (Exception ex) { errorMsg = ex.Message; }
+        finally { saving = false; }
+    }
+
+    async Task Cancel() => await OnCancelled.InvokeAsync();
+}

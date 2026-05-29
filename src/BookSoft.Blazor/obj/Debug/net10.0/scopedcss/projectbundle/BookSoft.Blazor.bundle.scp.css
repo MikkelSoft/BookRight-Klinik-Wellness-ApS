@@ -1,0 +1,412 @@
+/* /Components/Layout/MainLayout.razor.rz.scp.css */
+.main-layout[b-70soimjwuj] {
+    background-color: var(--primary);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar[b-70soimjwuj] {
+    width: 20%;
+    flex-shrink: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content[b-70soimjwuj] {
+    background-color: var(--secondary);
+    flex: 1;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* /Components/Layout/NavMenu.razor.rz.scp.css */
+.nav-scrollable[b-anr8ipptmn] {
+    width: 100%;
+    align-content: center;
+}
+
+.nav-item[b-anr8ipptmn] {
+    display: flex;
+    background-color: var(--primary-hover);
+    margin: 5px;
+    border-radius: 25px; 
+        
+}
+
+.nav-link[b-anr8ipptmn] {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-nav[b-anr8ipptmn] {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* /Components/Layout/ReconnectModal.razor.rz.scp.css */
+.components-reconnect-first-attempt-visible[b-rsia2mosg2],
+.components-reconnect-repeated-attempt-visible[b-rsia2mosg2],
+.components-reconnect-failed-visible[b-rsia2mosg2],
+.components-pause-visible[b-rsia2mosg2],
+.components-resume-failed-visible[b-rsia2mosg2],
+.components-rejoining-animation[b-rsia2mosg2] {
+    display: none;
+}
+
+#components-reconnect-modal.components-reconnect-show .components-reconnect-first-attempt-visible[b-rsia2mosg2],
+#components-reconnect-modal.components-reconnect-show .components-rejoining-animation[b-rsia2mosg2],
+#components-reconnect-modal.components-reconnect-paused .components-pause-visible[b-rsia2mosg2],
+#components-reconnect-modal.components-reconnect-resume-failed .components-resume-failed-visible[b-rsia2mosg2],
+#components-reconnect-modal.components-reconnect-retrying[b-rsia2mosg2],
+#components-reconnect-modal.components-reconnect-retrying .components-reconnect-repeated-attempt-visible[b-rsia2mosg2],
+#components-reconnect-modal.components-reconnect-retrying .components-rejoining-animation[b-rsia2mosg2],
+#components-reconnect-modal.components-reconnect-failed[b-rsia2mosg2],
+#components-reconnect-modal.components-reconnect-failed .components-reconnect-failed-visible[b-rsia2mosg2] {
+    display: block;
+}
+
+
+#components-reconnect-modal[b-rsia2mosg2] {
+    background-color: white;
+    width: 20rem;
+    margin: 20vh auto;
+    padding: 2rem;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: display 0.5s allow-discrete, overlay 0.5s allow-discrete;
+    animation: components-reconnect-modal-fadeOutOpacity-b-rsia2mosg2 0.5s both;
+    &[open]
+
+{
+    animation: components-reconnect-modal-slideUp-b-rsia2mosg2 1.5s cubic-bezier(.05, .89, .25, 1.02) 0.3s, components-reconnect-modal-fadeInOpacity-b-rsia2mosg2 0.5s ease-in-out 0.3s;
+    animation-fill-mode: both;
+}
+
+}
+
+#components-reconnect-modal[b-rsia2mosg2]::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: components-reconnect-modal-fadeInOpacity-b-rsia2mosg2 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes components-reconnect-modal-slideUp-b-rsia2mosg2 {
+    0% {
+        transform: translateY(30px) scale(0.95);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes components-reconnect-modal-fadeInOpacity-b-rsia2mosg2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes components-reconnect-modal-fadeOutOpacity-b-rsia2mosg2 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.components-reconnect-container[b-rsia2mosg2] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#components-reconnect-modal p[b-rsia2mosg2] {
+    margin: 0;
+    text-align: center;
+}
+
+#components-reconnect-modal button[b-rsia2mosg2] {
+    border: 0;
+    background-color: #6b9ed2;
+    color: white;
+    padding: 4px 24px;
+    border-radius: 4px;
+}
+
+    #components-reconnect-modal button:hover[b-rsia2mosg2] {
+        background-color: #3b6ea2;
+    }
+
+    #components-reconnect-modal button:active[b-rsia2mosg2] {
+        background-color: #6b9ed2;
+    }
+
+.components-rejoining-animation[b-rsia2mosg2] {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+    .components-rejoining-animation div[b-rsia2mosg2] {
+        position: absolute;
+        border: 3px solid #0087ff;
+        opacity: 1;
+        border-radius: 50%;
+        animation: components-rejoining-animation-b-rsia2mosg2 1.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+
+        .components-rejoining-animation div:nth-child(2)[b-rsia2mosg2] {
+            animation-delay: -0.5s;
+        }
+
+@keyframes components-rejoining-animation-b-rsia2mosg2 {
+    0% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    4.9% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    5% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}
+/* /Components/Pages/Appointment.razor.rz.scp.css */
+/* shared calendar layout is in app.css */
+
+.appointment[b-u1e8iy2lfr] {
+    background-color: var(--primary-hover);
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 11px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.appointment.appt-completed[b-u1e8iy2lfr] { background-color: #10b981; }
+.appointment.appt-cancelled[b-u1e8iy2lfr] { background-color: #9ca3af; text-decoration: line-through; }
+
+/* Week / Day view */
+.week-list[b-u1e8iy2lfr] {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.week-day-section[b-u1e8iy2lfr] { display: flex; flex-direction: column; gap: 6px; }
+
+.week-day-label[b-u1e8iy2lfr] {
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    text-transform: capitalize;
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.week-day-label.today[b-u1e8iy2lfr] { color: var(--primary-hover); }
+
+.week-appointment[b-u1e8iy2lfr] {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: var(--primary-hover);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.week-appointment.appt-completed[b-u1e8iy2lfr] { background: #10b981; }
+.week-appointment.appt-cancelled[b-u1e8iy2lfr] { background: #9ca3af; text-decoration: line-through; }
+.week-appointment span[b-u1e8iy2lfr] { white-space: nowrap; }
+
+.no-appt[b-u1e8iy2lfr] { font-size: 12px; color: #bbb; padding: 4px 0; margin: 0; }
+/* /Components/Pages/Campaigns.razor.rz.scp.css */
+/* shared calendar layout is in app.css */
+
+.campaign-chip[b-sdslevnq6o] {
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 11px;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.campaign-chip:hover[b-sdslevnq6o] { opacity: 0.85; }
+
+/* Checkbox group inside AddCampaign form */
+.checkbox-group[b-sdslevnq6o] {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 6px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+
+.checkbox-label[b-sdslevnq6o] {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #333 !important;
+    margin-top: 0 !important;
+}
+
+.checkbox-label input[type="checkbox"][b-sdslevnq6o] {
+    width: auto;
+    cursor: pointer;
+}
+/* /Components/Pages/Financials.razor.rz.scp.css */
+/* ── Bento grid ── */
+.bento[b-7z07a3uouy] {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 90px 1fr 1fr;
+    gap: 12px;
+    padding: 12px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Card base */
+.bento-card[b-7z07a3uouy] {
+    background: white;
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+    min-height: 0;
+}
+
+/* Column spans */
+.span-2[b-7z07a3uouy] { grid-column: span 2; }
+.span-3[b-7z07a3uouy] { grid-column: span 3; }
+
+/* ── KPI tile ── */
+.kpi-card[b-7z07a3uouy] {
+    justify-content: center;
+    padding: 14px 20px;
+}
+
+.kpi-label[b-7z07a3uouy] {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #999;
+}
+
+.kpi-value[b-7z07a3uouy] {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--font-color);
+    letter-spacing: -0.5px;
+}
+
+.kpi-red .kpi-value[b-7z07a3uouy] { color: #ef4444; }
+
+/* ── Chart titles ── */
+.chart-title[b-7z07a3uouy] {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #999;
+    flex-shrink: 0;
+}
+
+/* ── Chart container ── */
+.chart-wrap[b-7z07a3uouy] {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+}
+
+/* ── Info card ── */
+.info-card[b-7z07a3uouy] { gap: 0; }
+
+.info-row[b-7z07a3uouy] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 13px;
+}
+
+.info-row:last-child[b-7z07a3uouy] { border-bottom: none; }
+
+.info-row span[b-7z07a3uouy] { color: #666; }
+
+.info-row strong[b-7z07a3uouy] {
+    font-weight: 600;
+    color: var(--font-color);
+}
+/* /Components/Pages/Patients.razor.rz.scp.css */
+/* styles moved to app.css */

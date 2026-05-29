@@ -1,0 +1,31 @@
+.nav-scrollable[b-anr8ipptmn] {
+    width: 100%;
+    align-content: center;
+}
+
+.nav-item[b-anr8ipptmn] {
+    display: flex;
+    background-color: var(--primary-hover);
+    margin: 5px;
+    border-radius: 25px; 
+        
+}
+
+.nav-link[b-anr8ipptmn] {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-nav[b-anr8ipptmn] {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
