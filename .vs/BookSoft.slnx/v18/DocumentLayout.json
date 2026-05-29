@@ -399,7 +399,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -430,10 +430,6 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Clinics.razor",
@@ -456,8 +452,7 @@
               "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Pages\\Financials.razor",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAACAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T23:12:52.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-28T23:12:52.05Z"
             },
             {
               "$type": "Document",
@@ -469,8 +464,7 @@
               "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Pages\\Patients.razor",
               "ViewState": "AgIAACQAAAAAAAAAAAAAADoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-27T18:48:40.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T18:48:40.242Z"
             },
             {
               "$type": "Document",
@@ -482,8 +476,7 @@
               "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Forms\\AddPatient.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T10:29:38.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-28T10:29:38.561Z"
             },
             {
               "$type": "Document",
@@ -507,12 +500,7 @@
               "RelativeToolTip": "src\\BookSoft.Blazor\\Components\\Pages\\Error.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-28T13:08:31.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2026-05-28T13:08:31.009Z"
             },
             {
               "$type": "Document",
@@ -536,8 +524,7 @@
               "RelativeToolTip": "src\\BookSoft.Infrastructure\\QueryHandlers\\PatientQueries.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAlwBQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T15:53:41.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T15:53:41.128Z"
             },
             {
               "$type": "Document",

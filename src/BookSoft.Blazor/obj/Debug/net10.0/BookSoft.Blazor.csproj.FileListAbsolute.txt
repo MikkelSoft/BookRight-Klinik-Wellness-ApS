@@ -648,7 +648,6 @@ C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\bin\Debug\net10.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Pages\Patients.razor.rz.scp.css
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Pages\Campaigns.razor.rz.scp.css
-C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\kdj1qlqoba-{0}-x8it65cr1u-x8it65cr1u.gz
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\bin\Debug\net10.0\Blazor-ApexCharts.dll
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\scopedcss\Components\Pages\Financials.razor.rz.scp.css
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\q731hh5ls5-{0}-fipu15mg5j-fipu15mg5j.gz
@@ -701,3 +700,4 @@ C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\xixr6jn651-{0}-tga1esetbp-tga1esetbp.gz
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\f40gn40kyc-{0}-tga1esetbp-tga1esetbp.gz
 C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\SEBEI\source\sebastex\BookRight-Klinik-Wellness-ApS\src\BookSoft.Blazor\obj\Debug\net10.0\compressed\kdj1qlqoba-{0}-jzeaycae69-jzeaycae69.gz
